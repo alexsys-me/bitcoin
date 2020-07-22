@@ -1,0 +1,149 @@
+{% from "./tag-box-mini.html" import tagBoxMini %}
+{% from "./form.html" import selector %} 
+{% from "./dropdown.html" import dropdown %}
+{% from "./buttons.html" import service %} 
+
+{% macro activity_card(data) %}
+{#
+	data = [
+		{
+			"name": "",
+			"img": "",
+			"img_alt": "",
+			"age": "",
+			"tags": ["", "", ...],
+			"options": [ "F", "", ... ],
+			"description": "",
+			"address": "",
+			"is_first_view": "",
+			"is_approved": "",
+			"is_free": "",
+			"mest_for": "",
+			"web_site_url": "",
+			"facebook_url": "",
+			"emails": ["", "", ...],
+			"author": "",
+			"author_grp": "",
+			"update_type": "",
+			"update_icon": "",
+			"update_date": "",
+			"update_time": "",
+			"phones": ["", "", ...],
+			"popularity": "",
+			"editor": ""
+		}
+	]
+#}
+{% for item in data %}
+
+	<section class="activity-card">
+		<article class="activity-card__content-box">
+			<div class="activity-card__content">
+				
+				<h2 class="activity-card__ttl">{{ item.name }}</h2>
+
+				<div class="activity-card__img" style="background-image: url(images/{{ item.img }}.jpg)"></div>
+				
+				{{ tagBoxMini(item.tags, 'Age: ' + item.age, 'activity-card__tags ', item.options) }}
+				
+				<p class="activity-card__desc">{{ item.description }}</p>
+				
+				<footer class="activity-card__links">
+
+					{% if item.editor %}
+						<aside class="activity-card__link-menu link-menu">
+							<div class="link-menu__ttl icon-author">Editor: {{ item.editor }}</div>
+							<ul class="link-menu__list link-menu__list_command">
+									<li class="link-menu__item">
+										<a href="javascript:void(0)" class="link-menu__link">Change current editor</a>
+									</li>
+									<li class="link-menu__item">
+										<a href="./activities-of-user.html" class="link-menu__link">Show all of his activities</a>
+									</li>
+							</ul>
+						</aside>
+					{% endif %}
+					
+					{% if item.web_site_url %}
+						<a href="{{ item.web_site_url }}" class="activity-card__link icon-web">Web—site</a>
+					{% endif %}
+
+					{% if item.facebook_url %}
+						<a href="{{ item.facebook_url }}" class="activity-card__link icon-fb">Facebook</a>
+					{% endif %}
+
+					{% if item.emails %}
+						{% if item.emails.length < 2 %}
+							<a href="mailto:{{ item.emails }}" class="activity-card__link icon-email2">{{ item.emails }}</a>
+						{% else%}
+							<aside class="activity-card__link-menu link-menu">
+								<div class="link-menu__ttl icon-email2">Emails</div>
+
+								{{ dropdown(item.emails, 'email') }}
+
+							</aside>
+						{% endif %}
+					{% endif %}
+
+					{% if item.phones %}
+						{% if item.phones.length < 2 %}
+							<a href="tel:{{ item.phones }}" class="activity-card__link icon-phone">{{ item.phones }}</a>
+						{% else%}
+							<aside class="activity-card__link-menu link-menu">
+								<div class="link-menu__ttl icon-phone">Phones</div>
+								{{ dropdown(item.phones, 'phone') }}
+							</aside>
+						{% endif %}
+					{% endif %}
+
+				</footer>
+
+				<nav class="activity-card__btns">
+					{{ service('More', 'icon-down2', 'button_sm activity-card__btn') }}
+					{{ service('Edit', 'icon-pen', 'button_sm activity-card__btn js-demo-open-edit-modal') }}
+					{% if (item.is_approved == 'false') %}
+						{{ service('Approve', 'icon-like', 'button_sm activity-card__btn') }}
+						{{ service('Reject', 'icon-dislike', 'button_sm activity-card__btn') }}
+					{% endif %}
+					{{ service('Archive', 'icon-arc', 'button_sm activity-card__btn') }}
+				</nav>
+			</div>
+		</article>
+		
+		<aside class="activity-card__aside">
+			{{ selector("Mest For:", [
+						{
+								name: "Barn"
+						},
+						{
+								name: "Familie"
+						}
+				], 'selector_sm activity-card__selector-tool', item.img) }}
+
+				<a class="activity-card__info-tool activity-card__info-tool_map icon-map js-demo-open-quick-map" href="javascript:void(0)">
+					{{ item.address }}
+				</a>
+
+				<a class="activity-card__info-tool icon-clock js-demo-open-hours-modal" href="javascript:void(0)">Open Hours</a>
+				
+				<a class="activity-card__info-tool icon-date js-demo-open-scheduler-modal" href="javascript:void(0)">Scheduler</a>
+				
+				{% if item.is_free != "true" %}
+				<a class="activity-card__info-tool icon-tickets" href="javascript:void(0)">
+					Ticket Information
+				</a>
+				{% endif %}
+
+				<a class="activity-card__history-tool last-action icon-history js-demo-open-history" href="javascript:void(0)">
+					{{ item.update_type }}: <span class="last-action__date">{{ item.update_date }}</span> by <span class="last-action__user">{{ item.author }}</span> <span class="last-action__user-group">({{ item.author_grp }})</span></span>
+				</a>
+		</aside>
+		
+		{% if item.is_approved == 'false' %}
+		<div class="activity-card__ribbon ribbon{{ ' ribbon_shown' if item.is_first_view == "false" }}">
+			<span class="ribbon__text">Venter</span>
+		</div>
+		{% endif %}
+	</section>
+{% endfor %}
+{% endmacro %}

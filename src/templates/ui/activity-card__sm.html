@@ -1,0 +1,52 @@
+{% from  "./tag-box-mini.html" import tagBoxMini %}
+
+{% macro activity_card(data, class = '') %}
+{#
+	data = {
+			type: 'activity | arrangement',
+			title: '',
+			img: 'url',
+			age: '',
+			tags: ['', ..., ''],
+			description: '',
+			last_modify_type: '',
+			last_modify_date: '',
+			last_modify_time: '',
+			address: '',
+			url: ''
+	}
+#}
+	<article class="activity-card-sm">
+		<section class="activity-card-sm__image" style='background-image: url({{ data.img }});'></section>
+		<section class="activity-card-sm__content">
+			<h5 class="activity-card-sm__title">{{ data.title }}</h5>
+			{{ tagBoxMini( data.tags, 'Age: ' + data.age) }}
+			<div class="activity-card-sm__desc">{{ data.description }}</div>
+			<div class="activity-card-sm__tool-box">
+				{% if data.type == 'activity' and data.address %}
+					<span class="activity-card-sm__address">
+						<i class="icon-map activity-card-sm__icon"></i>
+						{{ data.address }} 
+					</span>
+				{% endif %}
+
+				<span class="activity-card-sm__date">
+					<i class="icon-{{ data.last_modify_type }} activity-card-sm__icon"></i>
+					{{ data.last_modify_date }} 
+					<span class="activity-card-sm__time">{{ data.last_modify_time }}</span>
+				</span>
+
+				<ul class="activity-card-sm__tools">
+					<li class="activity-card-sm__tools-item">
+						<a href="{{ data.url }}" class="activity-card-sm__link">View {{'Arrangement' if data.type !='activity' else 'Activity'}}</a>
+					</li>
+					{% if data.type != 'activity' %}
+					<li class="activity-card-sm__tools-item">
+						<a href="{{ data.url }}" class="activity-card-sm__link activity-card-sm__link_edit">Edit</a>
+					</li>
+					{% endif %}
+				</ul>
+			</div>
+		</section>
+	</article>
+{% endmacro %}

@@ -1,0 +1,111 @@
+.advertising {
+    background: #fcfcfc;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    flex: 0 1 25%;
+    margin: 0 20px 0 0;
+    padding: 10px 20px;
+    
+    @media(max-width: 1200px) {
+        padding: 10px;
+    }
+
+    @media(max-width: 980px) {
+        padding: 10px 20px;
+    }
+
+    @media(max-width: 768px) {
+        flex: 0 1 ~'calc(50% - 10px)';
+        margin-bottom: 20px;
+    }
+
+    @media(max-width: 425px) {
+        flex: 0 1 100%;
+        margin-right: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:nth-child(even) {
+        
+        @media(max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        margin: 0 0 40px;
+
+        @media(max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__status {
+        font: 700 12px 'Lato';
+        color: #b2b7cc;
+        margin: 0 0 10px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 6px 0 0;
+            background: #b2b7cc;
+        }
+
+        &_on {
+            color: #5ecc4f;
+
+            &:before {
+                background: #5ecc4f;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        margin: 0 0 30px;
+
+        a {
+            color: #2e74c5;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__date {
+        font: 700 14px 'Lato';
+        color: #6c6c6c;
+        margin: 0 0 10px;
+    }
+
+    &__time {
+        color: #bed5f7;
+    }
+
+    &__date-title {
+        font: 12px 'Lato';
+        color: #9f9f9f;
+        margin: 0 0 3px;
+    }
+
+    &__client {
+        font: 700 14px 'Lato';
+        color: #6c6c6c;
+    }
+
+    &__client-title {
+        font: 12px 'Lato';
+        color: #9f9f9f;
+        margin: 0 0 3px;
+    }
+}

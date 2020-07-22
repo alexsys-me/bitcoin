@@ -1,0 +1,64 @@
+{% import "./buttons.html" as btn %}
+{% macro modal(options) %}
+	{#
+		options = {
+				title: '',
+				class: '',
+				btnHead: '',
+				subTitle: '',
+				buttons: [
+						type: 'primary | secondary | ""',
+						text: '',
+						status: 'disabled | loading'
+				]
+		}
+	#}
+	<aside class="modal__wrap">
+		<section class="modal__container">
+			<div class="modal{{ ' ' + options.class if options.class }}">
+				<a href="javascript:void(0)" class="modal__close icon-cross"></a>
+
+				<div class="modal__head{% if options.btnHead %} modal__head_btn{% endif %}">
+					<h3 class="modal__title">
+						{{options.title}}
+						{% if options.subTitle %}
+						<span class="modal__title-sub">{{options.subTitle}}</span>
+						{% endif %}
+					</h3>
+
+					{% if options.btnHead %}
+					<button class="button">
+						{%if options.btnHeadIcon %}
+						<i class="icon-{{options.btnHeadIcon}}"></i>
+						{% endif %}
+						{{options.btnHead}}
+					</button>
+					{%endif%}
+				</div>
+
+
+				{{ caller() }}
+				
+
+				{% if options.buttons %}
+
+					<div class="modal__buttons">
+						{% for item in options.buttons %}
+							{%if item.type == 'primary' %}
+								{{btn.main(item.text,'','', item.status)}}
+							{% elseif item.type == 'secondary' %}
+								{{btn.service(item.text, item.icon, item.status)}}
+							{% else %}
+								{{ btn.service_link(item.text) }}
+							{% endif %}
+						{% endfor %}
+					</div>
+
+				{# {% else %}
+					{{ btn.service('Close') }} #}
+				{% endif %}
+			</div>
+		</section>
+		<div class="modal__shadow"></div>
+	</aside>
+{% endmacro %}

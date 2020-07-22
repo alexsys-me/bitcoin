@@ -1,0 +1,13 @@
+{% macro loader()%}
+    <div class="loader">
+
+        <i class="loader__icon icon-spinner"></i>
+        {{ caller() }}
+
+        <div class="loader__btn">
+            <button class="button">
+                Cancel
+            </button>
+        </div>
+    </div>
+{% endmacro %}

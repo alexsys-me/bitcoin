@@ -1,0 +1,62 @@
+{% extends "./_base.html"  %}
+
+{% block page_body %}
+  <div class="app__box">
+    <div class="app__mask"></div>
+      <aside class="app__aside">
+        <a href="#" class="logo">
+          <img src="./images/logo.svg" alt="BarnasNorge.no">
+          {% block logo %}  {% endblock %}
+        </a>
+
+        <nav class="nav__box app__nav">
+          {% block menu %} {% endblock %}
+        </nav>
+        
+        <div class="copyright">{{copyright}}</div>
+      </aside>
+      <div class="app">
+        <header class="app__header">
+         {# <div class="app__logo">
+           <a href="#" class="logo logo_mob">
+
+           </a>
+         </div> #}
+
+         <div class="emotion-box">We glad to see you on BarnasNorge.no!</div>
+
+         <a href="#" class="header__link icon-world">
+          Visit frontpage of BarnasNorge.no
+         </a>
+
+         <div class="menu">
+           <a href="#" class="menu__link js-menu-link icon-menu">
+             <span>Menu</span>
+           </a>
+         </div>
+       </header>
+       <main class="app__content">
+        <div class="content__wrp">
+          
+          <div class="content__row">
+            <section class="content__box">
+                {% block left %} {% endblock %}
+            </section> 
+            
+            <section class="content__box content__box_grow">
+              {% block right %} {% endblock %}
+            </section>
+          </div>
+
+          <div class="content__row">
+            <section class="content__box content__box_grow">
+              {% block bottom %} {% endblock %}
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  {% block body %} {% endblock %}
+{% endblock %}

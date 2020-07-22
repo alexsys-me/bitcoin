@@ -1,0 +1,99 @@
+{% macro scroll_table(header, data, class) %}
+	<main class="scroll-table scroll-table_full{{' ' + class if class}}">
+		<section class="scroll-table__super-box">
+			<div class="scroll-table__box">
+				<header class="scroll-table__header">
+					<table class="real-tbl">
+						<tr>
+							{% for h in header %}
+								<th>
+									<a href="javascript:void(0)" class="real-tbl__sort-link">
+										{{h.name}}
+									</a>
+									{% if (h.sort) %}
+										<i class="icon-sort-{{ h.sort }} real-tbl__sort-icon"></i>
+									{% endif%}
+								</th>
+							{% endfor %}
+						</tr>
+						{% for i in data %}
+							<tr>
+								<td>
+									{% if i.reject_reason %}
+										<div class="real-tbl__note splash-note__box">
+											<span class="real-tbl__action-icon icon-{{ i.action_icon }}"></span>
+											<span class="splash-note__link">{{ i.action }}</span>
+											<aside class="splash-note">
+												<div class="splash-note__ttl">Admin Comment</div>
+												{{ i.reject_reason }}
+											</aside>
+										</div>
+									{% else %}
+										<span class="real-tbl__action-icon icon-{{ i.action_icon }}"></span>
+										{{ i.action }}
+									{% endif %}
+								</td>
+								<td>
+									{{ i.date }} 
+									<span class="real-tbl__val-time">{{ i.time }}</span>
+								</td>
+								<td>
+									<a href="{{ i.user_url }}" class="real-tbl__link">{{ i.user_name }}</a>
+								</td>
+								<td>
+									{{ i.user_group }}
+								</td>
+							</tr>
+						{% endfor %}
+					</table>
+				</header>
+
+				<article class="scroll-table__data">
+					<table class="real-tbl">
+						<tr>
+							{% for h in header %}
+								<th>
+									<a href="javascript:void(0)" class="real-tbl__sort-link">
+										{{h.name}}
+									</a>
+									{% if (h.sort) %}
+										<i class="icon-sort-{{ h.sort }} real-tbl__sort-icon"></i>
+									{% endif%}
+								</th>
+							{% endfor %}
+						</tr>
+						{% for i in data %}
+							<tr>
+								<td>
+									{% if i.reject_reason %}
+										<div class="real-tbl__note splash-note__box">
+											<span class="real-tbl__action-icon icon-{{ i.action_icon }}"></span>
+											<span class="splash-note__link">{{ i.action }}</span>
+											<aside class="splash-note">
+												<div class="splash-note__ttl">Admin Comment</div>
+												{{ i.reject_reason }}
+											</aside>
+										</div>
+									{% else %}
+										<span class="real-tbl__action-icon icon-{{ i.action_icon }}"></span>
+										{{ i.action }}
+									{% endif %}
+								</td>
+								<td>
+									{{ i.date }} 
+									<span class="real-tbl__val-time">{{ i.time }}</span>
+								</td>
+								<td>
+									<a href="{{ i.user_url }}" class="real-tbl__link">{{ i.user_name }}</a>
+								</td>
+								<td>
+									{{ i.user_group }}
+								</td>
+							</tr>
+						{% endfor %}
+					</table>
+				</article>
+			</div>
+		</section>
+	</main>
+{% endmacro %}

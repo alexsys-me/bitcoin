@@ -1,0 +1,71 @@
+.panel-controls {
+    height: 67px;
+    background: #fff;
+    box-shadow: 0 -7px 5px -4px rgba(0, 0, 0, .15);
+    margin: 0 -51px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px 0 40px;
+    z-index: 1000;
+
+
+    @media(max-width: 767px) {
+        padding: 0 16px;
+        margin: 0 -32px;
+    }
+
+    @media(max-width: 490px) {
+        margin: 0 -16px;
+        position: relative;
+        width: auto;
+        transition: transform 0.4s ease;
+    }
+
+    @media(max-width: 378px) {
+        margin: 0 -15px;
+        padding: 0 8px;
+    }
+
+    &_fixed {
+        @media(max-width: 490px) {
+            left: 16px;
+            position: fixed;
+            width: 100%;
+            transform: translateY(150%);
+            opacity: 0;
+            transition: transform 0.4s ease;
+
+            &.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__right {
+        margin: 0 0 0 auto;
+
+        // @media(max-width: 490px) {
+        //     margin: 10px 0 0;
+        // }
+
+        // @media(max-width: 350px) {
+        //     margin: 0;
+        // }
+    }
+
+    .button {
+        margin: 0 15px 0 0;
+
+        // @media(max-width: 490px) {
+        //     margin: 0;
+        // }
+
+        // @media(max-width: 350px) {
+        //     margin: 0 0 10px;
+        // }
+    }
+}

@@ -1,0 +1,28 @@
+.hint {
+    font-size: 18px;
+    color: #232631;
+    font-weight: 700;
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    
+    &:before {
+        content: '?';
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+        background: #f5f9fd;
+    }
+
+    &:hover {
+        .scheduler__hint {
+            pointer-events: all;
+			opacity: 1;
+			transform: perspective(600px) translateY(0) rotateX(0);
+        }
+    }
+}

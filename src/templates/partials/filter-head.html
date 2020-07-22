@@ -1,0 +1,19 @@
+{% import "../ui/form.html" as form %}
+{% import "../ui/range-slider.html" as range %}
+
+{{ form.input({
+	placeholder: 'County', 
+	value: 'All', 
+	class: 'filter-head__input form-control_dark'}) }}
+
+{{ form.input({
+		placeholder: 'Date', 
+		value: 'Today', 
+		class: 'filter-head__input form-control_dark'}) }}
+
+{{ range.selector('filter-head__slider') }}
+
+{{ form.input({
+		placeholder: 'Keyword', 
+		class: 'filter-head__input form-control_dark',
+		icon: 'search'}) }}

@@ -1,0 +1,26 @@
+{% macro ad(data) %}
+<div class="advertising__wrap">
+    {% for item in data %}
+        
+        <div class="advertising">
+            <div class="advertising__status advertising__status_{{item.status}}">{{item.status}}</div>
+            
+            <h3 class="advertising__title">
+                <a href="#">{{item.name}}</a>
+            </h3>
+
+            <div class="advertising__date">
+                <div class="advertising__date-title">End date</div>
+                {{item.date}} <span class="advertising__time">{{item.time}}</span>
+            </div>
+
+            <div class="advertising__client">
+                <div class="advertising__client-title">Client</div>
+                {{item.client}}
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+
+{% endmacro %}

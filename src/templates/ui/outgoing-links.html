@@ -1,0 +1,113 @@
+{% import "./form.html" as form %}
+
+{% macro linksTable(data) %}
+    <div class="outgoing-links">
+        <div class="outgoing-links__head">
+            <div class="outgoing-links__activity">
+                <a class="outgoing-links__head-link" href="#">
+                    Activity / Date
+                    <i class="outgoing-links__head-icon icon-sort-asc"></i>
+                </a>
+            </div>
+            <div class="outgoing-links__count">
+                <a class="outgoing-links__head-link" href="#">
+                    Count
+                    <i class="outgoing-links__head-icon outgoing-links__head-icon_active icon-sort-desc"></i>
+                </a>
+            </div>
+            <div class="outgoing-links__list">
+                List of  Invalid Links
+            </div>
+        </div>
+
+        <div class="outgoing-links__body">
+            {% for item in data %}
+            <div class="outgoing-links__row">
+                <div class="outgoing-links__activity">
+                    <div class="outgoing-links__info-wrap">
+                        <div class="outgoing-links__img">
+                            <img src="./images/activity-cards/{{ item.image }}" alt="image">
+                        </div>
+                        <div class="outgoing-links__info">
+                            <div class="outgoing-links__title"> {{ item.name }} </div>
+                            <div class="outgoing-links__address icon-map">
+                                <a href="#">{{ item.address }}</a>
+                            </div>
+                            <div class="outgoing-links__date icon-plus">
+                                {{ item.date }}
+                                <span class="outgoing-links__time">{{ item.time }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="outgoing-links__count">
+                    <span class="outgoing-links__count-box">
+                        {{ item.count }}
+                    </span>
+                </div>
+                
+                <div class="outgoing-links__list">
+                    <ul class="outgoing-links__link-list">
+                        {% for i in item.links %}
+                            <li class="outgoing-links__link-item">
+                                <div class="outgoing-links__link-info">
+                                    <span class="outgoing-links__link-status">{{ i.status }}</span>
+                                    <span class="outgoing-links__link-source">
+                                        {% if i.source == 'facebook' %}
+                                            <i class="icon-fb"></i>
+                                        {% elif i.source == 'youtube' %}
+                                            <i class="icon-youtube"></i>
+                                        {% elif i.source == 'instagram' %}
+                                            <i class="icon-instagram"></i>
+                                        {% elif i.source == 'trippsbatservice' %}
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="11px">
+                                                <image  x="0px" y="0px" width="18px" height="11px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAMAAABFyS02AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB/lBMVEX////////e3t6WmJxsa2tkXVBSTUJTTkJoY1ZycXOlpqjy8vLT09PZ2dl7e3uampq7u7vZ2dlvb2+BgYE8PDxQUFAxMTFLS0tZWVmhoaG6urr///+9vb1paWlQUFBqamq3t7ft7e3v7++srKxdXV1SUlJubm7ExMTR0dFaW1wVEw9XRyS1o1zqy3fvzXvvznvoyHWsm1hMQCUjIiKIiInT09PPz88AAAABAQFCQkJjY2NVVFBTRircwHL/54r/6IrOsWlPRS1ZV1RfX187OzsSEhK1tbX09PTi4uL4+PmbnaMxLCLnyXfSt2w5NjCztLnz8/Pj4+P29vaXl5ccHByfn5/j4uJjZGRZX19wcHH7+/uFh41zYztgUzOnqrBeXV5bWFxzc3P9/f15eXnp6el8fX2klJTwtLSMiIiCg4T29vccHBk5NzT///9kY2WhqZ651qx8fnugn6DX19fv7+96fX3QtLTodXa/sbFiZmYGBwcxMTNSUFTB0LuJwHChpZ6KiYrk5OSysrJeYGCfnJxXWFjNzczU1NQCAgIJCQnw8PCoqKiamptTU1OwsLBDQ0P4+PjQ0dGVl5fh4eH39/dHR0dcXFzKysuZmJnn5+fo6Og3NzdsbGw+Pj6tra3AwMCJiYlbW1t1dXV0dHRMTEy0tLTHx8enp6c6OjqKioqBdI7YAAAAKHRSTlPo8/Pz8/Pz8/Pz8/P39/T09PT09PT09PT09PT38/Pz8/Pz8/Pz8/PzIMCzkwAAAAFiS0dEAIgFHUgAAAAHdElNRQfiCgwRLTMVIEWOAAAA3ElEQVQI1wHRAC7/AAABAQECAwQFBgcICQoLAQEBAAAMKCgpKissLS4vMDEyMzQ1Ng0ADjc4OTo7PD0+P0BBQkNENzcPABBFRkdISUpLTE1OT1BRUlNUEQASVVZXWFlaW1xdXlFfYGFiYxMAFGRlZmdoaWprbG1ub3BxcnMVABZ0dXZ3eHltenttfH1+f4CBFwAXNoKDhIWGh4iJios6jI0ojhgAGY+QkZKTlJU3N5Ztl5iZmpsaABucnZ6fizmgoaKjpKWmp6ipGwAAARwdHh8gASEiASMkJSYnAQB2+DxRIvRsWwAAAABJRU5ErkJggg==" />
+                                            </svg>
+                                        {% elif i.source == 'homepage' %}
+                                            <span class="outgoing-links__homepage-icon">Homepage</span>
+                                        {% elif i.source == 'brochure-url' %}
+                                            <span class="outgoing-links__brochure-icon">Brochure Url</span>
+                                        {% elif i.source == 'ticket-info' %}
+                                            <span class="outgoing-links__brochure-icon">Ticket Info</span>
+                                        {% elif i.source == 'ticket-booking' %}
+                                            <span class="outgoing-links__brochure-icon">Ticket Booking</span>
+
+                                        {% endif %}
+                                    </span>
+                                    <a href="{{i.link}}" class="outgoing-links__link">
+                                        {{ i.link }}
+                                    </a>
+                                    <div class="outgoing-links__controls">
+                                        <a href="#" class="outgoing-links__edit icon-pen">
+                                            <span>Edit</span>
+                                        </a>
+                                        <a href="#" class="outgoing-links__remove icon-clear">
+                                            <span>Remove</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="outgoing-links__edit-input">
+                                    <div class="outgoing-links__edit-input-wrap">
+                                    {{ form.input({
+                                        placeholder: 'Website',
+                                        value: 'https://attraction-oslo.no',
+                                        btn: 'world'
+                                    }) }}
+
+                                    <a href="#" class="outgoing-links__edit-save icon-save-disk"></a>
+                                    </div>
+                                    <div class="outgoing-links__edit-message">
+                                        Paste url and save, please.
+                                    </div>
+                                </div>
+                               
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

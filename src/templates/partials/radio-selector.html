@@ -1,0 +1,45 @@
+{% from "../ui/form.html" import dropzone %}
+
+<div class="form-control form-control_radio">
+	<label class="radio radio_active">
+		<input type="radio" name="radio_selector" class="radio__input" checked="checked" value="dropzone">
+		<span class="radio__icon"></span>
+		I will upload pictures by myself
+	</label>
+	<div class="radio__box radio__box_dropzone">
+		{{ form.dropzone('Drop pictures here or click to upload.
+')}}
+	</div>
+</div>
+
+<div class="form-control form-control_radio">
+	<label class="radio">
+		<input type="radio" name="radio_selector" class="radio__input" value="libusing">
+		<span class="radio__icon"></span>
+		I want to use picture from standard library
+	</label>
+	<div class="radio__box radio__box_dropzone">
+		{{ form.dropzone('Drop files here or click to upload.', dropzone2)}}
+	</div>
+</div>
+
+<script type="text/javascript">
+	var radio = document.getElementsByName('radio_selector');
+	var radioValue;
+
+	radio.forEach(function(entry) {
+		if (entry.parentElement.classList.contains('radio_active')) {
+			radioValue = entry;
+		}
+
+		entry.addEventListener('change', function() {
+			if (radioValue) {
+				radioValue.parentElement.classList.remove('radio_active')
+			} 
+			entry.parentElement.classList.add('radio_active');
+			radioValue = entry;
+			
+		});
+	});
+
+</script>

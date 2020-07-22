@@ -1,0 +1,49 @@
+  
+.fotter{
+  height: 150px;
+  background: @grey;
+  flex: 0 0 auto;
+  justify-content: center;
+  display: flex;  
+  flex-wrap: wrap; 
+  padding-bottom: 22px;
+  padding-top: 32px;
+
+  &__copyright{
+    flex:100%;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color:#b9b8b8;
+    font-size: 14px;
+  }
+
+  &__menu{
+    list-style: none;
+    display: flex;
+    a{
+      color:black;
+      margin: 0 15px;
+      text-decoration: underline;
+
+    }
+  }
+
+  &__social{
+    display: flex;
+    justify-content: center;
+    flex: 100%; 
+    &.facebok {
+      
+    }
+    &_icon{
+      background:#000;
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius:50%;
+
+    }
+
+  }
+}

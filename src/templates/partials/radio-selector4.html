@@ -1,0 +1,88 @@
+{% from "../ui/form.html" import dropzone, input, textarea %}
+
+<div class="form-control form-control_radio">
+	<label class="radio radio_active">
+		<input type="radio" name="radio_selector_ticket" class="radio__input" checked="checked" value="ticket_free">
+		<span class="radio__icon"></span>
+		Activity is Free
+	</label>
+</div>
+
+<div class="form-control form-control_radio">
+	<label class="radio">
+		<input type="radio" name="radio_selector_ticket" class="radio__input" value="ticket_link">
+		<span class="radio__icon"></span>
+		Specify link to ticket information
+	</label>
+	<div class="radio__box radio__box_one-input">
+		{{ input({ 
+			placeholder: 'Link', 
+			value: 'https://attraction-oslo.no/buy-ticket', 
+			btn: 'world'}) 
+		}}
+	</div>
+</div>
+
+<div class="form-control form-control_radio">
+	<label class="radio">
+		<input type="radio" name="radio_selector_ticket" class="radio__input" value="ticket_info">
+		<span class="radio__icon"></span>
+		Specify all information
+	</label>
+	<div class="radio__box radio__box_ticket-info">
+		{{ textarea('How book a tickets', 'form-control_xs form-control_autosize', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsam, iste sed dolores, vel mollitia ducimus facilis, explicabo at laboriosam enim animi debitis dolor quidem distinctio consectetur eius inventore aliquam?') }}
+		<div class="row">
+			<div class="col-6">
+				{{ input({ 
+					placeholder: 'Email for booking tickets', 
+					value: 'email.example@mail.com'}) }}
+			</div>
+			<div class="col-6">
+				{{ input({ 
+					placeholder: 'Phone for booking tickets', 
+					value: '22 30 54 56'}) }}
+			</div>
+		</div>
+		{{ input({ 
+			placeholder: 'Link for booking tickets online', 
+			value: 'https://attraction-oslo.no/buy-ticket'}) }}
+	</div>
+</div>
+
+<script type="text/javascript">
+	var radio = document.getElementsByName('radio_selector_ticket');
+	var radioValue;
+
+	radio.forEach(function(entry) {
+		if (entry.parentElement.classList.contains('radio_active')) {
+			radioValue = entry;
+		}
+
+		entry.addEventListener('change', function() {
+			if (radioValue) {
+				radioValue.parentElement.classList.remove('radio_active')
+			} 
+			entry.parentElement.classList.add('radio_active');
+			radioValue = entry;
+			
+		});
+	});
+
+	
+	var open_btns = document.querySelectorAll('.img-box__set-seo');
+	var close_btns = document.querySelectorAll('.service-link');
+	// img-box__seo-param_shown
+	open_btns.forEach(function(entry) {
+		entry.addEventListener('click', function() {
+			entry.parentElement.parentElement.querySelector('.img-box__seo-param').classList.add('img-box__seo-param_shown');
+		});
+	});
+
+	close_btns.forEach(function(entry) {
+		entry.addEventListener('click', function() {
+			entry.parentElement.classList.remove('img-box__seo-param_shown');
+		});
+	});
+	
+
+</script>

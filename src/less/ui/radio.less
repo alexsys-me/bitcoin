@@ -1,0 +1,141 @@
+.radio {
+	position: relative;
+	padding: 0 0 0 32px;
+	cursor: pointer;
+	user-select: none;
+	font-size: 16px;
+	line-height: 21px;
+	color: #444545;
+	font-weight: 400;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	min-height: 21px;
+
+	@media (max-width: 490px) {
+		white-space: normal;
+	}
+
+	&_sm {
+		padding-left: 24px;
+	}
+
+	&_slot-selector {
+		height: 100%;
+		padding: 10px 5px 0 32px;
+	}
+
+	&__input {
+		display: none;
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid #b8b7b7;
+		background: white;
+		position: absolute;
+		left: 0;
+
+		.radio_sm & {
+			width: 16px;
+			height: 16px;
+			top: 3px;
+		}
+
+		&:before {
+			content: '';
+			transform: scale(0);
+			opacity: 0;
+			transition: transform 0.5s ease-out, opacity 0.3s;
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: white;
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+
+			.radio_sm & {
+				width: 8px;
+				height: 8px;
+				box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.35);
+			}
+		}
+
+		.radio__input:checked + & {
+			border-color: #98cf90;
+			background: #9bdf91;
+
+			&:before {
+				opacity: 1;
+				transform: scale(1);
+				transition: transform 0.3s cubic-bezier(0, 1.9, 1, 1);
+			}
+
+			.radio_sm & {
+				background-color: #88b0f9;
+				border-color: #85a6e0;
+			}
+		}
+	}
+
+	.checkbox_grp & {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__box {
+		padding: 0 0 0 32px;
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: height .4s ease-in-out, opacity .35s ease-in-out;
+
+		.radio_active + & {
+			opacity: 1;
+			transition: height .4s ease-in-out, opacity .35s ease-in-out;
+
+			&_dropzone {
+				height: 256px;
+			}
+
+			&_one-input {
+				height: 94px;
+			}
+
+			&_dropzone-sm {
+				height: 123px;
+			}
+
+			&_ticket-info {
+				height: 500px;
+			}
+		}
+
+		.radio__box_error & {
+			color: #ff5959;
+		}
+	}
+
+	&__message {
+		color: #9d9ea1;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 3px 5px 0 3px;
+		white-space: nowrap;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+
+		.radio__box_error & {
+			color: #ff5959;
+		}
+	}
+}

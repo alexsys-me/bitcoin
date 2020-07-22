@@ -1,0 +1,397 @@
+	{% import "./form.html" as form %}
+{% from  "./tag-box-mini.html" import tagBoxMini %}
+{% from  "./activity-card.html" import activity_card %}
+
+{% macro table(data, table_options = '', class = '') %}
+{#
+	data = [
+		{
+			name: "Norsk Trikotasjemuseum - lærerik industrihistorie",
+			img: "img",
+			img_alt: "Very strange house",
+			age: "0-15+",
+			tags: ["Museums"],
+			options: [ "Free", "For Birthdays" ],
+			description: "",
+			address: "Mjølfjell Kleivavegen 576 5706 VOSS",
+			is_first_view: "true",
+			is_approved: "false",
+			is_free: "false",
+			mest_for: "unset",
+			web_site_url: "#",
+			facebook_url: "#",
+			emails: ["iajslskk@hotmail.com"],
+			author: "AlexP",
+			author_grp: "AdmLimit",
+			update_type: "Updated",
+			update_date: "08-07-2018",
+			phones: ["55 25 10 81", "55 25 10 81 "],
+			popularity: "32",
+			editor: "AlexP"
+		},
+#}
+
+<section class="expand-table">
+	<div class="expand-table__head">
+		<div class="expand-table__head-row">
+			{% for item in table_options %}
+				<div class="expand-table__cell{{ ' expand-table__cell_sort' if item.sort }}">
+					
+					{% if item.names %}
+
+						{% for name in item.names %}
+							<a class="expand-table__sort-link" href="javascript:void(0)">{{ name.name }}</a>
+
+							{% if (name.sort) and (name.sort == "asc" or name.sort == "desc" or name.sort == "on") %}
+								<a class="expand-table__sort{{' icon-sort-desc' if name.sort == "desc" }}{{' icon-sort-asc' if name.sort == "asc" }}{{' expand-table__sort_secondary icon-sort-asc' if name.sort == "on" }}" href="javascript:void(0)"></a>
+							{% endif %}
+
+							{{'/' if not loop.last }}
+						{% endfor %}
+					
+					{% else %}
+						<a class="expand-table__sort-link" href="javascript:void(0)">{{item.name}}</a>
+						
+						{% if item.sort %}
+							<a class="expand-table__sort{{' icon-sort-desc' if item.sort == "desc" else ' icon-sort-asc' }}" href="javascript:void(0)"></a>
+						{% endif %}
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="expand-table__body">
+		
+		{% for item in data %}
+
+			<div class="expand-table__row{{ ' expand-table__row_new' if (item.is_first_view == "true") and (item.is_approved == "false") }}{{ ' expand-table__row_venter' if (item.is_first_view == "false") and (item.is_approved == "false") }}">
+				<div class="expand-table__cell-box">
+					<div class="expand-table__cell" data-cell-title="{{ table_options[0].names[0].name if table_options[0].names else table_options[0].name }}">
+						<div class="expand-table__name">{{item.name}}</div>
+						{{ tagBoxMini( item.tags, 'Age: ' + item.age, 'expand-table__tags', item.options) }}
+					</div>
+
+					<div class="expand-table__cell" data-cell-title="{{ table_options[1].names[0].name if table_options[1].names else table_options[1].name }}">
+						<div class="expand-table__date">
+
+							<i class="expand-table__cell-icon icon-{{item.update_icon}}"></i>
+
+							{{ item.update_date }} 
+
+							<span>{{ item.update_time }}</span>
+
+						</div>
+					</div>
+
+					<div class="expand-table__cell" data-cell-title="{{ table_options[2].names[0].name if table_options[2].names else table_options[2].name }}">
+						<span class="expand-table__popularity">
+							{{ item.popularity }}
+						</span>
+					</div>
+					
+					<div class="expand-table__cell" data-cell-title="{{ table_options[3].names[0].name if table_options[3].names else table_options[3].name }}">
+						{% set selectedItem = true if [1,2] | random == 2 else false %}
+						{{ form.selector("", [
+									{
+											name: "Barn",
+											selected: "true" if selectedItem else "false"
+									},
+									{
+											name: "Familie",
+											selected: "false" if selectedItem else "true"
+									}
+							], 'selector_sm selector_read-only expand-table__selector', item.id) }}
+					</div>
+
+				</div>
+
+				<span class="expand-table__expander row-expander">
+					<i class="row-expander__control"></i>
+					<span class="row-expander__line"></span>
+				</span>
+
+				<div class="expand-table__middle-data-box">
+
+					{{ activity_card([item]) }}
+					<span class="expand-table__closer icon-cross"></span>
+
+					<span class="row-expander row-expander_undo">
+						<i class="row-expander__control"></i>
+						<span class="row-expander__line"></span>
+					</span>
+				</div>
+			</div>
+
+		{% endfor %}
+
+	</div>
+</section>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function(){
+
+		function expandRow(e) {
+			if ( !e.target.classList.contains('selector__label') && !e.target.classList.contains('selector__radio') ) {
+
+				this.style.height = this.offsetHeight + 'px';
+
+				var _self = this;
+				setTimeout(function(){
+					_self.classList.add('expand-table__row_expanded');
+
+					el = _self.querySelector('.expand-table__middle-data-box');
+
+					_self.style.height = el.offsetHeight + 'px';
+
+					setTimeout(function(){
+						_self.style.height = 'auto';
+					}, 50);
+
+				}, 50);
+
+				this.removeEventListener('click', expandRow);
+
+			}
+		}
+
+		function narrowRow(e) {
+			e.stopPropagation();
+			var row = this.parentElement.parentElement;
+			var elHeight = row.querySelector('.expand-table__cell-box').offsetHeight;
+
+			row.style.height = row.offsetHeight + 'px';
+			row.classList.remove('expand-table__row_expanded');
+			row.addEventListener('click', expandRow, false)
+
+			setTimeout(function(){
+				row.style.height = elHeight + 'px';
+
+				setTimeout(function(){
+					row.style.height = 'auto';
+				}, 50);
+			}, 50);
+
+		}
+		
+		rows = document.querySelectorAll('.expand-table__row');
+		closeBtn = document.querySelectorAll('.expand-table__closer');
+		narrowBtn = document.querySelectorAll('.row-expander_undo')
+
+		for (i=0;i<rows.length;i++) {
+			rows[i].addEventListener('click', expandRow, false)
+		}
+
+		for (i=0;i<rows.length;i++) {
+			closeBtn[i].addEventListener('click', narrowRow, false)
+		}
+
+		for (i=0;i<rows.length;i++) {
+			narrowBtn[i].addEventListener('click', narrowRow, false)
+		}
+
+	});
+</script>
+{% endmacro %}
+
+{% macro tablePost(data, table_options = '', class = '') %}
+
+
+<section class="expand-table{% if table_options.settings.class %} expand-table_{{table_options.settings.class}} {% endif %}">
+	<div class="expand-table__head">
+		<div class="expand-table__head-row">
+			<div class="expand-table__cell expand-table__cell_checkbox">
+				{{
+					form.checkbox()
+				}}
+			</div>
+			{% for item in table_options.items %}
+				<div class="expand-table__cell{{ ' expand-table__cell_sort' if item.sort }}">
+					
+					{% if item.names %}
+
+						{% for name in item.names %}
+							<a class="expand-table__sort-link" href="javascript:void(0)">{{ name.name }}</a>
+
+							{% if (name.sort) and (name.sort == "asc" or name.sort == "desc" or name.sort == "on") %}
+								<a class="expand-table__sort{{' icon-sort-desc' if name.sort == "desc" }}{{' icon-sort-asc' if name.sort == "asc" }}{{' expand-table__sort_secondary icon-sort-asc' if name.sort == "on" }}" href="javascript:void(0)"></a>
+							{% endif %}
+
+							{{'/' if not loop.last }}
+						{% endfor %}
+					
+					{% else %}
+						<a class="expand-table__sort-link" href="javascript:void(0)">{{item.name}}</a>
+						
+						{% if item.sort %}
+							<a class="expand-table__sort{{' icon-sort-desc' if item.sort == "desc" else ' icon-sort-asc' }}" href="javascript:void(0)"></a>
+						{% endif %}
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="expand-table__body">
+		
+		{% for item in data %}
+
+			<div class="expand-table__row{{ ' expand-table__row_new' if (item.is_first_view == "true") and (item.is_approved == "false") }}{{ ' expand-table__row_venter' if (item.is_first_view == "false") and (item.is_approved == "false") }}">
+				<div class="expand-table__cell-box">
+					<div class="expand-table__cell">
+						{{
+							form.checkbox()
+						}}
+					</div>
+					<div class="expand-table__cell" data-cell-title="Activity Name">
+						<div class="expand-table__name">{{item.name}}</div>
+						<div class="expand-table__template">Mail Template: <span>{{item.template}}</span></div>
+					</div>
+					
+					<div class="expand-table__cell" data-cell-title="Status">
+						<span class="expand-table__status">
+							{{ item.status }}
+						</span>
+					</div>
+
+					<div class="expand-table__cell" data-cell-title="Acceptance date">
+						<div class="expand-table__date">
+
+							<i class="expand-table__cell-icon{% if item.update_icon == 'attention'%} expand-table__cell-icon_attention{% endif %} icon-{{item.update_icon}}"></i>
+
+							{{ item.date }} 
+
+							<span>{{ item.time }}</span>
+
+						</div>
+					</div>
+
+					
+					
+					<div class="expand-table__cell" data-cell-title="Follow up">
+						{{
+							form.date(item.follow)
+						}}
+						{% if item.was_sent%}
+						<div class="expand-table__sent-info">
+							Sent: {{ item.was_sent.date }} <span class="expand-table__sent-time">{{ item.was_sent.time }}</span>
+							<a href="#" class="expand-table__resend-link">Resend</a>
+						</div>
+						{% endif %}
+					</div>
+
+				</div>
+
+				<span class="expand-table__expander row-expander">
+					<i class="row-expander__control"></i>
+					<span class="row-expander__line"></span>
+				</span>
+
+				<div class="expand-table__middle-data-box">
+
+					{{ activity_card([item]) }}
+					<span class="expand-table__closer icon-cross"></span>
+
+					<span class="row-expander row-expander_undo">
+						<i class="row-expander__control"></i>
+						<span class="row-expander__line"></span>
+					</span>
+				</div>
+			</div>
+
+		{% endfor %}
+
+	</div>
+</section>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function(){
+
+		function expandRow(e) {
+			console.log('Open Row')
+			e.stopPropagation();
+
+			if ( !e.target.classList.contains('selector__label') && !e.target.classList.contains('selector__radio') ) {
+				var parent = this.closest('.expand-table__row');
+
+				parent.style.height = parent.offsetHeight + 'px';
+
+				var _self = parent;
+				setTimeout(function(){
+					_self.classList.add('expand-table__row_expanded');
+
+					el = _self.querySelector('.expand-table__middle-data-box');
+
+					_self.style.height = el.offsetHeight + 'px';
+
+					setTimeout(function(){
+						_self.style.height = 'auto';
+					}, 50);
+
+				}, 50);
+
+				this.removeEventListener('click', expandRow);
+
+			}
+		}
+
+		function narrowRow(e) {
+			console.log('Close Row')
+			e.stopPropagation();
+			var row = this.parentElement.parentElement;
+			var elHeight = row.querySelector('.expand-table__cell-box').offsetHeight;
+
+			row.style.height = row.offsetHeight + 'px';
+			row.classList.remove('expand-table__row_expanded');
+			row.addEventListener('click', expandRow, false)
+
+			setTimeout(function(){
+				row.style.height = elHeight + 'px';
+
+				setTimeout(function(){
+					row.style.height = 'auto';
+				}, 50);
+			}, 50);
+
+		}
+
+		function checkRow(e) {
+			console.log('Select Row')
+			var box = this.querySelector('.expand-table__cell-box');
+			var checkbox = this.querySelector('.checkbox__input');
+
+			if (box.classList.contains('expand-table__cell-box_selected')){
+				box.classList.remove('expand-table__cell-box_selected');
+				checkbox.checked = false;
+			} else {
+				box.classList.add('expand-table__cell-box_selected');
+				checkbox.checked = true;
+			}
+		}
+		
+		rows = document.querySelectorAll('.expand-table__row');
+		expandBtn = document.querySelectorAll('.row-expander__control');
+		closeBtn = document.querySelectorAll('.expand-table__closer');
+		narrowBtn = document.querySelectorAll('.row-expander_undo')
+
+		for (i=0;i<rows.length;i++) {
+			rows[i].addEventListener('click', checkRow, false)
+		}
+
+		for (i=0;i<expandBtn.length;i++) {
+			expandBtn[i].addEventListener('click', expandRow, false)
+		}
+
+		for (i=0;i<rows.length;i++) {
+			closeBtn[i].addEventListener('click', narrowRow, false)
+		}
+
+		for (i=0;i<rows.length;i++) {
+			narrowBtn[i].addEventListener('click', narrowRow, false)
+		}
+
+	});
+</script>
+{% endmacro %}

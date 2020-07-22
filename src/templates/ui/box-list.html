@@ -1,0 +1,40 @@
+{% macro box(data) %}
+
+<div class="box-list">
+    <div class="box-list__title">
+        <span>{{data.title}}</span>
+        <a href="#">View all</a>
+    </div>
+
+    {% if data.head %}
+    <div class="box-list__head">
+        {% for i in data.head %}
+            <div class="box-list__head-cell">
+                {{i}}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% for item in data.items %}
+        <div class="box-list__item">
+            
+            {% if item.name %}
+                <a href="#" class="box-list__item-name">{{item.name}}</a>
+            {% endif %}
+
+            {% if item.author %}
+                <div class="box-list__author">
+                    <div class="box-list__author-name">{{item.author}}</div>
+                    <div class="box-list__author-email">{{item.email}}</div>
+                </div>
+            {% endif %}
+            
+            <div class="box-list__item-date">
+                {{item.date}}&nbsp;<div class="box-list__item-time">{{item.time}}</div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endmacro %}

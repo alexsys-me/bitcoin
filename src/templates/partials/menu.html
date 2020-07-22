@@ -1,0 +1,29 @@
+{% macro nav(coll, activeItem) %}
+<ul class="nav">
+  {% for item in coll %}
+    <li class="nav__item">
+      <a href="{{ item.path if item.path else "#" }}" class="nav__link {{ "nav__link_active" if activeItem == item.name }} {{"icon-" + item.icon if item.icon }}">
+        {{item.name}}
+        {% if item.amount %}
+          <span class="nav__amount">{{item.amount}}</span>
+        {% endif %}
+      </a>
+      {% if (item.children) and (activeItem == item.name) %}
+        <ul class="nav-sub">
+          {% for i in item.children %}
+            <li class="nav-sub__item">
+              <a href="#" class="nav-sub__link {{"nav-sub__link_active" if i.active }} ">
+                {{i.name}}
+                
+                {%if i.amount %}
+                  <span class="nav__amount{{' nav__amount_secondary' if i.amount_secondary }}">{{i.amount}}</span>
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

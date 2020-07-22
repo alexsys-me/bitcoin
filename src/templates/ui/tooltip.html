@@ -1,0 +1,17 @@
+{% import "./buttons.html" as btn %}
+
+{% macro tooltip(data) %}
+    <section class="tooltip">
+        {{data.text}}
+        {% if data.settings.date %}
+        <img src="./images/calendar.png" alt="image">
+        {% endif %}
+        {% if data.buttons %}
+            <div class="tooltip__foot">
+                {% for item in data.buttons %}
+                    {{ btn[item.type](item.text, item.icon) }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </section>
+{% endmacro %}

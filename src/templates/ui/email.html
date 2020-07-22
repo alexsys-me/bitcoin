@@ -1,0 +1,11 @@
+{% macro email(data) %}
+    <section class="email-box">
+        {% for item in data %}
+            <div class="email-box__item{% if item.selected%} email-box__item_selected{% endif %}">
+                <div class="email-box__title">{{item.name}}</div>
+                <div class="email-box__template">Template: <b>{{item.template}}</b></div>
+                <a href="#" class="email-box__control icon-clear"></a>
+            </div>
+        {% endfor %}
+    </section>
+{% endmacro %}

@@ -1,0 +1,71 @@
+{% macro table(data, class = '') %}
+<section class="drag-table{{ ' ' + class if class != ''}}">
+	<div class="drag-table__head">
+		<div class="drag-table__cell"></div>
+		{% for item in data.head %}
+		<div class="drag-table__cell">
+			{% if item.sort %}
+			<a href="#" class="drag-table__sort-link">{{item.name}}</a>
+			{% if item.sortType%}
+			<a href="#" class="drag-table__sort-icon icon-sort-{{item.sortType}}"></a>
+			{% endif %}
+			{% else %}
+			{{item.name}}
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+	<div class="drag-table__body">
+		{% for item in data.body %}
+			{% if item.isOpenChild %} <section class="drag-table__row-box"> {% endif %}
+				<div class="drag-table__row">
+					<div class="drag-table__cell drag-table__handle"></div>
+					<div class="drag-table__cell drag-table__image" style="background-image: url(./images/categories/{{item.image}});">
+					</div>
+					<div class="drag-table__cell">
+						{{item.name}}
+						{% if item.childs and item.childs.length %}
+						<a class="drag-table__subcat-link" href="javascript:void(0)">Subcategories: {{ item.childs.length }}</a>
+						{% endif %}
+					</div>
+					<div class="drag-table__cell">
+						{{item.sort}}
+					</div>
+					<div class="drag-table__cell">
+						{{item.activities}}
+					</div>
+					<div class="drag-table__cell">
+						<a href="#" class="drag-table__edit icon-pen"><span>Edit</span></a>
+						<a href="#" class="drag-table__delete icon-delete"><span>Delete</span></a>
+					</div>
+				</div>
+				{% if item.isOpenChild %}
+					<ul class="drag-table__sub-categories sub-categories">
+						{% for sub_item in item.childs %}
+						<li class="sub-categories__item">
+							<div class="drag-table__row">
+								<div class="drag-table__cell drag-table__handle"></div>
+								<div class="drag-table__cell drag-table__image" style="background-image: url(./images/categories/{{sub_item.image}});"></div>
+								<div class="drag-table__cell">
+									{{sub_item.name}}
+								</div>
+								<div class="drag-table__cell">
+									{{sub_item.sort}}
+								</div>
+								<div class="drag-table__cell">
+									{{sub_item.activities}}
+								</div>
+								<div class="drag-table__cell">
+									<a href="#" class="drag-table__edit icon-pen"><span>Edit</span></a>
+									<a href="#" class="drag-table__delete icon-delete"><span>Delete</span></a>
+								</div>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			{% if item.isOpenChild %}</section> {% endif %}
+		{% endfor %}
+	</div>
+</section>
+{% endmacro %}

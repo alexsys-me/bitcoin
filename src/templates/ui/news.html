@@ -1,0 +1,33 @@
+{% macro news(data) %}
+    <div class="news__wrap">
+
+        {% for item in data%}
+            <div class="news">
+                <div class="news__head">
+                    <div class="news__title">{{item.title}}</div>
+                    <div class="news__controls">
+                        <a href="#" class="news__edit icon-pen">Edit</a>
+                        <a href="#" class="news__delete icon-delete">Delete</a>
+                    </div>
+                </div>
+
+                <div class="news__box">
+                    <div class="news__img">
+                        <img src="./images/news/{{item.img}}" alt="image">
+                    </div>
+                    <div class="news__info">
+                        <div class="news__txt">
+                            {{item.text}}
+                            <a href="#" class="news__more">More</a>
+                        </div>
+                        <div class="news__date">
+                            {{item.date}} <span class="news__time">{{item.time}}</span>
+
+                            <span class="news__author">{{item.author}}</span> <b>({{item.role}})</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}

@@ -1,0 +1,115 @@
+.row-control {
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color .1s ease-in-out, padding-top .1s ease-in-out, color .1s ease-in-out;
+    text-decoration: none;
+    color: #abb1c7;
+
+    &:hover {
+        background-color: #fafafa;
+        text-decoration: none;
+        color: darken(#abb1c7,10%);
+    }
+
+    &:active {
+        padding-top: 1px;
+        background-color: #f0f0f0;
+        text-decoration: none;
+        color: darken(#abb1c7,10%);
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: darken(#abb1c7,10%);
+    }
+
+    .row-control__box_multi & {
+        width: 28px;
+        height: 28px;
+        border-radius: 2px;
+    }
+
+    &:before,
+    &:after {
+        display: block;
+        background-color: #83848a;
+    }
+
+    &__box {
+        position: absolute;
+        z-index: 100;
+        top: 7px;
+        right: 0;
+        transform: translateX(100%);
+
+        @media (max-width: 767px) {
+            top: auto;
+            bottom: 36px;
+        }
+
+        &_multi {
+            top: 0;
+            right: -6px;
+        }
+
+        .form-control & {
+            right: -11px;
+        }
+
+        &_disabled {
+            opacity: .3;
+            cursor: not-allowed;
+        }
+
+        &_slot-expander {
+            right: -8px;
+        }
+    }
+
+    &_add {
+        &:before {
+            content: '';
+            width: 22px;
+            height: 2px;
+        }
+
+        &:after {
+            content: '';
+            width: 2px;
+            height: 22px;
+            transform: translateX(-12px);
+        }
+
+    }
+
+    &_remove {
+        &:before {
+            content: '';
+            width: 22px;
+            height: 2px;
+        }
+    }
+
+    &_expand {
+        &:before {
+            content: "\e957";
+            font-size: 32px;
+            .icomoon();
+            background-color: rgba(0,0,0,0);
+            transition: transform .25s ease-in-out;
+
+            .slot_min-height & {
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+
+    .row-control__box_disabled & {
+        pointer-events: none;
+    }
+}

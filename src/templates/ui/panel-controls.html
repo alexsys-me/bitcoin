@@ -1,0 +1,24 @@
+{% import "./buttons.html" as btn %}
+{% import "./form.html" as form %}
+
+{% macro panel() %}
+    <div class="panel-controls">
+        {{ btn.service('Delete', 'icon-remove', 'button_disabled') }}
+
+        {{ btn.service('Ban', 'icon-sound-off', 'button_disabled') }}
+        
+        <div class="panel-controls__right">
+            {{ form.pagination(['1', '2', '3', '4', '51'], 3) }}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro panelSave() %}
+    <div class="panel-controls">
+        {{ btn.service('Save', 'icon-save-disk') }}
+
+        <div class="panel-controls__right">
+            {{ form.pagination(['1', '2', '3', '4', '51'], 3) }}
+        </div>
+    </div>
+{% endmacro %}

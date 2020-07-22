@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>{% block page_title %}{% endblock %} | {{ name }}</title>
+  {% if description != "" %}<meta name="description" content="{{ description }}" />{% endif %}
+  {% if keywords != "" %}<meta name="keywords" content="{{ keywords }}">{% endif %}
+  {% if social_networks.title != "" 
+        and social_networks.description != "" 
+        and social_networks.image != "" 
+        and social_networks.url != "" -%}
+    <meta property="og:title" content="{{ social_networks.title }}">
+    <meta property="og:description" content="{{ social_networks.description }}">
+    <meta property="og:image" content="{{ social_networks.image }}">
+    <meta property="og:url" content="{{ social_networks.url }}">
+    <meta name="twitter:card" content="summary_large_image">
+  {%- endif %}
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-128.png" sizes="128x128" />
+  <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+  <meta name="application-name" content="{{ name }}" />
+  <meta name="msapplication-TileColor" content="#fff" />
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/images/favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/images/favicons/mstile-150x150.png" />
+  <meta name="msapplication-square310x310logo" content="/images/favicons/mstile-310x310.png" />
+  <link src="../cached/init.css" inline></link>
+</head>
+<body class="{{body_class if body_class}}">
+  {% block page_body %}{% endblock %}
+  {% block page_footer %} {% endblock %}
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/main.js"></script>
+</body>
+</html>

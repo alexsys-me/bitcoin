@@ -1,0 +1,405 @@
+{% import "./form.html" as form %}
+{% import "./buttons.html" as btn %}
+
+{% macro table(data, className, sort = false, arr = [])%}
+
+
+<div class="table {%if className%}{{className}}{%endif%} {%if sort != true %}table_normal{%endif%}">
+    <div class="table__box">  
+        <div class="table__title">
+            <table class="tbl">
+                <tbody>
+                    <tr>
+                        {% for item in data.head %}
+                            <th>
+                                {% if item.sort %}
+                                    <a href="#" class="tbl__sort-ctrl {% if item.sort == 'asc'%}tbl__sort-ctrl_active tbl__sort-ctrl_asc{%endif%} {% if item.sort == 'desc'%}tbl__sort-ctrl_active tbl__sort-ctrl_desc{%endif%}">{{item.name}}</a>
+                                {% else %}
+                                    {{ item.name }}
+                                {% endif %}
+                            </th>
+                        {% endfor %}
+                    </tr>
+
+                    {% for item in data.body %}
+                    <tr>
+                        {% for i in item %}
+                            <td>{{i}}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        {%if sort %}
+        <div class="table__body">
+            <table class="tbl">
+                <tbody>
+                    <tr>
+                        {% for item in data.head %}
+                        
+                        <th>{{item.name}}</th>  
+
+                        {% endfor %}
+                    </tr>
+                    
+                    {% for item in data.body %}
+                    <tr>
+                        {% for i in item %}
+                            <td>{{i}}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                    
+                    {% if data.total %}
+                        <tr class="total">
+                            {% for i in data.total %}
+                                <td>{{i}}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endif %}
+                    
+                </tbody>
+            </table>
+        </div>
+
+        {%endif%}
+    </div>
+</div>
+
+{% endmacro %}
+
+
+{% macro zipTable(data, className, sort = false, st = '' )%}
+<div class="zip-table__wrap">
+    <table class="zip-table">
+        <thead>
+            <tr class="zip-table__head">
+                {% for item in data.head %}
+                    <th>
+                        <a href="#" class="tbl__sort-ctrl {% if item.sort == 'asc'%}tbl__sort-ctrl_active tbl__sort-ctrl_asc{%endif%} {% if item.sort == 'desc'%}tbl__sort-ctrl_active tbl__sort-ctrl_desc{%endif%}">{{item.name}}</a>
+                    </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        
+        <tbody>
+
+            {% for item in data.body %}
+
+            <tr class="zip-table__row {%if loop.first %} {% if st == 'failed' %}zip-table__row_failed {% else %}zip-table__row_selected{% endif %}{% endif %}">
+
+                    <td>
+                        {{item.date}}
+                        <span class="zip-table__time">{{item.time}}</span>
+                    </td>
+
+                    <td>
+                        <span class="zip-table__status">
+                            {{item.status}}
+                        </span>
+                    </td>
+                    {% for i in item.data %}
+                        <td>
+                            {{i}}
+                        </td>
+                    {% endfor %}
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="zip-table__controls">
+        {{ form.pagination(['1', '2', '3', '4', '51'], 3, 'zip-table__pagination') }}
+    </div>
+</div>
+{% endmacro %}
+
+{# {% macro stickyTable(data, className, sort = false, st = '' )%}
+<div class="sticky-table__wrap {% if data.settings.class %}sticky-table__{{data.settings.class}}{% endif%}">
+    <table class="sticky-table">
+        <thead>
+            <tr class="sticky-table__head">
+                {% for item in data.head %}
+                    {% if loop.last %}
+                        <th>
+                            {{item.name}}
+                        </th>
+                    {% else %}
+                        <th>
+                            <a href="#" class="tbl__sort-ctrl {% if item.sort == 'asc'%}tbl__sort-ctrl_active tbl__sort-ctrl_asc{%endif%} {% if item.sort == 'desc'%}tbl__sort-ctrl_active tbl__sort-ctrl_desc{%endif%}">{{item.name}}</a>
+                        </th>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        </thead>
+        
+        <tbody>
+
+            {% for item in data.body %}
+
+            <tr class="sticky-table__row">
+                    {% if item.name %}
+                    <td class="sticky-table__bold">
+                        {{item.name}}
+                    </td>
+                    {% endif %}
+                    
+                    {% if item.initialLink %}
+                    <td>
+                        <div class="sticky-table__link-wrap">
+                            <a href="#" class="sticky-table__link">{{item.initialLink}}</a>
+                        </div>
+                    </td>
+                    {% endif %}
+                    {% if item.redirect %}
+                    <td>
+                        <div class="sticky-table__link-wrap">
+                            <a href="#" class="sticky-table__link">{{item.redirect}}</a>
+                        </div>
+                    </td>
+                    {% endif %}
+
+                    {% if item.parent %}
+                    <td>
+                        {{item.parent}}
+                    </td>
+                    {% endif %}
+                    {% if item.date %}
+                    <td>
+                        {{item.date}}
+                        {% if item.date %}
+                        <span class="sticky-table__time">{{item.time}}</span>
+                        {% endif %}
+                    </td>
+                    {% endif %}
+                    {% if item.link %}
+                    <td>
+                        <div class="sticky-table__link-wrap">
+                            <a class="sticky-table__link" href="{{item.link}}">{{item.link}}</a>
+                        </div>
+                    </td>
+                    {% endif %}
+                    <td class="sticky-table__bold">
+                        {% if data.settings.actions == "few" %}
+                            <div class="sticky-table__btn-box">
+                                <a href="#" class="sticky-table__edit icon-pen"><span>Edit</span></a>
+                                <a href="#" class="sticky-table__edit icon-remove"><span>Remove</span></a>
+                            </div>
+                        {% else %}
+                            <a href="#" class="sticky-table__edit icon-pen"><span>Edit</span></a>
+                        {% endif %}
+                    </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    {% if data.settings.pagi or data.settings.btn %}
+    <div class="sticky-table__controls">
+        {% if data.settings.pagi %}
+            {{ form.pagination(['1', '2', '3', '4', '51'], 3, 'sticky-table__pagination') }}
+        {% endif %}
+
+        {% if data.settings.btn %}
+            <div class="sticky-table__controls-btn">
+                {{ btn.service("Save", "icon-save-disk")}}
+            </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+{% endmacro %} #}
+
+{% from "./form.html" import checkbox %}
+{% from "./dropdown.html" import dropdown %}
+{% from "./panel-controls.html" import panelSave %}
+
+
+{% macro stickyTable(data) %}
+<div class="user-list__wrap {%if data.settings.class%}user-list__wrap_{{data.settings.class}}{%endif%}">
+    <table class="user-list">
+        <thead>
+            <tr class="user-list__head">
+                {% for item in data.head %}
+                    <th class="user-list__th">
+                        {% if item.sort %}
+                        <a href="#" class="user-list__head-link">
+                            <span>{{item.name}}</span>
+                            <i class="user-list__sort-icon user-list__sort-icon_active icon-sort-{{item.sort}}"></i>
+                        </a>
+                        {% else %}
+                        <a href="#" class="user-list__head-link">
+                            <span>{{item.name}}</span>
+                        </a>
+                        {% endif %}
+                    </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for item in data.body %}
+                <tr class="user-list__row">
+                    
+                    {% if item.name %}
+                    <td class="user-list__td user-list__td_sm">
+                        <span class="user-list__name">
+                            {{item.name}}
+                        </span>
+                        {% if item.desc %}
+                            <div class="user-list__desc">{{item.desc}}</div>
+                        {% endif %}
+
+                        {% if item.cdate %}
+                           <span class="user-list__cdate">
+                                {{item.cdate}}
+                            </span>
+                        </td>
+                        {% endif %}
+                    </td>
+                    {% endif %}
+
+                    {% if item.redirect_from  %}
+                        <td class="user-list__td">
+                            <div class="user-list__info-link"><b class="user-list__title-strong">From</b> {{ item.redirect_from }}</div>
+                            <b class="user-list__title-strong">To</b>
+                            {{ form.input({
+                            class: 'form-control_sm',
+                            value: item.redirect_to
+                        }) }}
+                        </td>
+                    {% endif%}
+
+                    {% if item.val %}
+                    <td class="user-list__td user-list__td_input">
+                        {% if item.title %}
+                            <div class="user-list__title">
+                                <b class="user-list__title-strong">From</b> 
+                                <a href="#" class="user-list__title-link" target="_blank">{{item.title}}</a>
+                                <b class="user-list__title-strong">to:</b> 
+                            </div>
+                        {% endif %}
+                        {{ form.input({
+                            class: 'form-control_sm',
+                            value: item.val
+                        }) }}
+
+                    </td>
+                    {% endif %}
+                    
+                    {% if item.parent %}
+                        <td class="user-list__td">
+                            {{item.parent}}
+                        </td>
+                    {% endif %}
+                    
+                    {% if item.date %}
+                        <td class="user-list__td">
+                            <span class="user-list__date">{{item.date}}</span>
+
+                            {% if item.time %}
+                                <span class="user-list__time">{{item.time}}</span>
+                            {% endif %}
+                        </td>
+                    {% endif %}
+                    
+                    {% if item.crdate %}
+                        <td class="user-list__td user-list__td_sm user-list__td_padd">
+                            <span class="user-list__date">{{item.crdate}}</span>
+                        </td>
+                    {% endif %}
+
+                    {% if item.expires %}
+                        <td class="user-list__td user-list__td_sm user-list__td_date_md user-list__td_padd">
+                            {{ form.input({
+                                class: 'form-control_sm',
+                                value: item.expires
+                            }) }}
+                        </td>
+                    {% endif %}
+
+                    {% if item.delete_redirect %}
+                        <td class="user-list__td user-list__td_sm user-list__td_padd">
+                            <a href="#" class="user-list__control icon-remove" title="Delete redirect rule"></a>
+                        </td>
+                    {% endif %}
+
+                    {% if data.settings.actions %}
+                        <td class="user-list__td">
+                            <a href="#" class="user-list__control user-list__control_text icon-pen"><span>Edit</span></a>
+                            <a href="#" class="user-list__control user-list__control_text icon-remove"><span>Remove</span></a>
+                        </td>
+                    {% endif%}
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+</div>
+    {{panelSave()}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var rows = document.querySelectorAll('.user-list__row');
+            var buttons = document.querySelectorAll('.button');
+            var checkboxs = document.querySelectorAll('.checkbox__input');
+
+            [...rows].forEach(function(item){
+                item.addEventListener('click', function(i) {
+                    var checkbox = item.querySelector('.checkbox__input');
+                    checkbox.checked ? checkbox.checked = false : checkbox.checked = true;
+                    item.classList.contains('user-list__row_selected') ? item.classList.remove('user-list__row_selected') : item.classList.add('user-list__row_selected');
+
+                    buttons.forEach(function(item){
+                        item.classList.remove('button_disabled')
+                    })
+                })
+            });
+        })
+    </script>
+{% endmacro %}
+
+
+
+{% macro simple_table_with_control(data, className)%}
+
+<div class="table table_m-34 table_normal {%if className%}{{className}}{%endif%}">
+    
+            <table class="tbl tbl_al">
+                <tr>
+                    {% for item in data.head %}
+                        <th>
+                            {% if item.sort %}
+                                <a href="#" class="tbl__sort-ctrl {% if item.sort == 'asc'%}tbl__sort-ctrl_active tbl__sort-ctrl_asc{%endif%} {% if item.sort == 'desc'%}tbl__sort-ctrl_active tbl__sort-ctrl_desc{%endif%}">{{item.name}}</a>
+                            {% else %}
+                                {{ item.name }}
+                            {% endif %}
+                        </th>
+                    {% endfor %}
+                </tr>
+                {% for item in data.body %}
+                <tr>
+                    {% if item.name %}
+                        <td>{{ loop.index }}</td>
+                        <td>{{ item.name }}</td>
+
+                        {% if item.template %}
+                            <td>{{ item.template }}</td>
+                        {% endif %}
+                    {% else %}
+                    <td>{{ item }}</td>
+                    {% endif %}
+                    <td>
+                        <a href="#" class="drag-table__edit icon-pen"><span>Edit</span></a>
+                        <a href="#" class="drag-table__delete icon-delete"><span>Delete</span></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+
+</div>
+
+{% endmacro %}

@@ -1,0 +1,21 @@
+{% from "./buttons.html" import main as btn, secondary %}
+
+{% macro title(data) %}
+    <div class="services__head">
+        <div class="services__info">
+            <div class="services__title">
+                {{data.name}}
+            </div>
+            <div class="services__head-row">
+                <div class="services__status{% if data.status%} services__status_{{data.status}} icon-{{data.status}}{%endif%}">{{data.statusMessage}} </div>
+                <div class="services__date">&nbsp;{{data.date}} <span class="services__time">{{data.time}}</span></div>
+            </div>
+        </div>
+        {% if data.button %}
+        <div class="services__controls">
+            {{ btn(data.button) }}
+        </div>
+
+        {% endif %}
+    </div>
+{% endmacro %}

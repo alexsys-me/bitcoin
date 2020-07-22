@@ -1,0 +1,21 @@
+{% from './form.html' import checkbox %}
+
+{% macro dropdown(data, type) %}
+    <ul class="link-menu__list{% if type == 'checkbox' %} link-menu__list_check{% endif %}">
+        {% for i in data %}
+            <li class="link-menu__item{% if type == 'checkbox' %} link-menu__item_check{% endif %}">
+                {% if type == 'phone' %}
+                <a href="tel: {{ i }}" class="link-menu__link icon-phone">{{ i }}</a>
+                {% endif %}
+
+                {% if type == 'email' %}
+                <a href="mailto: {{ i }}" class="link-menu__link icon-email2">{{ i }}</a>
+                {% endif %}
+
+                {% if type == 'checkbox' %}
+                 {{checkbox(i)}}
+                {% endif %}
+            </li>
+        {% endfor%}
+    </ul>
+{% endmacro %}

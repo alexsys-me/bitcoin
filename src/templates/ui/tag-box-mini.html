@@ -1,0 +1,30 @@
+	{% macro tagBoxMini(data, age_tag = '', class = '', options='') %}
+{#
+data = ['', ..., '']
+#}
+{#
+options = ['', ..., '']
+#}
+
+<ul class="tag__box tag__box_sm{{' ' + class if class != ''}}">
+	
+	{% if age_tag != '' %}
+		<li class="tag__item">
+			<span class="tag tag_age">{{ age_tag }}</span>
+		</li>
+	{% endif %}
+	
+	{% for item in data %}
+		<li class="tag__item tag__item_category">
+			<div class="tag">{{ item }}</div>
+		</li>
+	{%  endfor %}
+	
+	
+	{% for item in options %}
+		<li class="tag__item tag__item_category">
+			<div class="tag tag_option">{{ item }}</div>
+		</li>
+	{%  endfor %}
+</ul>
+{% endmacro %}

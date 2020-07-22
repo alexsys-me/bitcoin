@@ -1,0 +1,11 @@
+{% macro card(item) %}
+    <aside class="card{% if item.type %} {{item.type}}{% endif %}">
+        <div class="card__ttl">{{item.title}}</div>
+        <div class="card__time"><span class="pay-card__lbl">Time:</span>{{item.time}}</div>
+        <div class="card__fee"><span>Fee:</span>{{item.status}}</div>
+        <button class="btn btn_md card__btn">Select</button>
+        {% if  item.type %}
+        <span class="card__disabled">Disabled Card</span>
+        {% endif %}
+    </aside>
+{% endmacro %}

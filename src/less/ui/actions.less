@@ -1,0 +1,65 @@
+.actions {
+    display: flex;
+    margin: 0 -34px;
+    padding: 0 34px 25px;
+    align-items: center;
+    
+    @media(max-width: 900px) {
+        flex-wrap: wrap;
+    }
+    
+    @media(max-width: 768px) {
+        margin: 0 -15px 40px;
+        padding: 0 15px 25px;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: #585858;
+    }
+
+    &__link {
+        margin: 0 25px;
+        text-decoration: none;
+        color: #777a82;
+        font-family: 'Lato';
+        font-weight: 700;
+        transition: color .25s ease-in-out;
+
+        &:before {
+            margin: 0 15px 0 0;
+
+            @media(max-width: 1430px) {
+                margin: 0 5px 0 0;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover, &:focus, &:active {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        @media(max-width: 1430px) {
+            margin: 0 10px;
+        }
+
+        @media(max-width: 900px) {
+            width: 100%;
+            margin: 20px 0 0;
+        }
+    }
+
+    .btn__wrp {
+        margin: 0 0 0 auto;
+
+        .btn {
+            @media(max-width: 330px) {
+                padding: 0 8px;
+            }
+        }
+    }
+}

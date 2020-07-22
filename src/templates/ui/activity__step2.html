@@ -1,0 +1,134 @@
+{% import "./buttons.html" as btn %}
+
+{% import "./form.html" as form %}
+{% import "./add-activity-wizard.html" as wizard %}
+
+{% macro step2() %}
+
+{{ wizard.stepper(2) }}
+
+<div class="grid form">
+
+	<div class="row">
+		<div class="col-3">
+			{{ form.input({
+				placeholder: 'Postal Code', 
+				class: 'loading',
+				value: '0157',
+				message: 'Checking...'
+			}) }}
+		</div>
+		<div class="col-9">
+			{{ form.input({
+				placeholder: 'Address', 
+				class: '',
+				value: 'Nedre Slottsgate 23'
+			}) }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			{{ form.input({
+				placeholder: 'Place Notes',
+				value: 'Second floor'
+			}) }}
+		</div>
+	</div>
+
+	<div class="row row_mb">
+		<div class="col-12">
+			<div class="map__box"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 form__title">
+			Web Links
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Facebook',
+				value: 'https://facebook.com/attraction_os',
+				btn: "fb"
+			}) }}
+		</div>
+
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Youtube',
+				value: 'https://youtube.com/ak8as893',
+				btn: "youtube"
+			}) }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Instagram',
+				value: 'https://instagram.com/attraction-oslo',
+				btn: "instagram"
+			}) }}
+		</div>
+
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'TripAdvisor',
+				value: 'https://www.tripadvisor.ru/Attraction-g1904',
+				btn: "trip_adviser"
+			}) }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 form__title">
+			Activity contact information
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Owner or Company Name',
+				value: 'Oslo Attraction Company'
+			}) }}
+		</div>
+
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Website',
+				value: 'https://attraction-oslo.no',
+				btn: 'world'
+			}) }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Email',
+				value: 'attraction.oslo@gmail.com',
+				btn: 'plus2',
+				btn_direction: 'end'
+			}) }}
+		</div>
+
+		<div class="col-6">
+			{{ form.input({
+				placeholder: 'Phone',
+				value: '2 22 3223 33 22 2232 22 232 23232232 32 32323 232 23 232 3',
+				btn: 'plus2',
+				btn_direction: 'end'
+			}) }}
+		</div>
+	</div>
+
+	<div class="row">
+		{{ caller() }}
+	</div>
+</div>
+{%endmacro%}

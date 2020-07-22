@@ -1,0 +1,74 @@
+{% from "../ui/form.html" import dropzone %}
+{% from "../ui/form.html" import input %}
+
+<div class="form-control form-control_radio">
+	<label class="radio">
+		<input type="radio" name="radio_selector" class="radio__input" checked="checked" value="nothing">
+		<span class="radio__icon"></span>
+		No brochure
+	</label>
+</div>
+
+<div class="form-control form-control_radio">
+	<label class="radio">
+		<input type="radio" name="radio_selector" class="radio__input" value="dropzone">
+		<span class="radio__icon"></span>
+		Specify link
+	</label>
+	<div class="radio__box radio__box_one-input">
+		{{ input({ 
+			placeholder: 'Link', 
+			value: 'https://attraction-oslo.no/buy-ticket', 
+			btn: 'world'}) 
+		}}
+	</div>
+</div>
+
+<div class="form-control form-control_radio">
+	<label class="radio">
+		<input type="radio" name="radio_selector" class="radio__input" value="libusing">
+		<span class="radio__icon"></span>
+		Upload
+	</label>
+	<div class="radio__box radio__box_dropzone-sm ">
+		{{ form.dropzone('Drop files here or click to upload.','','dropzone_sm')}}
+	</div>
+</div>
+
+<script type="text/javascript">
+	var radio = document.getElementsByName('radio_selector');
+	var radioValue;
+
+	radio.forEach(function(entry) {
+		if (entry.parentElement.classList.contains('radio_active')) {
+			radioValue = entry;
+		}
+
+		entry.addEventListener('change', function() {
+			if (radioValue) {
+				radioValue.parentElement.classList.remove('radio_active')
+			} 
+			entry.parentElement.classList.add('radio_active');
+			radioValue = entry;
+			
+		});
+	});
+
+	
+	var open_btns = document.querySelectorAll('.img-box__set-seo');
+	var close_btns = document.querySelectorAll('.service-link');
+	// img-box__seo-param_shown
+	open_btns.forEach(function(entry) {
+		entry.addEventListener('click', function() {
+			entry.parentElement.parentElement.querySelector('.img-box__seo-param').classList.add('img-box__seo-param_shown');
+		});
+	});
+
+	close_btns.forEach(function(entry) {
+		entry.addEventListener('click', function() {
+			entry.parentElement.classList.remove('img-box__seo-param_shown');
+		});
+	});
+	
+
+</script>

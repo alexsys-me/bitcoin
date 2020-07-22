@@ -1,0 +1,32 @@
+{% macro event(data) %}
+<section class="event">
+
+    <div class="event__scale"></div>
+    
+    {% for event in data %}
+        <div class="event__section">
+            <div class="event__date">
+                {{event.date}}
+            </div>
+
+            {% for item in event.items %}
+                <div class="event__item">
+                    <div class="event__scale-time">{{item.time}}</div>
+                    <div class="event__box">
+                        <div class="event__info">
+                            <div class="event__head">
+                                <div class="event__title">
+                                    {{item.name}}
+                                </div>
+                                <div class="event__time">{{item.period}}</div>
+                            </div>
+                            <div class="event__info">{{item.description}}</div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</section>
+
+{% endmacro %}

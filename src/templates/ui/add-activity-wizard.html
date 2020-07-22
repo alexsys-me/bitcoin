@@ -1,0 +1,34 @@
+{% import "./buttons.html" as btn %}
+
+{% macro header(title, saved_at, copy_link, saved_btn) %}
+    
+    <div class="content__head">
+        
+        <div class="content__hdr-box">
+            <h1 class="content__hdr">
+                {{ title }}
+            </h1>
+            <p class="content__hdr-extra">Saved in <a href="#">Drafts</a> at <span class="time">{{saved_at}}</span></p>
+        </div>
+
+        <div class="content__head-right-box">
+            {{ btn.service_link(copy_link, "icon-dublicate") }}
+            {{btn.service(saved_btn, "icon-save-disk")}}
+        </div>
+    </div>
+    
+{% endmacro %}
+
+{% macro stepper(active, alert = '') %}
+    
+    {% set items = ["Main", "Addresses", "Specification", "Scheduler", "Extra"] %}
+
+    <ul class="stepper">
+        {% for item in items %}
+            <li class="stepper__item{{ " stepper__item_active" if loop.index == active }}{{ " stepper__item_passed" if (loop.index < active) and (loop.index != alert) }}{{ " stepper__item_alert" if loop.index == alert }}">
+                {{item}}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endmacro %}

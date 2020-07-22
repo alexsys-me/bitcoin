@@ -1,0 +1,394 @@
+{% import "./buttons.html" as btn %}
+{% macro input(data) %}
+{# 
+    data = {
+        class: "error | valid | success | anim | show | weak | autocomplete_show | disabled",
+        type: "text (default)",
+        value: "",
+        placeholder: "",
+        icon: "dropdown | spinner",
+        message: "",
+        btn: "",
+        btn_direction: "front (default) | end",
+        latest: []
+    }
+#}
+<div class="form-control {{data.class}}{{" form-control_btned" if data.btn}}{{" form-control_btn-end" if data.btn_direction == 'end'}}">
+    <div class="form-control__wrap">
+        <input type={{ data.type or "text"}} class="form-control__input" value="{{data.value}}" required="required"> 
+        <label class="form-control__label">{{data.placeholder}}</label>
+        <span class="form-control__line"></span>
+        {% if data.icon %}
+
+            {% if data.icon == 'spinner' %}
+                <i class="form-control__icon icon-spinner show">
+                </i>
+            
+            {% elif data.icon == 'weak' %} 
+                <i class="form-control__icon icon-lock2 show"></i>
+
+            {% elif data.icon == 'lock' %}
+                <i class="form-control__icon icon-secure show"></i>
+
+            {% elif data.icon == 'check' %}
+                <i class="form-control__icon icon-check show"></i>
+            
+            {% elif data.icon == 'password' %}
+                <i class="form-control__icon icon-view show"></i>
+
+            {% elif data.icon == 'dropdown' %}
+                <i class="form-control__icon icon-down show"></i>
+
+            {% elif data.icon == 'search' %} 
+            <a href="#" class="form-control__icon form-control__icon_search">
+                <i class="icon-search"></i>
+            </a>
+
+            {% elif data.icon == 'waiting' %} 
+            <a href="#" class="form-control__icon form-control__icon_search" title="Click for cancel email changing">
+                <i class="icon-attention"></i>
+            </a>
+
+            {% elif data.icon == 'clear' %} 
+            <a href="#" class="form-control__icon form-control__clear">
+                <svg x="0px" y="0px" width="357px" height="357px" viewBox="0 0 357 357">
+                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+                    214.2,178.5"/>
+                </svg>
+            </a>
+
+            {% endif %}
+
+        {% endif %}
+
+        {% if data.class == 'filter' %} 
+            <i class="form-control__icon icon-filter show"></i>
+        {% endif %}
+    </div>
+
+    {% if data.message %}
+        <div class="form-control__message">
+            {{data.message}}
+        </div>
+    {% endif %}
+
+    {% if data.btn %}
+        <a href="javascript:void(0)" class="form-control__btn" tabindex="100000">
+            <i class="icon-{{data.btn}}"></i>
+        </a>
+    {% endif %}
+
+    {% if data.latest %}
+        <aside class="autocomplete__box">
+            <div class="autocomplete__ttl">Latest Activities</div>
+            <ul class="autocomplete">
+                {% for e in data.latest %}
+                    <li class="autocomplete__item">{{ e }}</li>
+                {% endfor %}
+            </ul>
+        </aside>
+    {% endif %}
+
+    {% if data.filter %}
+        <aside class="autocomplete__box">
+            <ul class="autocomplete">
+                {% for e in data.filter %}
+                    <li class="autocomplete__item">{{ e | safe }}</li>
+                {% endfor %}
+            </ul>
+        </aside>
+    {% endif %}
+</div>
+
+{% endmacro %}
+
+
+{% macro select(data, class = '') %}
+{#
+    data = {
+        placeholder: '', 
+        items: ['', '', ...], 
+        icon: 'sort-asc'
+    }
+#}
+
+        <div class="form-control form-control__select{{' ' + class if class}} native-select">
+            <i class="native-select__icon icon-{{ data.icon }}"></i>
+            <select class="native-select__select">
+                <option>{{ data.placeholder }}</option>
+                {% for i in data.items %}
+                <option value="{{i}}">{{ i }}</option>
+                {% endfor %}
+            </select>
+            <span class="native-select__line"></span>
+        </div>
+
+{% endmacro %}
+
+
+{% macro textarea(placeholder, class = '', value = '', message = '', submit = '') %}
+    <div class="form-control form-control_textarea{{' ' + class if class != ''}}{{' ' + submit if submit != ''}}">
+        <textarea class="form-control__textarea" required="required">{{ value }}</textarea>
+        <label class="form-control__label">{{ placeholder }}</label>
+        <span class="form-control__line"></span>
+
+        {% if message %}
+            <div class="form-control__message">
+                {{ message }}
+            </div>
+        {% endif %}
+
+        {% if submit %}
+            <div class="row-control__box form-control__row-add-btn">
+                <a href="javascript:void(0)" class="row-control row-control_add" title="Add"></a>
+            </div>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro checkbox(placeholder, check = false) %}
+    <div class="form-checkbox">
+        <label class="checkbox">
+            <input type="checkbox" class="checkbox__input" {% if check %} checked {% endif %}>
+            <span class="checkbox__icon"></span>
+            {{ placeholder }}
+        </label>
+    </div>
+{% endmacro %}
+
+
+{% macro radio(placeholder, check = false, name = 'radio', class = '') %}
+    <div class="form-control form-control_radio">
+        <label class="radio{{ " radio_" + class if class != '' }}">
+            <input type="radio" name="{{ name }}" class="radio__input" {% if check %} checked {% endif %}>
+            <span class="radio__icon"></span>
+            {{ placeholder }}
+        </label>
+    </div>
+{% endmacro %}
+
+{% macro switch(placeholder, check = false, position = "", class = "") %}
+    <div class="form-switch{{' ' + class if class}}">
+        <label class="switch{% if position %} {{position}}{%endif%}">
+            <input type="checkbox" class="switch__input" {% if check %} checked {% endif %}>
+            <span class="switch__icon"></span>
+            <span class="switch__label">
+                {{placeholder}}
+            </span>
+        </label>
+    </div>
+{% endmacro %}
+
+{% macro progress(title, percent) %}
+    <div class="progress">
+        <div class="progress__title">{{title}}</div>
+        <aside class="progress__box">
+            <span class="progress__line" style="width: {{percent}}%"></span>
+        </aside>
+    </div>
+{% endmacro %}
+
+{% macro pagination(page, currentPage, class='')%}
+    <div class="pagination__wrap{{' ' + class if class!=''}}">
+        <ul class="pagination">
+            <li class="pagination__item"><a href="javascript:void(0)" class="pagination__link pagination__link_prev" rel="prev" title="Go to previos page"></a></li>
+
+            {% for item in page %}
+                <li class="pagination__item">
+                    <a href="javascript:void(0)" class="pagination__link {%if loop.index == currentPage%} pagination__link_current {% endif %}" title="Go to page {{item}}">{{item}}</a>
+                </li>
+
+                {% if loop.revindex == 2 %}
+                    <li class="pagination__item"><span class="pagination__link">...</span></li>
+                {% endif %}
+            {% endfor %}
+
+            
+            <li class="pagination__item"><a href="javascript:void(0)" class="pagination__link pagination__link_next" rel="next" title="Go to next page"></a></li>
+        </ul>
+    </div>
+{% endmacro %}
+
+
+{% macro dropzone(title, data, class = '') %} 
+
+        <div class="dropzone{{' ' + class if class != ''}}">
+            {% if data %}
+                <ul class="dropzone__box">
+                    {% for item in data %}
+                        <li class="dropzone__item{% if item.selected %} dropzone__item_selected{%endif%}">
+                            <div class="dropzone__img-box">
+                                <div class="dropzone__img-main-maker">
+                                    {{ radio(item.desc, item.selected, 'lib_picture', 'sm') }}
+                                </div>
+
+                                <img src="./images/{{item.img}}.jpg" alt="image" class="dropzone__img">
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            
+            {% else %}
+                <div class="dropzone__src-box icon-image"></div>
+                <div class="dropzone__ttl">{{title}}</div>
+            {% endif %}
+        </div>
+
+{% endmacro %}
+
+
+{% macro dropzone_loaded(title, data) %} 
+
+        <div class="dropzone">
+            {% if data %}
+                <ul class="dropzone__box">
+                    {% for item in data %}
+                        <li class="dropzone__item{% if item.selected %} dropzone__item_selected{%endif%}">
+                            <div class="dropzone__img-box">
+                                <div class="dropzone__img-main-maker dropzone__img-main-maker_tagged">
+                                    {{ radio('Main image', 'item.selected', 'loaded_picture', 'sm') }}
+                                    <ul class="image-state">
+                                        <li class="image-state__item{{" image-state__item_error" if item.alt_status != 'success'}}">alt</li>
+                                        <li class="image-state__item{{" image-state__item_error" if item.title_status != 'success'}}">title</li>
+                                    </ul>
+                                </div>
+
+                                <img src="./images/{{item.img}}.jpg" alt="image" class="dropzone__img">
+
+                                <aside class="img-box__control">
+                                    {{btn.service_link('Delete', 'icon-cross', 'img-box__delete sm')}}
+                                    {{btn.service('Set alt and title', '', 'img-box__set-seo') }}
+                                </aside>
+
+                                <aside class="img-box__seo-param">
+                                    {{input({
+                                        placeholder: 'Alt', 
+                                        class: 'form-control_compact',
+                                        value: ''
+                                    })}}
+                                    {{input({
+                                        placeholder: 'Title', 
+                                        class: 'form-control_compact',
+                                        value: ''
+                                    })}}
+                                    {{btn.service_link('Set attributes', '', 'img-box__save-seo')}}
+                                </aside>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            
+            {% else %}
+                <div class="dropzone__src-box icon-image"></div>
+                <div class="dropzone__ttl">{{title}}</div>
+            {% endif %}
+        </div>
+
+{% endmacro %}
+
+
+{% macro dropdown(data) %}
+    <div class="form-control {{data.class}}">
+        <div class="form-control__wrap">
+            <input type="text" class="form-control__input" value="{{data.value}}" required="required"> 
+            <label class="form-control__label">{{data.placeholder}}</label>
+            {% if data.add or data.dropicon %}
+                <i class="form-control__drop-icon{% if data.dropicon %} form-control__drop-icon_right{%endif%} icon-down"></i>
+            {% endif %}
+            <span class="form-control__line"></span>
+        </div>
+
+        {% if data.btn %}
+            <div class="form-control__btn form-control__btn_down"><span>{{data.btn}}</span></div>
+        {% endif %}
+
+        {% if data.add %}
+            <div class="form-control__btn form-control__btn_add">+</div>
+        {% endif %}
+
+        <div class="form-control__dropdown">
+            <div class="form-control__dropdown-wrap">
+                {% for item in data.list %}
+                    <div class="form-control__dropdown-item">{{item}}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro multiple(data) %}
+    <div class="form-control form-control_multiple active {{data.class}}">
+        <div class="form-control__wrap">
+            <div class="form-control__tags category">
+                {% for tag in data.tags %}
+                    <span class="category__item">{{tag}} <a href="#" class="category__remove-btn icon-cross"></a></span>
+                {% endfor %}
+                
+                <input type="text" id="multiple" class="form-control__input" value="" required="required">
+                <label class="form-control__label">{{data.placeholder}}</label>
+            </div>
+            
+            
+            <span class="form-control__line"></span>
+        </div>
+
+        <div class="form-control__dropdown">
+            <div class="form-control__dropdown-wrap">
+                {% for item in data.list%}
+                    <div class="form-control__dropdown-item">
+                        {{ item }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro selector(name, data, class = '', nameprefix = '') %}
+{#
+    data = [
+        {
+            name: "",
+            selected: "",
+            type: "default | orange | red"
+        },
+    ]
+#}
+    <div class="selector__box{{ ' ' + class if class != '' }}">
+        <span class="selector__name">{{ name }}</span>
+        <ul class="selector">
+            {% for item in data %}
+            <li class="selector__item">
+                <label class="selector__chooser">
+                    <input type="radio" name="{{'selector' + nameprefix}}" value="{{item.name}}" class="selector__radio" {{"checked" if item.selected == "true"}}>
+                    <div class="selector__label {{ "selector__label_" + item.type if (item.type and item.type!='default')}}">{{item.name}}</div>
+                    <div class="selector__spliter"></div>
+                </label>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endmacro %}
+
+{% macro droplist(data, class) %}
+    <section class="drop-list {{class}}">
+        <div class="drop-list__box">
+            {{caller()}}
+
+            <i class="drop-list__icon icon-down"></i>
+        </div>
+        <ul class="drop-list__list">
+            {% for item in data %}
+                <li class="drop-list__item">{{item | safe}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endmacro %}
+
+{% macro date(data) %}
+    <div class="form-control__wrap form-control__wrap_date">
+        <input type="text" class="form-control__input form-control__input_date" value="{{data}}" required="required">
+        <span class="form-control__line"></span>
+        <i class="form-control__icon icon-calendar"></i>
+    </div>
+{% endmacro %}

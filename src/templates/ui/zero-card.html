@@ -1,0 +1,16 @@
+{% macro zero_card(data, class='') %}
+{#
+	data = {
+		title: '',
+		desc: '',
+		message: ''
+	}
+#}
+<section class="zero-card{{' ' + class if class}}">
+	<h5 class="zero-card__ttl">{{ data.title if data.title else "Activity wasn't chosen" }}</h5>
+	<div class="zero-card__desc">{{ data.desc if data.desc else "Please select activity by Activity Title field below" }}</div>
+	{% if data.message %}
+		<div class="zero-card__message">{{ data.title if data.title else "Parent activity wasn’t chosen" }}</div>
+	{% endif %}
+</section>
+{% endmacro %}

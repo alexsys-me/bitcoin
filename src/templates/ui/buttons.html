@@ -1,0 +1,46 @@
+{% macro main(name, icon_before = '', icon_after = '', class = '' ) %}
+{#
+    class: btn__wrp_centered | 
+#}
+    <div class="btn__wrp {{' ' + class if class}}">
+        <button class="btn">
+            {% if (icon_before) and (icon_before !='') %}
+            <i class="btn__icon btn__icon_before icon-{{icon_before}}"></i>
+            {% endif %}
+            {{ name }}
+            {% if (icon_after) and (icon_after !='') %}
+            <i class="btn__icon btn__icon_after icon-{{icon_after}}"></i>
+            {% endif %}
+        </button>
+    </div>
+{% endmacro %}
+
+{% macro secondary(name, class = '') %}
+    <div class="btn__wrp{{' ' + class if class}}">
+        <button class="btn-secondary">
+            <span class="btn__text icon-loader">{{ name }}</span>
+        </button>
+    </div>
+{% endmacro %}
+
+{% macro service(name, icon, class = '', mobile = false) %}
+    <button class="button{{' ' + class if class}}{{' button_mobile' if mobile}}">
+        {% if icon %}
+            <i class="{{ icon }} button__icon"></i>
+        {% endif %}
+        {% if mobile %}
+        <span class="button__des-txt">{{ name }}</span>
+        {% else %}
+        {{ name }}
+        {% endif %}
+    </button>
+{% endmacro %}
+
+{% macro service_link(name, icon, class = '') %}
+    <a class="service-link{{' ' + class if class}}" href="javascript:void(0)">
+        {% if icon %}
+            <i class="{{ icon }} service-link__icon"></i>
+        {% endif %}
+        <span class="service-link__text">{{ name }}</span>
+    </a>
+{% endmacro %}

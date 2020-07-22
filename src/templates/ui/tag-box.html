@@ -1,0 +1,51 @@
+{% macro tagBox(
+						data, 
+						age_tag = '', 
+						class = '', 
+						add_label = 'Add Filter Tags', 
+						options = '',
+						editor_tag = ''
+) %}
+{#
+data = ['', '', ...]
+options =  = ['', '', ...]
+#}
+<ul class="tag__box{{' ' + class if class != ''}}">
+	
+	{% if age_tag != '' %}
+		<li class="tag__item">
+			<span class="tag tag_age">{{ age_tag }}</span>
+		</li>
+	{% endif %}
+	
+	{% if editor_tag != '' %}
+		<li class="tag__item tag__item_category">
+			<span class="tag tag_editor">
+				Editor: {{ editor_tag }}
+				<a href="javascript:void(0)" class="tag__clear icon-clear"></a>
+			</span>
+		</li>
+	{% endif %}
+
+	{% for item in data %}
+		<li class="tag__item tag__item_category">
+			<div class="tag">{{ item }}
+				<a href="javascript:void(0)" class="tag__clear icon-clear"></a>
+			</div>
+		</li>
+	{%  endfor %}
+
+	{% for item in options %}
+		<li class="tag__item tag__item_category">
+			<div class="tag tag_option">{{ item }}
+				<a href="javascript:void(0)" class="tag__clear icon-clear"></a>
+			</div>
+		</li>
+	{%  endfor %}
+	
+	<li class="tag__item">
+		<a href="javascript:void(0)" class="tag__control icon-plus2">{{ add_label }}</a>
+	</li>
+
+</ul>
+{% endmacro %}

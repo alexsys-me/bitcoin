@@ -1,0 +1,64 @@
+{% import "./buttons.html" as btn %}
+
+{% import "./form.html" as form %}
+{% import "./add-activity-wizard.html" as wizard %}
+
+{% macro step1() %}
+{{ wizard.stepper(1) }}
+
+<div class="grid form">
+
+	<div class="row">
+		<div class="col-9">
+			{{ form.input({
+				placeholder: 'Activity Title', 
+				class: 'wide',
+				value: 'Barnas Cinematek'
+			}) }}
+		</div>
+		<div class="col-3">
+			{{ form.selector("Type:", [
+			{
+				name: "Activity",
+				selected: "true"
+			},
+			{
+				name: "Arrangement"
+			}
+			])}}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			{{ form.input({
+				placeholder: 'Title Description', 
+				class: 'wide',
+				value: 'Filmer hver helg'
+			}) }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			{{ form.textarea('Description') }}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 form__title">
+			Gallery
+		</div>
+	</div>
+
+	<div class="row row_mb">
+		<div class="col-12">
+			{% include "../partials/radio-selector.html" %}
+		</div>
+	</div>
+
+	<div class="row">
+		{{ caller() }}
+	</div>
+</div>
+{%endmacro%}

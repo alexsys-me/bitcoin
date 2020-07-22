@@ -1,0 +1,108 @@
+{% from "./form.html" import checkbox %}
+{% from "./dropdown.html" import dropdown %}
+{% from "./panel-controls.html" import panel %}
+
+{% set roles = ["Registered user", "Organizer", "Admin limited rights", "Administrator"] %}
+{% macro table(data) %}
+<div class="user-list__wrap">
+    <table class="user-list">
+        <thead>
+            <tr class="user-list__head">
+                <th class="user-list__th user-list__th_checkbox js-user-check">{{checkbox()}}</th>
+                <th class="user-list__th">
+                    <a href="#" class="user-list__head-link">
+                        <span>Name</span>
+                    </a>
+                    / 
+                    <a href="#" class="user-list__head-link">
+                        <span>Email</span>
+                        <i class="user-list__sort-icon user-list__sort-icon_active icon-sort-desc"></i>
+                    </a>
+                </th>
+                <th class="user-list__th user-list__profile link-menu">
+
+                    <a class="user-list__link user-list__profile-link" href="#">
+                        <span>Profile</span>
+                        <div class="user-list__profile-icon icon-filter"></div>
+                    </a>
+                    <a class="user-list__profile-clear" href="#">Clear</a>
+
+                    {{dropdown(roles, 'checkbox')}}
+
+                </th>
+                <th class="user-list__th">
+                    <a href="#" class="user-list__head-link">
+                        <span>Registration Date</span>
+                        <i class="user-list__sort-icon icon-sort-asc"></i>
+                    </a>
+                </th>
+                <th class="user-list__th">
+                    <a href="#" class="user-list__head-link"><span>Last Visit</span></a>
+                </th>
+                <th class="user-list__th"><a href="#" class="user-list__head-link"><span>ID</span></a></th>
+                <th class="user-list__th">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for item in data %}
+                <tr class="user-list__row">
+                    <td class="user-list__td user-list__td_checkbox js-user-check">{{checkbox()}}</td>
+                    <td class="user-list__td">
+                        <span class="user-list__name">
+                            {{item.name}}
+
+                            {% if item.status == 'banned' %}
+                                <span class="user-list__ban-shield icon-sound-off">Banned</span>
+                            {% endif %}
+                        </span>
+                        <span class="user-list__email"><a class="user-list__email-link" href="mailto:{{item.email}}">{{item.email}}</a></span>
+                    </td>
+                    <td class="user-list__td">{{item.profile}}</td>
+                    <td class="user-list__td">
+                        <span class="user-list__date">{{item['registration date']}} </span>
+                        <span class="user-list__time">{{item['registration time']}}</span>
+                    </td>
+                    <td class="user-list__td">
+                        <span class="user-list__date">{{item['last visit date']}}</span>
+                        <span class="user-list__time">{{item['last-visit time']}}</span>
+                    </td>
+                    <td class="user-list__td">{{item.id}}</td>
+                    <td class="user-list__td">
+                        <a href="#" class="user-list__control icon-pen"></a>
+                        <a href="#" class="user-list__control {% if item.statistic == 'off'%}user-list__control_disabled{%endif%} icon-graph"></a>
+                        {% if item.sound == 'on' %}
+                        <a href="#" class="user-list__control icon-sound-on"></a>
+                        {% else %}
+                        <a href="#" class="user-list__control icon-sound-off"></a>
+                        {% endif %}
+                        <a href="#" class="user-list__control icon-remove"></a>
+                    </td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+</div>
+    {{panel()}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var rows = document.querySelectorAll('.user-list__row');
+            var buttons = document.querySelectorAll('.button');
+            var checkboxs = document.querySelectorAll('.checkbox__input');
+
+            [...rows].forEach(function(item){
+                item.addEventListener('click', function(i) {
+                    var checkbox = item.querySelector('.checkbox__input');
+                    checkbox.checked ? checkbox.checked = false : checkbox.checked = true;
+                    item.classList.contains('user-list__row_selected') ? item.classList.remove('user-list__row_selected') : item.classList.add('user-list__row_selected');
+
+                    buttons.forEach(function(item){
+                        item.classList.remove('button_disabled')
+                    })
+                })
+            });
+        })
+    </script>
+{% endmacro %}
+

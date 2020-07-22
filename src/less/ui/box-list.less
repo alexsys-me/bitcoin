@@ -1,0 +1,127 @@
+.box-list {
+
+    &__wrap {
+        flex-grow: 1;
+        display: flex;
+        margin: 0 -34px -40px;
+        border-top: 1px solid #e0e0e0;
+
+        @media(max-width: 768px) {
+            margin: 0 -15px;
+            flex-direction: column;
+        }
+    }
+
+    &__half {
+        width: 50%;
+        flex: 0 0 auto;
+        padding: 40px 34px 5px;
+        border-right: 1px solid #e0e0e0;
+        min-width: 0;
+
+        @media(max-width: 767px) {
+            width: 100%;
+            padding: 40px 15px 5px;
+            border-right: 0;
+            
+            &:not(:last-child) {
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 20px;
+
+        span {
+            font-size: 24px;
+            color: #585858;
+        }
+
+        a {
+            color: #2e74c5;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__head {
+        color: #6c6c6c;
+        font-size: 12px;
+        display: flex;
+        border-bottom: 1px solid #efefef;
+        padding: 0 0 5px;
+    }
+
+    &__head-cell {
+
+
+        &:last-child {
+            width: 115px;
+            margin-left: auto;
+        }
+    }
+
+    &__item {
+        display: flex;
+        min-height: 48px;
+        align-items: center;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #efefef;
+        }
+    }
+
+    &__item-name {
+        padding: 0 20px 0 0;
+        color: #2e74c5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: darken(#2e74c5, 10%);
+            text-decoration: underline;
+        }
+    }
+
+    &__item-date {
+        width: 115px;
+        display: flex;
+        color: #6c6c6c;
+        font: 700 14px 'Lato';
+        margin-left: auto;
+        white-space: nowrap;
+    }
+
+    &__item-time {
+        color: #bed5f7;
+    }
+
+    &__author {
+        color: #6c6c6c;
+        overflow: hidden;
+    }
+
+    &__author-name {
+        font: 700 15px 'Lato';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__author-email {
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

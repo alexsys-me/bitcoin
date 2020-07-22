@@ -1,0 +1,35 @@
+{% from "../ui/tag-box.html" import tagBox%}
+
+<div class="filter-cat">
+	<div class="filter-cat__box filter-cat__box_left">
+		<div class="filter-cat__title">Filter by Category and Options:</div>
+
+		{{ tagBox(['Museums', 'Gratis', 'Hesteveddeløp'], '', '', 'Add Filter Tags', ['Free'], 'AlexP')}}
+	</div>
+
+	<div class="filter-cat__box filter-cat__box_right">
+
+		{{ btn.main(
+				'Add activity', 
+				'add-event', 
+				'', 
+				'btn_md filter-cat__btn')}}
+
+		{{ form.switch(
+				'Table View', 
+				false, 
+				"switch_bottom", 
+				'filter-cat__switch') }}
+	
+		{{ form.select({
+				placeholder: 'Latest', 
+				items: [
+					'Title', 
+					'Popularity', 
+					'Character',
+					'Age',
+					'Period'], 
+				icon: 'sort-asc' },
+				'native-select_sm filter-cat__select') }}
+	</div>
+</div>
