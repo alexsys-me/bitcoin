@@ -1,0 +1,3575 @@
+{
+	"activities": {
+		"title": "Last activities",
+		"head": [
+			"Name",
+			"Created"
+		],
+		"items": [
+			{
+				"name": "Norsk Trikotasjemuseum - lærerik indu Norsk Trikotasjemuseum - lærerik indu Trikotasjemuseum - lærerik indu",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"name": "Mjølfjell Fjellstove friluftsbad",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"name": "Babysang og BaBy-vandringer på og me",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"name": "Babysang og BaBy-vandringer på og me",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"name": "Completely Overloaded Form by Data:",
+				"date": "22-10-2018",
+				"time": "11:23"
+			}
+		]
+	},
+	"activities2": {
+		"title": "New users",
+		"head": [
+			"Name",
+			"Registered"
+		],
+		"items": [
+			{
+				"author": "Henning Amundsen",
+				"email": "hamundsen@broadpark.no",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"author": "Reidar Kristoffersen",
+				"email": "djgejl@gmail.com",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"author": "Michael Prozorov",
+				"email": "michael.prozorov@itrexgroup.com",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"author": "Michael Prozorov",
+				"email": "michael.prozorov@itrexgroup.com",
+				"date": "22-10-2018",
+				"time": "11:23"
+			},
+			{
+				"author": "Bendik Kværnø",
+				"email": "bendik.kvarno@icloud.com",
+				"date": "22-10-2018",
+				"time": "11:23"
+			}
+		]
+	},
+	"advertising": [
+		{
+			"name": "Background site Ad",
+			"status": "on",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"client": "Global Cycling Adventures"
+		},
+		{
+			"name": "Right Sidebar Ad",
+			"status": "on",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"client": "Client with very long name and some words after"
+		},
+		{
+			"name": "Activity Content Ad",
+			"status": "off",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"client": "Oslo Future Living"
+		},
+		{
+			"name": "Bottom Block Ad",
+			"status": "on",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"client": "Norway Powered by Nature"
+		}
+	],
+	"blockList": {
+		"settings": {
+			"class": "block-list",
+			"pagi": true,
+			"actions": true
+		},
+		"head": [
+			{
+				"name": "Block name",
+				"sort": "asc"
+			},
+			{
+				"name": "Parent page name"
+			},
+			{
+				"name": "Editing date"
+			},
+			{
+				"name": "Actions"
+			}
+		],
+		"body": [
+			{
+				"name": "Akershus - Region Block",
+				"parent": "Main page (Akershus)",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Buskerud - Region Block",
+				"parent": "Main page (Buskerud)",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Contact Block",
+				"parent": "Contact page",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Cookies Ask Block",
+				"parent": "Welcome page",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Hordaland - Region Block",
+				"parent": "Main page (Hordaland)",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Oslo - Region Block",
+				"parent": "Main page (Oslo)",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Østfold - Region Block",
+				"parent": "Main page (Østfold)",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Welcome Block",
+				"parent": "Welcome page",
+				"date": "30-05-2018",
+				"time": "00:00"
+			}
+		]
+	},
+	"categories": {
+		"head": [
+			{
+				"name": "Image"
+			},
+			{
+				"name": "Name",
+				"sort": true,
+				"sortType": "asc"
+			},
+			{
+				"name": "Sorting order",
+				"sort": true
+			},
+			{
+				"name": "Included in activities",
+				"sort": true
+			},
+			{
+				"name": "Actions"
+			}
+		],
+		"body": [
+			{
+				"image": "img-01.jpg",
+				"name": "Badeland",
+				"childs": [
+					{
+						"image": "img-07.jpg",
+						"name": "Lorem ipsum dolor",
+						"sort": "1",
+						"activities": "12"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					}
+				],
+				"sort": "8",
+				"activities": "234"
+			},
+			{
+				"image": "img-02.jpg",
+				"name": "Aktive familier",
+				"childs": [
+					{
+						"image": "img-07.jpg",
+						"name": "Lorem ipsum dolor",
+						"sort": "1",
+						"activities": "12"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					}
+				],
+				"isOpenChild": "true",
+				"sort": "1",
+				"activities": "234"
+			},
+			{
+				"image": "img-03.jpg",
+				"name": "Barnefestivaler",
+				"sort": "13",
+				"childs": [
+					{
+						"image": "img-07.jpg",
+						"name": "Lorem ipsum dolor",
+						"sort": "1",
+						"activities": "12"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					}
+				],
+				"activities": "234"
+			},
+			{
+				"image": "img-04.jpg",
+				"name": "Historie og kultur",
+				"sort": "4",
+				"activities": "234"
+			},
+			{
+				"image": "img-05.jpg",
+				"name": "Kreative utfoldelser",
+				"sort": "5",
+				"childs": [
+					{
+						"image": "img-07.jpg",
+						"name": "Lorem ipsum dolor",
+						"sort": "1",
+						"activities": "12"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					},
+					{
+						"image": "img-08.jpg",
+						"name": "Sit amet, consectetur adipisicing elit",
+						"sort": "2",
+						"activities": "31"
+					},
+					{
+						"image": "img-09.jpg",
+						"name": "Accusamus eveniet fuga",
+						"sort": "3",
+						"activities": "57"
+					}
+				],
+				"activities": "234"
+			},
+			{
+				"image": "img-06.jpg",
+				"name": "Litteratur og kunst",
+				"sort": "6",
+				"activities": "234"
+			},
+			{
+				"image": "img-07.jpg",
+				"name": "Museum",
+				"sort": "2",
+				"activities": "234"
+			},
+			{
+				"image": "img-08.jpg",
+				"name": "Sport og bevegelse",
+				"sort": "8",
+				"activities": "234"
+			},
+			{
+				"image": "img-09.jpg",
+				"name": "Vinterferien",
+				"sort": "9",
+				"activities": "234"
+			}
+		]
+	},
+	"dropzone1": [
+		{
+			"img": "img2",
+			"selected": "true",
+			"alt_status": "success",
+			"title_status": "success"
+		},
+		{
+			"img": "img3"
+		},
+		{
+			"img": "img4",
+			"alt_status": "success"
+		},
+		{
+			"img": "img2"
+		},
+		{
+			"img": "img3",
+			"title_status": "success"
+		},
+		{
+			"img": "img4"
+		}
+	],
+	"dropzone2": [
+		{
+			"img": "img5",
+			"selected": "true",
+			"desc": "BarnasNorge.no"
+		},
+		{
+			"img": "img6",
+			"desc": "Aktivitetsgårder"
+		},
+		{
+			"img": "img7",
+			"desc": "Badeland"
+		},
+		{
+			"img": "img5",
+			"desc": "BarnasNorge.no"
+		},
+		{
+			"img": "img6",
+			"desc": "Aktivitetsgårder"
+		},
+		{
+			"img": "img7",
+			"desc": "Badeland"
+		}
+	],
+	"ePosts": [
+		{
+			"name": "Babysang og BaBy-vandringer på og med Bymuseet",
+			"template": "Baby Special",
+			"status": "AdmLimit",
+			"date": "30-10-2018",
+			"time": "00:00",
+			"update_icon": "attention",
+			"follow": "26.07.2018",
+			"img": "img",
+			"tags": [
+				"Museums"
+			],
+			"options": [
+				"Free",
+				"For Birthdays"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Updated",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "AlexP"
+		},
+		{
+			"name": "Lillehammer Olympiske Bob- og Akebane - vinter",
+			"template": "Default",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:14",
+			"update_icon": "attention",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Kjelking og vinteraktiviteter på Vierli",
+			"template": "Default",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "attention",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Teater for barn - Oslo Nye Trikkestallen",
+			"template": "Theather",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "update",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Åsane bibliotek",
+			"template": "Study",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "create",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Vikingfestivalen på Avaldsnes",
+			"template": "Festival",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "update",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Teater for barn - Halden",
+			"template": "Default",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "update",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Babysang og BaBy-vandringer på og med Bymuseet",
+			"template": "Baby Special",
+			"status": "AdmLimit",
+			"date": "30-10-2018",
+			"time": "00:00",
+			"update_icon": "create",
+			"follow": "26.07.2018",
+			"was_sent": {
+				"date": "30-10-2018",
+				"time": "00:00"
+			}
+		},
+		{
+			"name": "Lillehammer Olympiske Bob- og Akebane - vinter",
+			"template": "Default",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:14",
+			"update_icon": "create",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Kjelking og vinteraktiviteter på Vierli",
+			"template": "Default",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "telegram",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Teater for barn - Oslo Nye Trikkestallen",
+			"template": "Theather",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "telegram",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Åsane bibliotek",
+			"template": "Study",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "telegram",
+			"follow": "28.08.2018"
+		},
+		{
+			"name": "Vikingfestivalen på Avaldsnes",
+			"template": "Festival",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "telegram",
+			"follow": "28.08.2018",
+			"was_sent": {
+				"date": "30-10-2018",
+				"time": "00:00"
+			}
+		},
+		{
+			"name": "Teater for barn - Halden",
+			"template": "Default",
+			"status": "AdmLimit",
+			"date": "06-07-2018",
+			"time": "09:13",
+			"update_icon": "telegram",
+			"follow": "28.08.2018"
+		}
+	],
+	"Emails": [
+		{
+			"name": "Babysang og BaBy",
+			"template": "Baby Special",
+			"selected": true
+		},
+		{
+			"name": "Lillehammer Olympiske Bob",
+			"template": "Default"
+		},
+		{
+			"name": "Åsane bibliotek",
+			"template": "Default"
+		},
+		{
+			"name": "Kjelking og vinteraktiviteter på Vierli",
+			"template": "Default"
+		},
+		{
+			"name": "Åsane bibliotek",
+			"template": "Default"
+		},
+		{
+			"name": "Lillehammer Olympiske Bob",
+			"template": "Default"
+		},
+		{
+			"name": "Babysang og BaBy",
+			"template": "Default"
+		},
+		{
+			"name": "Lillehammer Olympiske Bob",
+			"template": "Default"
+		}
+	],
+	"events": [
+		{
+			"date": "8 august",
+			"items": [
+				{
+					"time": "13.00",
+					"name": "BabySkrik. Presentasjon utstillingen Mellom klokken og sengen. Ordinær inngangsbillett",
+					"description": "BabySkrik og familieaktiviteter på Munchmuseet",
+					"period": "13.00 - 17.00"
+				},
+				{
+					"time": "17.00",
+					"name": "Hagelek på Ekely. Utforsk Edvard Munchs atelier, og bli med på maskeverksted for store og små! Ta med nistekurv og nyt lunsjen i hagen. Gratis. Til kl 19.00",
+					"description": "BabySkrik og familieaktiviteter på Munchmuseet",
+					"period": "17.00 - 19.00"
+				}
+			]
+		},
+		{
+			"date": "25 august",
+			"items": [
+				{
+					"time": "13.00",
+					"name": "Kunstfestival for barn og unge 6-12 år. To-dagers live-kunstfestival spekket med aktiviteter. Se museets hjemme- og facebookside for mer info. Billetter via hjemmesiden",
+					"description": "BabySkrik og familieaktiviteter på Munchmuseet",
+					"period": "17.00 - 19.00"
+				}
+			]
+		}
+	],
+	"outgoingLinks": [
+		{
+			"name": "Norsk Trikotasjemuseum - lærerik industrihistorie",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "5",
+			"image": "001_mini.jpg",
+			"links": [
+				{
+					"source": "facebook",
+					"link": "https://facebook.com/someurl",
+					"status": "404"
+				},
+				{
+					"source": "youtube",
+					"link": "https://www.youtube.com/k1si32dj4",
+					"status": "404"
+				},
+				{
+					"source": "trippsbatservice",
+					"link": "http://www.trippsbatservice.no/trippsbatservicetrippsbatservice/trippsbatservice/trippsbatservice/trippsbatservice/trippsbatservice",
+					"status": "404"
+				},
+				{
+					"source": "homepage",
+					"link": "http://aust-agder.turistforeningen.no/index.php?f.d=a",
+					"status": "500"
+				},
+				{
+					"source": "brochure-url",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "500"
+				}
+			]
+		},
+		{
+			"name": "Another Norsk Trikotasjemuseum - lærerik industrihistorie",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "5",
+			"image": "002_mini.jpg",
+			"links": [
+				{
+					"source": "facebook",
+					"link": "https://facebook.com/someurl",
+					"status": "404"
+				},
+				{
+					"source": "instagram",
+					"link": "https://www.instagram.com/instagram/k392lkd92k",
+					"status": "404"
+				},
+				{
+					"source": "trippsbatservice",
+					"link": "http://www.trippsbatservice.no/",
+					"status": "404"
+				},
+				{
+					"source": "homepage",
+					"link": "http://aust-agder.turistforeningen.no/index.php?f.d=a",
+					"status": "500"
+				},
+				{
+					"source": "brochure-url",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "500"
+				}
+			]
+		},
+		{
+			"name": "Buldring på Sørenga",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "3",
+			"image": "003_mini.jpg",
+			"links": [
+				{
+					"source": "homepage",
+					"link": "http://aust-agder.turistforeningen.no/index.php?f.d=a",
+					"status": "404"
+				},
+				{
+					"source": "brochure-url",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "501"
+				},
+				{
+					"source": "trippsbatservice",
+					"link": "http://www.trippsbatservice.no/",
+					"status": "404"
+				}
+			]
+		},
+		{
+			"name": "Frammuseet - et skip lastet med polarhistorie",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "3",
+			"image": "001_mini.jpg",
+			"links": [
+				{
+					"source": "ticket-info",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "501"
+				},
+				{
+					"source": "ticket-booking",
+					"link": "http://aust-agder.turistforeningen.no/index.phpfd=",
+					"status": "404"
+				},
+				{
+					"source": "youtube",
+					"link": "http://youtube.com/asdasdaa",
+					"status": "404"
+				}
+			]
+		},
+		{
+			"name": "Holmenkollbakken, Skimuseet, Skisimulator og Kollensvevet",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "2",
+			"image": "002_mini.jpg",
+			"links": [
+				{
+					"source": "ticket-info",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "501"
+				},
+				{
+					"source": "ticket-booking",
+					"link": "http://aust-agder.turistforeningen.no/index.phpfd=",
+					"status": "404"
+				}
+			]
+		},
+		{
+			"name": "Holmlia bad",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "2",
+			"image": "003_mini.jpg",
+			"links": [
+				{
+					"source": "ticket-info",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "501"
+				},
+				{
+					"source": "ticket-booking",
+					"link": "http://aust-agder.turistforeningen.no/index.phpfd=",
+					"status": "404"
+				}
+			]
+		},
+		{
+			"name": "Kid og Junior GoKart Alnabru",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"date": "22-10-2018",
+			"time": "11:23",
+			"count": "1",
+			"image": "001_mini.jpg",
+			"links": [
+				{
+					"source": "ticket-info",
+					"link": "http://aust-agder.turistforeningen.no/index.php?fd=",
+					"status": "501"
+				}
+			]
+		}
+	],
+	"menu": [
+		{
+			"name": "Add Activity",
+			"path": "/",
+			"icon": "add-event"
+		},
+		{
+			"name": "Home",
+			"path": "/",
+			"icon": "home"
+		},
+		{
+			"name": "Activities",
+			"icon": "calendar",
+			"amount": "2",
+			"children": [
+				{
+					"name": "E-Post",
+					"amount": "211"
+				},
+				{
+					"name": "Archive"
+				},
+				{
+					"name": "Drafts",
+					"amount": "5",
+					"amount_secondary": "true"
+				},
+				{
+					"name": "Rejected",
+					"amount": "77",
+					"amount_secondary": "true"
+				}
+			]
+		},
+		{
+			"name": "News",
+			"icon": "news"
+		},
+		{
+			"name": "Content",
+			"icon": "doc"
+		},
+		{
+			"name": "Annouser",
+			"icon": "megaphone"
+		},
+		{
+			"name": "Users",
+			"icon": "users"
+		},
+		{
+			"name": "Service",
+			"icon": "tool"
+		},
+		{
+			"name": "Settings",
+			"icon": "settings",
+			"children": [
+				{
+					"name": "General Site Settings",
+					"active": "true"
+				},
+				{
+					"name": "Localizations"
+				},
+				{
+					"name": "Categories"
+				},
+				{
+					"name": "Mailing Templates"
+				},
+				{
+					"name": "Semantic URLs"
+				}
+			]
+		}
+	],
+	"menu2": [
+		{
+			"name": "Home",
+			"path": "/",
+			"icon": "home"
+		},
+		{
+			"name": "Log In",
+			"icon": "key"
+		},
+		{
+			"name": "Sign Up",
+			"icon": "singup"
+		},
+		{
+			"name": "Forgot a Password",
+			"icon": "lock"
+		},
+		{
+			"name": "Get Support",
+			"icon": "tool"
+		}
+	],
+	"newsInfo": [
+		{
+			"title": "Klatreparker – gøy sommermoro Klatreparker – gøy sommermoro Klatreparker – gøy sommermoro Klatreparker – gøy sommermoro",
+			"text": "Været kan være lunefullt, men klatreparker er familiemoro på et høyt plan, uansett vær. Kanskje bortsett fra regnfulle dager. Høyt og Lavt er et samarbeid mellom 12 klatreparker, primært i Syd-Norge. De fleste av dem har klatrerruter for barn med en minimumshøyde på 80 cm. Større barn og voksne har flere valgmuligheter, og hele familien kan lett tilbringe en hel dag i klatreparken!",
+			"img": "01.jpg",
+			"date": "28-06-2018",
+			"time": "11:23",
+			"author": "Peter F. Tschudi",
+			"role": "SuperAdm"
+		},
+		{
+			"title": "Dansens Dager 27. – 29. april",
+			"text": "Dans og hver glad, eller bare gled dere over danseforestillinger med høyst forskjellige musikalske uttrykk og i mange forskjellige sjangere. Selv om Dansens Dager 2018 åpnes på Operataket i Oslo av ordføreren fredag 27. april kl 12.00, så er det minst en danseaktivitet i alle fylker, og i flere fylker, og i byer som Oslo og Bergen, er allsidigheten og kreativiteten imponerende alle dagene",
+			"img": "02.jpg",
+			"date": "22-06-2018",
+			"time": "11:23",
+			"author": "Peter F. Tschudi",
+			"role": "SuperAdm"
+		},
+		{
+			"title": "Vinterferie – yeahhhh!",
+			"text": "Skolenes vinterferie faller i uke 7, 8 eller 9, avhengig av hvor i landet man bor. Snø og ski er vinterferie for noen, andre steder er det ikke snø og noen ønsker bare å bruke ferien til å «coole» den! Vinterferien har noe for alle!",
+			"img": "03.jpg",
+			"date": "16-06-2018",
+			"time": "11:23",
+			"author": "Peter F. Tschudi",
+			"role": "SuperAdm"
+		},
+		{
+			"title": "Merry christmas!",
+			"text": "Skolenes vinterferie faller i uke 7, 8 eller 9, avhengig av hvor i landet man bor. Snø og ski er vinterferie for noen, andre steder er det ikke snø og noen ønsker bare å bruke ferien til å «coole» den! Vinterferien har noe for alle!",
+			"img": "03.jpg",
+			"date": "14-06-2018",
+			"time": "11:23",
+			"author": "Peter F. Tschudi",
+			"role": "SuperAdm"
+		}
+	],
+	"pageList": {
+		"settings": {
+			"class": "page-list",
+			"actions": true
+		},
+		"head": [
+			{
+				"name": "Page name",
+				"sort": "asc"
+			},
+			{
+				"name": "Editing date"
+			},
+			{
+				"name": "Actions"
+			}
+		],
+		"body": [
+			{
+				"name": "Om oss",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Annonsering",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Betingelser",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Personopplysninger",
+				"date": "30-05-2018",
+				"time": "00:00"
+			},
+			{
+				"name": "Contact",
+				"date": "30-05-2018",
+				"time": "00:00"
+			}
+		]
+	},
+	"pageList2": {
+		"settings": {
+			"class": "links"
+		},
+		"head": [
+			{
+				"name": "Type / Changed",
+				"sort": "asc"
+			},
+			{
+				"name": "Generated URLs (Content Title → PAGE URL)"
+			}
+		],
+		"body": [
+			{
+				"name": "Activity",
+				"cdate": "12.05.2017",
+				"title": "AdventureRooms Oslo - escape room",
+				"val": "adventurerooms-oslo"
+			},
+			{
+				"name": "Activity",
+				"cdate": "12.05.2017",
+				"title": "Akershus festning",
+				"val": "akershus-festning"
+			},
+			{
+				"name": "Activity",
+				"cdate": "12.05.2017",
+				"title": "BabySkrik og familieaktiviteter på Munchmuseet",
+				"val": "babyskrik-og-familieaktiviteter-på-munchmuseet"
+			},
+			{
+				"name": "Activity",
+				"cdate": "12.05.2017",
+				"title": "Bogstad besøksgård",
+				"val": "bogstad-besøksgård"
+			},
+			{
+				"name": "Arrangement",
+				"cdate": "12.05.2017",
+				"title": "Bogstad Gård - storhet i vakre omgivelser",
+				"val": "bogstad-gård-storhet-i-vakre-omgivelser"
+			},
+			{
+				"name": "Arrangement",
+				"cdate": "12.05.2017",
+				"title": "Babysang",
+				"val": "babysang"
+			},
+			{
+				"name": "Arrangement",
+				"cdate": "12.05.2017",
+				"title": "Babyomvisning for foreldre med barn opp til 2 år.",
+				"val": "babyomvisning-for-foreldre-med-barn-opp-til-2-år"
+			},
+			{
+				"name": "News",
+				"cdate": "12.05.2017",
+				"title": "Julenissen - et monster?",
+				"val": "julenissen-et-monster"
+			},
+			{
+				"name": "News",
+				"cdate": "12.05.2017",
+				"title": "Halloween 31. oktober – skrekk og gru",
+				"val": "halloween-31-oktober-skrekk-og-gru"
+			}
+		]
+	},
+	"Directory": {
+		"settings": {
+			"class": "links"
+		},
+		"head": [
+			{
+				"name": "Type",
+				"sort": "asc"
+			},
+			{
+				"name": "Generated URLs (Page Title → PAGE URL)"
+			}
+		],
+		"body": [
+			{
+				"name": "Page",
+				"title": "About us",
+				"val": "about"
+			},
+			{
+				"name": "Page",
+				"title": "Advertising",
+				"val": "advertising"
+			},
+			{
+				"name": "Page",
+				"title": "Terms of Use",
+				"val": "terms-of-use"
+			},
+			{
+				"name": "Page",
+				"title": "Privacy Policy",
+				"val": "privacy-policy"
+			},
+			{
+				"name": "Folder",
+				"title": "News",
+				"val": "news"
+			},
+			{
+				"name": "Folder",
+				"title": "Activity",
+				"val": "activity"
+			},
+			{
+				"name": "Folder",
+				"title": "Arrangement",
+				"val": "arrangement"
+			}
+		]
+	},
+	"Redirect": {
+		"settings": {
+			"class": "redirect"
+		},
+		"head": [
+			{
+				"name": "Redirects"
+			},
+			{
+				"name": "Created",
+				"sort": "asc"
+			},
+			{
+				"name": "Expires"
+			},
+			{
+				"name": ""
+			}
+		],
+		"body": [
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape-room",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "07.02.2018",
+				"expires": "07.02.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "https://barnasnorge.no/activities/oslo-escape",
+				"redirect_to": "https://barnasnorge.no/activities/adventurerooms-oslo",
+				"crdate": "05.05.2018",
+				"expires": "05.05.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/julenissen-et-monster",
+				"redirect_to": "http://barnasnorge.no/nyheter/julenissen-et-monster",
+				"crdate": "06.03.2018",
+				"expires": "06.03.2019",
+				"delete_redirect": "delete"
+			},
+			{
+				"redirect_from": "http://barnasnorge.no/news/halloween-31-oktober–skrekk-og-gru",
+				"redirect_to": "http://barnasnorge.no/nyheter/halloween-31-oktober–skrekk-og-gru",
+				"crdate": "01.10.2018",
+				"expires": "01.10.2019",
+				"delete_redirect": "delete"
+			}
+		]
+	},
+	"Localization": {
+		"settings": {
+			"class": "localization",
+			"btn": true
+		},
+		"head": [
+			{
+				"name": "Variable",
+				"sort": "asc"
+			},
+			{
+				"name": "Value"
+			}
+		],
+		"body": [
+			{
+				"name": "MORE",
+				"val": "More"
+			},
+			{
+				"name": "APPROVE",
+				"val": "Approve"
+			},
+			{
+				"name": "EDIT",
+				"val": "Edit"
+			},
+			{
+				"name": "DELETE",
+				"val": "Delete"
+			},
+			{
+				"name": "REJECT",
+				"val": "Reject"
+			},
+			{
+				"name": "ARCHIVE",
+				"val": "Archive"
+			},
+			{
+				"name": "EXPIRED",
+				"val": "Expired"
+			},
+			{
+				"name": "UNARCHIVE",
+				"val": "Unarchive"
+			},
+			{
+				"name": "EMAIL",
+				"val": "Email"
+			},
+			{
+				"name": "ACTIVITY",
+				"val": "Activity"
+			},
+			{
+				"name": "ACTIVITY_L",
+				"val": "activity"
+			},
+			{
+				"name": "ARRANGEMENT_L",
+				"val": "arrangement"
+			},
+			{
+				"name": "ARRANGEMENT",
+				"val": "Arrangement"
+			},
+			{
+				"name": "CANCEL",
+				"val": "Cancel"
+			},
+			{
+				"name": "PHONE",
+				"val": "Phone"
+			},
+			{
+				"name": "LOADING",
+				"val": "Loading"
+			},
+			{
+				"name": "PRINT",
+				"val": "Print"
+			},
+			{
+				"name": "DOWNLOAD",
+				"val": "Download"
+			},
+			{
+				"name": "GET_SUPPORT",
+				"val": "Get Support"
+			},
+			{
+				"name": "FORGOT_PASSWORD",
+				"val": "Forgot a Password"
+			}
+		]
+	},
+	"Hints": {
+		"settings": {
+			"class": "hints"
+		},
+		"head": [
+			{
+				"name": "Variable",
+				"sort": "asc"
+			},
+			{
+				"name": "Value"
+			}
+		],
+		"body": [
+			{
+				"name": "ACTIVITY_TITLE",
+				"desc": "Step #1. Main - Field #1. Activity Title",
+				"val": "This field sets activity title. Activity Title must be unique. Some activity can have title description. In this case activity on the site will contain both activity title and activity title description separated by dash."
+			},
+			{
+				"name": "TITLE_DESCTIPTION",
+				"desc": "Step #1. Main - Field #2. Title Description",
+				"val": "This field sets activity title description. This is extra field that helps users and search engine understand the goal of activity. If setted, the activity on the site will contain both activity title and activity title description separated by dash"
+			},
+			{
+				"name": "DESCRIPTION",
+				"desc": "Step #1. Main - Field #3. Description",
+				"val": "The description of activity. Description may contains text, images etc. User can separate short form of description from full form by 'more' tag. This allows users control card view of activity. "
+			},
+			{
+				"name": "ACTIVITY_TITLE",
+				"desc": "Step #1. Main - Field #4. Activity Title",
+				"val": "This field sets activity title. Activity Title must be unique. Some activity can have title description. In this case activity on the site will contain both activity title and activity title description separated by dash."
+			},
+			{
+				"name": "TITLE_DESCTIPTION",
+				"desc": "Step #1. Main - Field #5. Activity Title",
+				"val": "This field sets activity title description. This is extra field that helps users and search engine understand the goal of activity. If setted, the activity on the site will contain both activity title and activity title description separated by dash"
+			},
+			{
+				"name": "DESCRIPTION",
+				"desc": "Step #1. Main - Field #6. Activity Title",
+				"val": "The description of activity. Description may contains text, images etc. User can separate short form of description from full form by 'more' tag. This allows users control card view of activity. "
+			},
+			{
+				"name": "TITLE_DESCTIPTION",
+				"desc": "Step #1. Main - Field #7. Activity Title",
+				"val": "This field sets activity title. Activity Title must be unique. Some activity can have title description. In this case activity on the site will contain both activity title and activity title description separated by dash."
+			},
+			{
+				"name": "DESCRIPTION",
+				"desc": "Step #1. Main - Field #8. Activity Title",
+				"val": "This field sets activity title description. This is extra field that helps users and search engine understand the goal of activity. If setted, the activity on the site will contain both activity title and activity title description separated by dash"
+			},
+			{
+				"name": "ACTIVITY_TITLE",
+				"desc": "Step #1. Main - Field #1. Activity Title",
+				"val": "This field sets activity title. Activity Title must be unique. Some activity can have title description. In this case activity on the site will contain both activity title and activity title description separated by dash."
+			},
+			{
+				"name": "TITLE_DESCTIPTION",
+				"desc": "Step #1. Main - Field #2. Title Description",
+				"val": "This field sets activity title description. This is extra field that helps users and search engine understand the goal of activity. If setted, the activity on the site will contain both activity title and activity title description separated by dash"
+			},
+			{
+				"name": "DESCRIPTION",
+				"desc": "Step #1. Main - Field #3. Description",
+				"val": "The description of activity. Description may contains text, images etc. User can separate short form of description from full form by 'more' tag. This allows users control card view of activity. "
+			},
+			{
+				"name": "DESCRIPTION",
+				"desc": "Step #1. Main - Field #4. Activity Title",
+				"val": "This field sets activity title. Activity Title must be unique. Some activity can have title description. In this case activity on the site will contain both activity title and activity title description separated by dash."
+			},
+			{
+				"name": "TITLE_DESCTIPTION",
+				"desc": "Step #1. Main - Field #5. Activity Title",
+				"val": "This field sets activity title description. This is extra field that helps users and search engine understand the goal of activity. If setted, the activity on the site will contain both activity title and activity title description separated by dash"
+			},
+			{
+				"name": "DESCRIPTION",
+				"desc": "Step #1. Main - Field #6. Activity Title",
+				"val": "The description of activity. Description may contains text, images etc. User can separate short form of description from full form by 'more' tag. This allows users control card view of activity. "
+			},
+			{
+				"name": "ACTIVITY_TITLE",
+				"desc": "Step #1. Main - Field #7. Activity Title",
+				"val": "This field sets activity title. Activity Title must be unique. Some activity can have title description. In this case activity on the site will contain both activity title and activity title description separated by dash."
+			},
+			{
+				"name": "TITLE_DESCTIPTION",
+				"desc": "Step #1. Main - Field #8. Activity Title",
+				"val": "This field sets activity title description. This is extra field that helps users and search engine understand the goal of activity. If setted, the activity on the site will contain both activity title and activity title description separated by dash"
+			}
+		]
+	},
+	"Options": {
+		"settings": {
+			"class": "hints"
+		},
+		"head": [
+			{
+				"name": "Variable",
+				"sort": "asc"
+			},
+			{
+				"name": "Value"
+			}
+		],
+		"body": [
+			{
+				"name": "OPTIONS_SPORT",
+				"desc": "Options for sport activities",
+				"val": "Sport"
+			},
+			{
+				"name": "OPTIONS_ANIMAL_WORLD",
+				"desc": "Options for diffrent animals",
+				"val": "Animal world"
+			},
+			{
+				"name": "OPTIONS_SPORT",
+				"desc": "Options for sport activities",
+				"val": "Sport"
+			},
+			{
+				"name": "OPTIONS_ANIMAL_WORLD",
+				"desc": "Options for diffrent animals",
+				"val": "Animal world"
+			},
+			{
+				"name": "OPTIONS_SPORT",
+				"desc": "Options for sport activities",
+				"val": "Sport"
+			},
+			{
+				"name": "OPTIONS_ANIMAL_WORLD",
+				"desc": "Options for diffrent animals",
+				"val": "Animal world"
+			},
+			{
+				"name": "OPTIONS_SPORT",
+				"desc": "Options for sport activities",
+				"val": "Sport"
+			},
+			{
+				"name": "OPTIONS_ANIMAL_WORLD",
+				"desc": "Options for diffrent animals",
+				"val": "Animal world"
+			}
+		]
+	},
+	"products": [
+		{
+			"id": "1",
+			"name": "Norsk Trikotasjemuseum - lærerik industrihistorie",
+			"img": "img",
+			"img_alt": "Very strange house",
+			"age": "0-15+",
+			"tags": [
+				"Museums"
+			],
+			"options": [
+				"Free",
+				"For Birthdays"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "false",
+			"is_free": "false",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Updated",
+			"update_icon": "update",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "AlexP"
+		},
+		{
+			"id": "2",
+			"name": "Mjølfjell Fjellstove friluftsbad",
+			"img": "img8",
+			"img_alt": "House in the mountains",
+			"age": "0-15+",
+			"tags": [
+				"Museums",
+				"Nature",
+				"Forest"
+			],
+			"options": [
+				"Indoor Activity"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "false",
+			"is_approved": "false",
+			"is_free": "true",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com",
+				"spore@mail.com",
+				"test@mailinator.com",
+				"superlong@mmmmmailinattttttor.ccccom"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Created",
+			"update_icon": "create",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81"
+			],
+			"popularity": "32",
+			"editor": "Alex Shmidth"
+		},
+		{
+			"id": "3",
+			"name": "Babysang og BaBy-vandringer på og med Bymuseet ",
+			"img": "img9",
+			"img_alt": "Textile chairs",
+			"age": "0-15+",
+			"tags": [
+				"Museums",
+				"Furniture"
+			],
+			"options": [
+				"Free"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "false",
+			"is_approved": "false",
+			"is_free": "true",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Mail sent",
+			"update_icon": "telegram",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phone": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "North Naturalist"
+		},
+		{
+			"id": "4",
+			"name": "Norsk Trikotasjemuseum - lærerik industrihistorie",
+			"img": "img",
+			"img_alt": "Very strange house",
+			"age": "0-15+",
+			"tags": [
+				"Museums"
+			],
+			"options": [
+				"Free"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "true",
+			"is_free": "false",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Rejected",
+			"update_icon": "reject",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "AlexP"
+		},
+		{
+			"id": "5",
+			"name": "Mjølfjell Fjellstove friluftsbad ",
+			"img": "img8",
+			"img_alt": "House in the mountains",
+			"age": "0-15+",
+			"tags": [
+				"Museums",
+				"Nature",
+				"Forest"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "true",
+			"is_free": "true",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com",
+				"spore@mail.com",
+				"test@mailinator.com",
+				"superlong@mmmmmailinattttttor.ccccom"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Approved",
+			"update_icon": "like",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81"
+			],
+			"popularity": "32",
+			"editor": "AlexP"
+		},
+		{
+			"id": "6",
+			"name": "Babysang og BaBy-vandringer på og med Bymuseet ",
+			"img": "img9",
+			"img_alt": "Textile chairs",
+			"age": "0-15+",
+			"tags": [
+				"Museums",
+				"Lorem"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "true",
+			"is_free": "false",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Updated",
+			"update_icon": "update",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phone": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "Very long name overflow test etc"
+		},
+		{
+			"id": "7",
+			"name": "Norsk Trikotasjemuseum - lærerik industrihistorie",
+			"img": "img",
+			"img_alt": "Very strange house",
+			"age": "0-15+",
+			"tags": [
+				"Museums"
+			],
+			"options": [
+				"Free"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "true",
+			"is_free": "false",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Updated",
+			"update_icon": "update",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "AlexP"
+		},
+		{
+			"id": "8",
+			"name": "Mjølfjell Fjellstove friluftsbad ",
+			"img": "img8",
+			"img_alt": "House in the mountains",
+			"age": "0-15+",
+			"tags": [
+				"Museums",
+				"Nature",
+				"Forest"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "true",
+			"is_free": "true",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com",
+				"spore@mail.com",
+				"test@mailinator.com",
+				"superlong@mmmmmailinattttttor.ccccom"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Updated",
+			"update_icon": "update",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phones": [
+				"55 25 10 81"
+			],
+			"popularity": "32",
+			"editor": "AlexP"
+		},
+		{
+			"id": "9",
+			"name": "Babysang og BaBy-vandringer på og med Bymuseet ",
+			"img": "img9",
+			"img_alt": "Textile chairs",
+			"age": "0-15+",
+			"tags": [
+				"Museums",
+				"Lorem"
+			],
+			"description": "Hver søndag utenom skoleferiene er det ullkrok i kafeen med aktiviteter for barna. Siste søndag i måneden er det barnesøndag og omvisning med sauen Bændik. I sommer-, høst- og vinterferien utvides ullkroken til",
+			"address": "Mjølfjell Kleivavegen 576 5706 VOSS",
+			"is_first_view": "true",
+			"is_approved": "true",
+			"is_free": "false",
+			"mest_for": "unset",
+			"web_site_url": "#",
+			"facebook_url": "#",
+			"emails": [
+				"iajslskk@hotmail.com"
+			],
+			"author": "AlexP",
+			"author_grp": "AdmLimit",
+			"update_type": "Updated",
+			"update_icon": "update",
+			"update_date": "08-07-2018",
+			"update_time": "11:23",
+			"phone": [
+				"55 25 10 81",
+				"55 25 10 81 "
+			],
+			"popularity": "32",
+			"editor": "Very long name overflow test etc"
+		}
+	],
+	"scrollTableOptions": [
+		{
+			"name": "Action"
+		},
+		{
+			"name": "Date Time",
+			"sort": "desc"
+		},
+		{
+			"name": "User"
+		},
+		{
+			"name": "User Group"
+		}
+	],
+	"scrollTableData": [
+		{
+			"action": "Mail sent",
+			"action_icon": "telegram",
+			"date": "08-06-2018",
+			"time": "17:23",
+			"user_name": "Alex Watson",
+			"user_url": "#",
+			"user_group": "AdmLimit"
+		},
+		{
+			"action": "Updated",
+			"action_icon": "update",
+			"date": "08-06-2018",
+			"time": "16:45",
+			"user_name": "Alex Watson",
+			"user_url": "#",
+			"user_group": "AdmLimit"
+		},
+		{
+			"action": "Rejected",
+			"action_icon": "reject",
+			"reject_reason": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quod, deserunt nihil. Cumque praesentium ullam distinctio deleniti quo!",
+			"date": "02-05-2018",
+			"time": "11:22",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		},
+		{
+			"action": "Updated",
+			"action_icon": "update",
+			"date": "12-04-2018",
+			"time": "10:05",
+			"user_name": "Alex Watson",
+			"user_url": "#",
+			"user_group": "AdmLimit"
+		},
+		{
+			"action": "Mail sent",
+			"action_icon": "telegram",
+			"date": "02-10-2017",
+			"time": "11:22",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		},
+		{
+			"action": "Updated",
+			"action_icon": "update",
+			"date": "02-10-2017",
+			"time": "10:09",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		},
+		{
+			"action": "Mail sent",
+			"action_icon": "telegram",
+			"date": "08-06-2018",
+			"time": "17:23",
+			"user_name": "Alex Watson",
+			"user_url": "#",
+			"user_group": "AdmLimit"
+		},
+		{
+			"action": "Updated",
+			"action_icon": "update",
+			"date": "08-06-2018",
+			"time": "16:45",
+			"user_name": "Alex Watson",
+			"user_url": "#",
+			"user_group": "AdmLimit"
+		},
+		{
+			"action": "Rejected",
+			"action_icon": "reject",
+			"reject_reason": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quod, deserunt nihil. Cumque praesentium ullam distinctio deleniti quo! Itaque quam provident fugiat nihil voluptas iste corrupti aliquam neque, soluta facilis!",
+			"date": "02-05-2018",
+			"time": "11:22",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		},
+		{
+			"action": "Updated",
+			"action_icon": "update",
+			"date": "12-04-2018",
+			"time": "10:05",
+			"user_name": "Alex Watson",
+			"user_url": "#",
+			"user_group": "AdmLimit"
+		},
+		{
+			"action": "Mail sent",
+			"action_icon": "telegram",
+			"date": "02-10-2017",
+			"time": "11:22",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		},
+		{
+			"action": "Updated",
+			"action_icon": "update",
+			"date": "02-10-2017",
+			"time": "10:09",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		},
+		{
+			"action": "Created",
+			"action_icon": "create",
+			"date": "07-04-2018",
+			"time": "07:11",
+			"user_name": "Peter F Tschudi",
+			"user_url": "#",
+			"user_group": "Admin"
+		}
+	],
+	"zipCodes": {
+		"head": [
+			{
+				"name": "Last Update",
+				"sort": "asc"
+			},
+			{
+				"name": "Status"
+			},
+			{
+				"name": "Updated"
+			},
+			{
+				"name": "New"
+			},
+			{
+				"name": "Deleted"
+			},
+			{
+				"name": "Conflict"
+			}
+		],
+		"body": [
+			{
+				"date": "02-02-2018",
+				"time": "17:23",
+				"status": "Success",
+				"data": [
+					"2",
+					"1",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "08-10-2017",
+				"time": "16:45",
+				"status": "Success",
+				"data": [
+					"14",
+					"0",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "23-05-2017",
+				"time": "11:22",
+				"status": "Success",
+				"data": [
+					"1",
+					"0",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "02-03-2017",
+				"time": "10:05",
+				"status": "Success",
+				"data": [
+					"3",
+					"0",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "12-11-2016",
+				"time": "10:23",
+				"status": "Success",
+				"data": [
+					"15",
+					"0",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "08-07-2016",
+				"time": "11:04",
+				"status": "Success",
+				"data": [
+					"0",
+					"0",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "02-10-2015",
+				"time": "10:09",
+				"status": "Success",
+				"data": [
+					"0",
+					"0",
+					"0",
+					"0"
+				]
+			},
+			{
+				"date": "02-02-2018",
+				"time": "17:23",
+				"status": "Success",
+				"data": [
+					"2",
+					"1",
+					"0",
+					"0"
+				]
+			}
+		]
+	},
+	"tableInfo": {
+		"title": [
+			{
+				"name": "Activity Status"
+			},
+			{
+				"name": "Today"
+			},
+			{
+				"name": "During the Week"
+			},
+			{
+				"name": "During the Month"
+			},
+			{
+				"name": "During the Year"
+			},
+			{
+				"name": "During all this Time"
+			}
+		],
+		"body": [
+			[
+				"For approval",
+				"2",
+				"12",
+				"514",
+				"2,514",
+				"24,878"
+			],
+			[
+				"Approved",
+				"0",
+				"5",
+				"221",
+				"1,011",
+				"4,875"
+			],
+			[
+				"Not approved",
+				"0",
+				"7",
+				"293",
+				"1,503",
+				"20,003"
+			],
+			[
+				"All activities",
+				"2",
+				"24",
+				"1,028",
+				"5,028",
+				"49,756"
+			]
+		]
+	},
+	"tableInfo2": {
+		"title": [
+			{
+				"name": "Period"
+			},
+			{
+				"name": "Today"
+			},
+			{
+				"name": "During the Week"
+			},
+			{
+				"name": "During the Month"
+			},
+			{
+				"name": "During the Year"
+			},
+			{
+				"name": "During all this Time"
+			}
+		],
+		"body": [
+			[
+				"First time visitors",
+				"0",
+				"0",
+				"0",
+				"0",
+				"1,373"
+			],
+			[
+				"Unique visitors",
+				"2",
+				"2",
+				"2",
+				"4",
+				"712"
+			],
+			[
+				"Page views",
+				"5",
+				"5",
+				"5",
+				"92",
+				"9,976"
+			]
+		]
+	},
+	"tableOptions": [
+		{
+			"names": [
+				{
+					"name": "Activity Title"
+				},
+				{
+					"name": "Approval Status",
+					"sort": "on"
+				}
+			]
+		},
+		{
+			"name": "Latest",
+			"sort": "asc"
+		},
+		{
+			"name": "Popularity"
+		},
+		{
+			"name": "Mest for"
+		}
+	],
+	"ePostOptions": {
+		"settings": {
+			"class": "e-post"
+		},
+		"items": [
+			{
+				"name": "Activity Name",
+				"sort": "asc"
+			},
+			{
+				"name": "Status",
+				"sort": "asc"
+			},
+			{
+				"name": "Acceptance date",
+				"sort": "asc"
+			},
+			{
+				"name": "Follow up",
+				"sort": "asc"
+			}
+		]
+	},
+	"templates": {
+		"head": [
+			{
+				"name": "Name",
+				"sort": true,
+				"sortType": "asc"
+			},
+			{
+				"name": "Action"
+			}
+		],
+		"body": [
+			"Default template",
+			"New activity",
+			"For Babies",
+			"Museums"
+		]
+	},
+	"template_rules": {
+		"head": [
+			{
+				"name": "Priority",
+				"sort": true,
+				"sortType": "asc"
+			},
+			{
+				"name": "Rule Name",
+				"sort": true
+			},
+			{
+				"name": "Template",
+				"sort": true
+			},
+			{
+				"name": "Action"
+			}
+		],
+		"body": [
+			{
+				"name": "Activity was created",
+				"template": "New Activity"
+			},
+			{
+				"name": "Has word Baby",
+				"template": "For Babies"
+			},
+			{
+				"name": "Category: Museums",
+				"template": "Museums"
+			},
+			{
+				"name": "Default",
+				"template": "Default template"
+			}
+		]
+	},
+	"userList": [
+		{
+			"id": "348",
+			"name": "Aisyah Amranizar",
+			"email": "aish@adventurerooms.no",
+			"profile": "Organizer",
+			"registration date": "12-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "370",
+			"name": "Bendik Kværnø",
+			"email": "bendik.kvarno@icloud.com",
+			"profile": "Registered user",
+			"registration date": "10-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "353",
+			"name": "Christian Radich",
+			"email": "bettina.bjorn@radich.no",
+			"profile": "Organizer",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off",
+			"sound": "on",
+			"status": "banned"
+		},
+		{
+			"id": "347",
+			"name": "Henning Amundsen",
+			"email": "hamundsen@broadpark.no",
+			"profile": "Registered user",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "385",
+			"name": "Michael Prozorov",
+			"email": "michael.prozorov@itrexgroup.com",
+			"profile": "Administrator with limited rights",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "on"
+		},
+		{
+			"id": "363",
+			"name": "Reidar Kristoffersen",
+			"email": "djgejl@gmail.com",
+			"profile": "Registered user",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "384",
+			"name": "Sanna Saksvoll",
+			"email": "sanna_saksvoll@hotmail.com",
+			"profile": "Administrator with limited rights",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "on"
+		},
+		{
+			"id": "345",
+			"name": "SuperAdmin",
+			"email": "superadmin@mailinator.com",
+			"profile": "Administrator",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "383",
+			"name": "Various Gerg",
+			"email": "various@hotmail.com",
+			"profile": "Administrator with limited rights",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "348",
+			"name": "Aisyah Amranizar",
+			"email": "aish@adventurerooms.no",
+			"profile": "Organizer",
+			"registration date": "12-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "370",
+			"name": "Bendik Kværnø",
+			"email": "bendik.kvarno@icloud.com",
+			"profile": "Registered user",
+			"registration date": "10-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "353",
+			"name": "Christian Radich",
+			"email": "bettina.bjorn@radich.no",
+			"profile": "Organizer",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off",
+			"sound": "on",
+			"status": "banned"
+		},
+		{
+			"id": "347",
+			"name": "Henning Amundsen",
+			"email": "hamundsen@broadpark.no",
+			"profile": "Registered user",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "385",
+			"name": "Michael Prozorov",
+			"email": "michael.prozorov@itrexgroup.com",
+			"profile": "Administrator with limited rights",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "on"
+		},
+		{
+			"id": "363",
+			"name": "Reidar Kristoffersen",
+			"email": "djgejl@gmail.com",
+			"profile": "Registered user",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "384",
+			"name": "Sanna Saksvoll",
+			"email": "sanna_saksvoll@hotmail.com",
+			"profile": "Administrator with limited rights",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "on"
+		},
+		{
+			"id": "345",
+			"name": "SuperAdmin",
+			"email": "superadmin@mailinator.com",
+			"profile": "Administrator",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		},
+		{
+			"id": "383",
+			"name": "Various Gerg",
+			"email": "various@hotmail.com",
+			"profile": "Administrator with limited rights",
+			"registration date": "01-02-2018",
+			"registration time": "12:13:03",
+			"last visit date": "13-02-2017",
+			"last-visit time": "13:58:58",
+			"statistic": "off"
+		}
+	],
+	"userStatistic": {
+		"head": [
+			{
+				"name": "Date of session",
+				"sort": "asc"
+			},
+			{
+				"name": "Timestamp of log in"
+			},
+			{
+				"name": "Time spent"
+			},
+			{
+				"name": "Count of activities"
+			},
+			{
+				"name": "Lifetime activities counter"
+			}
+		],
+		"body": [
+			[
+				"02.03.2018",
+				"09:50",
+				"2h 5m",
+				"3",
+				"100"
+			],
+			[
+				"27.02.2018",
+				"08:57",
+				"3h 57m",
+				"8",
+				"60"
+			],
+			[
+				"20.02.2018",
+				"11:21",
+				"1h 37m",
+				"1",
+				"3"
+			],
+			[
+				"13.02.2018",
+				"20:50",
+				"-",
+				"-",
+				"-"
+			]
+		],
+		"total": [
+			"Total statistics",
+			"50:58",
+			"7h 37m",
+			"12",
+			"163"
+		]
+	}
+}
