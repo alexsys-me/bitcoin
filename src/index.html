@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-	<title>{% block page_title %}{% endblock %} | {{ name }}</title>
-	<!---
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>{% block page_title %}{% endblock %} | {{ name }}</title>
+    <!---
   {% if description != "" %}<meta name="description" content="{{ description }}" />{% endif %}
   {% if keywords != "" %}<meta name="keywords" content="{{ keywords }}">{% endif %}
   {% if social_networks.title != "" 
@@ -20,173 +22,194 @@
 				<meta name="twitter:card" content="summary_large_image">
 	{%- endif %}
 -->
-	<link rel="stylesheet/less" href="less/main.less" type="text/css" />
-	<script src="js/less.js" type="text/javascript"></script>
-</head>
+    <link rel="stylesheet/less" href="less/main.less" type="text/css" />
+    <script src="js/less.js" type="text/javascript"></script>
+  </head>
 
-<body>
-	<aside class="left-menu">
-		<ul class="left-menu__menu">
-			<li class="left-menu__item left-menu__item-active">
-				<a href="#" class="left-menu__link left-menu__home-icon">Home</a>
-			</li>
-			<li class="left-menu__item">
-				<a href="#" class="left-menu__link left-menu__buy-icon">Buy Bticoin</a>
-			</li>
-			<li class="left-menu__item">
-				<a href="#" class="left-menu__link left-menu__sell-icon">Sell Bticoin</a>
-			</li>
-			<li class="left-menu__item">
-				<a href="#" class="left-menu__link left-menu__history-icon">History</a>
-			</li>
-			<li class="left-menu__item">
-				<a href="#" class="left-menu__link left-menu__setting-icon">Settings</a>
-			</li>
-			<li class="left-menu__item">
-				<a href="#" class="left-menu__link left-menu__logout-icon">Log out</a>
-			</li>
-		</ul>
-	</aside>
+  <body>
+    <aside class="left-menu">
+      <ul class="left-menu__menu">
+        <li class="left-menu__item left-menu__item-active">
+          <a href="#" class="left-menu__link left-menu__home-icon">Home</a>
+        </li>
+        <li class="left-menu__item">
+          <a href="#" class="left-menu__link left-menu__buy-icon"
+            >Buy Bticoin</a
+          >
+        </li>
+        <li class="left-menu__item">
+          <a href="#" class="left-menu__link left-menu__sell-icon"
+            >Sell Bticoin</a
+          >
+        </li>
+        <li class="left-menu__item">
+          <a href="#" class="left-menu__link left-menu__history-icon"
+            >History</a
+          >
+        </li>
+        <li class="left-menu__item">
+          <a href="#" class="left-menu__link left-menu__setting-icon"
+            >Settings</a
+          >
+        </li>
+        <li class="left-menu__item">
+          <a href="#" class="left-menu__link left-menu__logout-icon">Log out</a>
+        </li>
+      </ul>
+    </aside>
 
-	<section class="wrapper">
-		<main class="main">
-			<header class="main__header">
-				<p class="main__header_slogo">
-					Hello Bob! Hope you have a wonderful day!
-				</p>
-				<img src="images/logo.png" alt="" class="main__header_logo" />
-			</header>
+    <section class="wrapper">
+      <main class="main">
+        <header class="main__header">
+          <p class="main__header_slogo">
+            Hello Bob! Hope you have a wonderful day!
+          </p>
+          <img src="images/logo.png" alt="" class="main__header_logo" />
+        </header>
 
-			<div class="main__table-money">
-				<div class="main__table-money_wallet">
-					<div class="main__table-money_wallet__icon ico">Wallet #1</div>
-					<div class="main__table-money_wallet__data">
-						0.12345678
-						<span class="main__table-money_wallet__data-cur">BTC</span>
-					</div>
-					<div class="main__table-money_wallet__history up">
-						0.12345678
-						<span class="main__table-money_wallet__history-text">From last Week</span>
-					</div>
-				</div>
-				<div class="main__table-money_wallet">
-					<div class="main__table-money_wallet__icon ico">Wallet #2</div>
-					<div class="main__table-money_wallet__data">
-						0.12345678
-						<span class="main__table-money_wallet__data-cur">BTC</span>
-					</div>
-					<div class="main__table-money_wallet__history down">
-						0.12345678
-						<span class="main__table-money_wallet__history-text">From the creation</span>
-					</div>
-				</div>
-				<div class="main__table-money_wallet">
-					<div class="main__table-money_wallet__icon ico">Wallet #3</div>
-					<div class="main__table-money_wallet__data">
-						0.12345678
-						<span class="main__table-money_wallet__data-cur">BTC</span>
-					</div>
-					<div class="main__table-money_wallet__history up">
-						0.12345678
-						<span class="main__table-money_wallet__history-text">From last Week</span>
-					</div>
-				</div>
-				<div class="main__table-money_wallet">
-					<div class="main__table-money_wallet__icon ico">Wallet #4</div>
-					<div class="main__table-money_wallet__data">
-						0.12345678
-						<span class="main__table-money_wallet__data-cur">BTC</span>
-					</div>
-					<div class="main__table-money_wallet__history down">
-						0.12345678
-						<span class="main__table-money_wallet__history-text">From last Week</span>
-					</div>
-				</div>
-				<div class="main__table-money_wallet-add ico">
-					Add Wallets
-				</div>
-			</div>
+        <div class="main__table-money">
+          <div class="main__table-money_wallet">
+            <div class="main__table-money_wallet__icon ico">Wallet #1</div>
+            <div class="main__table-money_wallet__data">
+              0.12345678
+              <span class="main__table-money_wallet__data-cur">BTC</span>
+            </div>
+            <div class="main__table-money_wallet__history up">
+              0.12345678
+              <span class="main__table-money_wallet__history-text"
+                >From last Week</span
+              >
+            </div>
+          </div>
+          <div class="main__table-money_wallet">
+            <div class="main__table-money_wallet__icon ico">Wallet #2</div>
+            <div class="main__table-money_wallet__data">
+              0.12345678
+              <span class="main__table-money_wallet__data-cur">BTC</span>
+            </div>
+            <div class="main__table-money_wallet__history down">
+              0.12345678
+              <span class="main__table-money_wallet__history-text"
+                >From the creation</span
+              >
+            </div>
+          </div>
+          <div class="main__table-money_wallet">
+            <div class="main__table-money_wallet__icon ico">Wallet #3</div>
+            <div class="main__table-money_wallet__data">
+              0.12345678
+              <span class="main__table-money_wallet__data-cur">BTC</span>
+            </div>
+            <div class="main__table-money_wallet__history up">
+              0.12345678
+              <span class="main__table-money_wallet__history-text"
+                >From last Week</span
+              >
+            </div>
+          </div>
+          <div class="main__table-money_wallet">
+            <div class="main__table-money_wallet__icon ico">Wallet #4</div>
+            <div class="main__table-money_wallet__data">
+              0.12345678
+              <span class="main__table-money_wallet__data-cur">BTC</span>
+            </div>
+            <div class="main__table-money_wallet__history down">
+              0.12345678
+              <span class="main__table-money_wallet__history-text"
+                >From last Week</span
+              >
+            </div>
+          </div>
+          <div class="main__table-money_wallet-add ico">
+            Add Wallets
+          </div>
+        </div>
 
-			<div class="main__info">
-				Have you thought about Verifying your Account?
-				<div class="main__info_close"></div>
-			</div>
+        <div class="main__info">
+          Have you thought about Verifying your Account?
+          <div class="main__info_close"></div>
+        </div>
 
-			<section class="main_wrapper">
-				<div class="main__acount-balance content-block">
-					<p class="content-block__title">
-						<span class="block__title__text">Account Balance</span>
-					</p>
-				</div>
+        <section class="main_wrapper">
+          <div class="main__acount-balance content-block">
+            <p class="content-block__title">
+              <span class="block__title__text">Account Balance</span>
+            </p>
+          </div>
 
-				<div class="main__transaction-history content-block">
-					<p class="content-block__title">
-						<span class="content-block__title-text">Transaction History</span>
-						<span class="content-block__title_btn-block">
-							<button class="btn">View More</button>
-						</span>
-					</p>
-				</div>
-			</section>
+          <div class="main__transaction-history content-block">
+            <p class="content-block__title">
+              <span class="content-block__title-text">Transaction History</span>
+              <span class="content-block__title_btn-block">
+                <button class="btn">View More</button>
+              </span>
+            </p>
+          </div>
+        </section>
 
-			<section class="main_wrapper">
-				<!--COL-->
-				<div class="main_wrapper__col">
-					<div class="main__bitcoin-price content-block">
-						<p class="content-block__title">
-							<span class="block__title__text">TBitcoin Price:</span>
-							<span class="content-block__title_btn-block">
-								<button class="btn">Buy Bitcoin</button>
-							</span>
-						</p>
-					</div>
+        <section class="main_wrapper">
+          <!--COL-->
+          <div class="main_wrapper__col">
+            <div class="main__bitcoin-price content-block">
+              <p class="content-block__title">
+                <span class="block__title__text">TBitcoin Price:</span>
+                <span class="content-block__title_btn-block">
+                  <button class="btn">Buy Bitcoin</button>
+                </span>
+              </p>
+            </div>
 
-					<div class="main__bitcoin-price content-block">
-						<p class="content-block__title">
-							<span class="block__title__text">Bitcoin Price:</span>
-							<span class="content-block__title_btn-block">
-								<button class="btn">Buy Bitcoin</button>
-							</span>
-						</p>
-					</div>
-				</div>
-				<!--COL-->
-				<div class="main_wrapper__col">
-					<div class="main__social-feed content-block">
-						<p class="content-block__title">
-							<span class="block__title__text">Bitcoin Price:</span>
-							<span class="content-block__title_btn-block">
-								<button class="btn">Buy Bitcoin</button>
-								<button class="btn">Buy Bitcoin</button>
-							</span>
-						</p>
-					</div>
-				</div>
-			</section>
-		</main>
+            <div class="main__bitcoin-price content-block">
+              <p class="content-block__title">
+                <span class="block__title__text">Bitcoin Price:</span>
+                <span class="content-block__title_btn-block">
+                  <button class="btn">Buy Bitcoin</button>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!--COL-->
+          <div class="main_wrapper__col">
+            <div class="main__social-feed content-block">
+              <p class="content-block__title">
+                <span class="block__title__text">Bitcoin Price:</span>
+                <span class="content-block__title_btn-block">
+                  <button class="btn">Buy Bitcoin</button>
+                  <button class="btn">Buy Bitcoin</button>
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-		<footer class="fotter">
-			<ul class="fotter__menu">
-				<li class="fotter__menu-items"><a href="#">Privacy Policy</a></li>
-				<li class="fotter__menu-items">
-					<a href="#">Terms and conditions</a>
-				</li>
-				<li class="fotter__menu-items"><a href="#">Get Support</a></li>
-				<li class="fotter__menu-items"><a href="#">Contact Us</a></li>
-			</ul>
-			<div class="fotter__social">
-				<a href="#" class="fotter__social-icon icon_facebok icon"></a>
-				<a href="#" class="fotter__social_icon icon_twitter icon"></a>
-				<a href="#" class="fotter__social_icon icon_google icon"></a>
-				<a href="#" class="fotter__social_icon icon_gost icon"></a>
-				<a href="#" class="fotter__social_icon icon_youtube icon"></a>
-			</div>
-			<p class="fotter__copyright">© 2018 Bitcoin Babe PTY LTD</p>
-		</footer>
-	</section>
+      <footer class="footer">
+        <ul class="footer__menu">
+          <li class="footer__item">
+            <a href="#" class="footer__links">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__links">Terms and conditions</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__links">Get Support</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__links">Contact Us</a>
+          </li>
+        </ul>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link icon_facebok"></a>
+          <a href="#" class="footer__social-link icon_twitter"></a>
+          <a href="#" class="footer__social-link icon_google"></a>
+          <a href="#" class="footer__social-link icon_gost"></a>
+          <a href="#" class="footer__social-link icon_youtube"></a>
+        </div>
+        <p class="footer__copyright">© 2018 Bitcoin Babe PTY LTD</p>
+      </footer>
+    </section>
 
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="./js/main.js"></script>
-</body>
-
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/main.js"></script>
+  </body>
 </html>

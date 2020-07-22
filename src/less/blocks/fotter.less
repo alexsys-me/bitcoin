@@ -1,49 +1,79 @@
-  
-.fotter{
+.footer {
   height: 150px;
   background: @grey;
   flex: 0 0 auto;
   justify-content: center;
-  display: flex;  
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
   padding-bottom: 22px;
   padding-top: 32px;
 
-  &__copyright{
-    flex:100%;
+  &__menu {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+  }
+
+  &__links {
+    color: black;
+    margin: 0 15px;
+    text-decoration: underline;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    flex: 100%;
+    margin-bottom: 17px;
+
+    &-link {
+      background: #b9b8b8;
+      border-radius: 50%;
+      display: block;
+      width: 29px;
+      height: 29px;
+      margin: 0 9px;
+      text-align: center;
+      line-height: 29px;
+
+      &:before {
+        font-size: 12px;
+        font-family: "icomoon";
+        color: #ebe9e8;
+      }
+
+      &:hover {
+        background: #bbb;
+      }
+    }
+  }
+
+  &__copyright {
+    flex: 100%;
     text-align: center;
     margin: auto;
     padding: 0;
-    color:#b9b8b8;
+    color: #b9b8b8;
     font-size: 14px;
   }
+}
 
-  &__menu{
-    list-style: none;
-    display: flex;
-    a{
-      color:black;
-      margin: 0 15px;
-      text-decoration: underline;
-
-    }
+.icon {
+  &_facebok:before {
+    content: "\e912";
   }
-
-  &__social{
-    display: flex;
-    justify-content: center;
-    flex: 100%; 
-    &.facebok {
-      
-    }
-    &_icon{
-      background:#000;
-      display: block;
-      width: 30px;
-      height: 30px;
-      border-radius:50%;
-
-    }
-
+  &_twitter:before {
+    content: "\e906";
+  }
+  &_google:before {
+    content: "\e913";
+  }
+  &_gost:before {
+    content: "\e914";
+  }
+  &_youtube:before {
+    content: "\e908";
   }
 }
