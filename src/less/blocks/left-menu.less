@@ -29,8 +29,8 @@
     color: white;
     font-weight: 900;
 
-    &:hover{ 
-      color:#d90f8b;
+    &:hover {
+      color: #d90f8b;
     }
 
     &:before {
@@ -45,7 +45,98 @@
   }
 }
 
+.content-block {
+  // .content-block__box
+  border: 1px solid #e2e2e2;
+  border-radius: 1px;
+  margin-bottom: 20px;
 
+  &__box {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    border-bottom: 1px solid #e2e2e2;
+    justify-content: space-between;
+    align-items: center;
+  }
 
- 
+  // .content-block__title
 
+  &__title {
+    text-align: left;
+    color: #6c6c6c;
+    font-size: 24px;
+  }
+
+  // .content-block__btns
+
+  &__btns {
+  }
+}
+
+.social-feed {
+  // .social-feed__body
+
+  &__body {
+    overflow-y: auto;
+    max-height: 580px;
+  }
+
+  // .social-feed__list
+
+  &__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  // .social-feed__listitem
+
+  &__listitem {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+  }
+
+  // .social-feed__user
+
+  &__user {
+    display: flex;
+  }
+
+  // .social-feed__user-picture
+
+  &__user-picture {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+
+  // .social-feed__userwrap
+
+  &__userwrap {
+  }
+
+  // .social-feed__user-name
+
+  &__username {
+    color: #f5638c;
+    margin-bottom: 9px;
+    font-weight: 700;
+  }
+
+  // .social-feed__userdate
+
+  &__userdate {
+    color: #605e5e;
+  }
+
+  // .social-feed__message
+
+  &__message {
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
