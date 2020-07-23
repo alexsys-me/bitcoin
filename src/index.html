@@ -125,22 +125,36 @@
           </div>
         </div>
 
-        <div class="main__info">
+        <div class="info-box">
           Have you thought about Verifying your Account?
-          <div class="main__info_close"></div>
+          <a href="#" class="info-box__close"></a>
         </div>
 
         <section class="main_wrapper">
-          <div class="main__acount-balance content-block">
-            <p class="content-block__title">
-              <span class="block__title__text">Account Balance</span>
+          <div class="acount-balance content-block">
+            <p class="content-block__box">
+              <span class="content-block__title">Account Balance</span>
             </p>
+            <div class="acount-balance__body">
+              <div class="acount-balance__balance">
+                2’598,63 <span class="acount-balance__aud">AUD</span>
+              </div>
+              <div class="acount-balance__loader acount-balance__loader-active">
+                Updating...
+              </div>
+              <div class="acount-balance__status">
+                Pending:
+                <div class="acount-balance__pending">1’259,22</div>
+                <span class="acount-balance__miniaud">AUD</span>
+              </div>
+              <button class="btn red">Top Up</button>
+            </div>
           </div>
 
           <div class="main__transaction-history content-block">
-            <p class="content-block__title">
-              <span class="content-block__title-text">Transaction History</span>
-              <span class="content-block__title_btn-block">
+            <p class="content-block__box">
+              <span class="content-block__title">Transaction History</span>
+              <span class="content-block__btns">
                 <button class="btn">View More</button>
               </span>
             </p>
@@ -151,18 +165,18 @@
           <!--COL-->
           <div class="main_wrapper__col">
             <div class="main__bitcoin-price content-block">
-              <p class="content-block__title">
-                <span class="block__title__text">TBitcoin Price:</span>
-                <span class="content-block__title_btn-block">
+              <p class="content-block__box">
+                <span class="content-block__title">TBitcoin Price:</span>
+                <span class="content-block__btns">
                   <button class="btn">Buy Bitcoin</button>
                 </span>
               </p>
             </div>
 
             <div class="main__bitcoin-price content-block">
-              <p class="content-block__title">
-                <span class="block__title__text">Bitcoin Price:</span>
-                <span class="content-block__title_btn-block">
+              <p class="content-block__box">
+                <span class="content-block__title">Bitcoin Price:</span>
+                <span class="content-block__btns">
                   <button class="btn">Buy Bitcoin</button>
                 </span>
               </p>
