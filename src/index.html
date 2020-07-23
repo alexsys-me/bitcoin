@@ -60,6 +60,7 @@
 
     <section class="wrapper">
       <main class="main">
+        <!--HEADER  -->
         <header class="header">
           <p class="header__slogo">
             Hello <strong class="header__name">Bob!</strong> Hope you have a
@@ -68,70 +69,42 @@
           <img src="images/logo.png" alt="" class="main__header_logo" />
         </header>
 
-        <div class="main__table-money">
-          <div class="main__table-money_wallet">
-            <div class="main__table-money_wallet__icon ico">Wallet #1</div>
-            <div class="main__table-money_wallet__data">
-              0.12345678
-              <span class="main__table-money_wallet__data-cur">BTC</span>
-            </div>
-            <div class="main__table-money_wallet__history up">
-              0.12345678
-              <span class="main__table-money_wallet__history-text"
-                >From last Week</span
-              >
-            </div>
+        <!--WALLET_TABLE  -->
+        <div class="wallet">
+          <div class="wallet__box">
+            <div class="wallet__name">My sister’s wallet</div>
+            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
+            <div class="wallet__change"><div class="wallet__stat wallet__change-down">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
           </div>
-          <div class="main__table-money_wallet">
-            <div class="main__table-money_wallet__icon ico">Wallet #2</div>
-            <div class="main__table-money_wallet__data">
-              0.12345678
-              <span class="main__table-money_wallet__data-cur">BTC</span>
-            </div>
-            <div class="main__table-money_wallet__history down">
-              0.12345678
-              <span class="main__table-money_wallet__history-text"
-                >From the creation</span
-              >
-            </div>
+          <div class="wallet__box">
+            <div class="wallet__name">My sister’s wallet</div>
+            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
+            <div class="wallet__change"><div class="wallet__stat wallet__change-up">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
           </div>
-          <div class="main__table-money_wallet">
-            <div class="main__table-money_wallet__icon ico">Wallet #3</div>
-            <div class="main__table-money_wallet__data">
-              0.12345678
-              <span class="main__table-money_wallet__data-cur">BTC</span>
-            </div>
-            <div class="main__table-money_wallet__history up">
-              0.12345678
-              <span class="main__table-money_wallet__history-text"
-                >From last Week</span
-              >
-            </div>
+          <div class="wallet__box">
+            <div class="wallet__name">My sister’s wallet</div>
+            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
+            <div class="wallet__change"><div class="wallet__stat wallet__change-down">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
           </div>
-          <div class="main__table-money_wallet">
-            <div class="main__table-money_wallet__icon ico">Wallet #4</div>
-            <div class="main__table-money_wallet__data">
-              0.12345678
-              <span class="main__table-money_wallet__data-cur">BTC</span>
-            </div>
-            <div class="main__table-money_wallet__history down">
-              0.12345678
-              <span class="main__table-money_wallet__history-text"
-                >From last Week</span
-              >
-            </div>
+          <div class="wallet__box">
+            <div class="wallet__name">My sister’s wallet</div>
+            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
+            <div class="wallet__change"><div class="wallet__stat wallet__change-up">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
           </div>
-          <div class="main__table-money_wallet-add ico">
-            Add Wallets
+          <div class="wallet__box">
+            <a href="#" class="wallet__addnew">Add Wallets</a>
           </div>
         </div>
 
+       
+        <!--INFO_BLOCK  -->
         <div class="info-box">
           Have you thought about Verifying your Account?
           <a href="#" class="info-box__close"></a>
         </div>
 
         <section class="main_wrapper">
+          <!--   ACOUNT-BALANCE   -->
           <div class="acount-balance content-block">
             <p class="content-block__box">
               <span class="content-block__title">Account Balance</span>
@@ -151,7 +124,7 @@
               <button class="btn red">Top Up</button>
             </div>
           </div>
-
+          <!--  TRANSACTION-HISTORY -->
           <div class="transaction-history content-block">
             <p class="content-block__box">
               <span class="content-block__title">Transaction History</span>
@@ -187,6 +160,7 @@
         <section class="main_wrapper">
           <!--COL-->
           <div class="main_wrapper__col">
+            <!--  BITCOIN-PRICE -->
             <div class="main__bitcoin-price content-block">
               <p class="content-block__box">
                 <span class="content-block__title">TBitcoin Price:</span>
@@ -195,7 +169,7 @@
                 </span>
               </p>
             </div>
-
+            <!--  BITCOIN-PRICE -->
             <div class="main__bitcoin-price content-block">
               <p class="content-block__box">
                 <span class="content-block__title">Bitcoin Price:</span>

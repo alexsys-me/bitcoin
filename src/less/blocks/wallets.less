@@ -1,0 +1,95 @@
+.wallet {
+  display: flex;
+  flex: 100%;
+
+  &__box {
+    max-width: 230px;
+    flex: 1;
+    border-right: 2px solid #ededed;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &:last-child {
+      border: none;
+    }
+  }
+  &__name {
+    color: #7b7b7c;
+    font-size: 15px;
+    padding-bottom: 10px;
+    &:before {
+      color: #c1c1c1;
+      font-family: icomoon;
+      content: "\e907";
+      margin-right: 5px;
+      font-size: 13px;
+    }
+  }
+  &__money {
+    color: #797979;
+    font-size: 33px;
+    font-weight: 300;
+    font-family: "Avenir";
+    margin-bottom: 10px;
+  }
+  &__money-val {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Mina";
+    margin-left: -6px;
+  }
+  &__change {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -4px;
+  }
+  &__stat {
+    font-size: 12px;
+    opacity: 0.6;
+    display: flex;
+    margin-right: 10px;
+
+    &:after {
+      font-family: icomoon;
+      content: "\e90f";
+      font-size: 3px;
+      height: 10px;
+    }
+  }
+  &__change-up {
+    color: #00ce87;
+    &:after {
+      transform: rotate(180deg);
+      margin-top: -7px;
+    }
+  }
+  &__change-down {
+    color: @rose;
+  }
+  &__descript {
+    color: #a9a9aa;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  &__addnew {
+    flex: 1;
+    opacity: 0.8;
+    color: #dfdbd9;
+    line-height: 40px;
+
+    &:before {
+      font-family: icomoon;
+      content: "\e903";
+      font-size: 20px;
+      margin-right: 10px;
+      float: left;
+    }
+    &:hover {
+      opacity: 1;
+      color: #9f9f9f;
+    }
+  }
+}
