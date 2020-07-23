@@ -1,49 +1,70 @@
 ﻿@font-face {
-    font-family: 'Mina';
-    src: url('../fonts/Mina-Bold.eot');
-    src: local('☺'),
-        url('../fonts/Mina-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Mina-Bold.woff') format('woff'),
-        url('../fonts/Mina-Bold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Mina";
+  src: url("../fonts/Mina-Bold.eot");
+  src: local("☺"),
+    url("../fonts/Mina-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Mina-Bold.woff") format("woff"),
+    url("../fonts/Mina-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Mina';
-    src: url('../fonts/Mina-Regular.eot');
-    src: local('☺'),
-        url('../fonts/Mina-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Mina-Regular.woff') format('woff'),
-        url('../fonts/Mina-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Mina";
+  src: url("../fonts/Mina-Regular.eot");
+  src: local("☺"),
+    url("../fonts/Mina-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Mina-Regular.woff") format("woff"),
+    url("../fonts/Mina-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Avenir';
-    src: url('../fonts/AvenirLT-Light.eot');
-    src: local('☺'),
-        url('../fonts/AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AvenirLT-Light.woff') format('woff'),
-        url('../fonts/AvenirLT-Light.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-body {
-	font-family: 'Mina', 'Helvetica', 'Arial', sans-serif;
-	font-weight: 400;
-	min-width: 320px;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 17px;
-	font-weight: 300;
-	color: #1e1d1d;
-	display: flex;
-	min-height: 100vh;
-	position: relative;
-	overflow-y: scroll;
-    flex-wrap: nowrap;
-    height: 100%;
-   
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLT-Light.eot");
+  src: local("☺"),
+    url("../fonts/AvenirLT-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AvenirLT-Light.woff") format("woff"),
+    url("../fonts/AvenirLT-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
+.btn {
+  background: transparent;
+  border: 1px solid #e7cbdc;
+  border-radius: 3px;
+  color: #dd91bf;
+  font-weight: 600;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 16px;
+
+  &:hover {
+    color: white;
+    background: #dd91bf;
+    transition: 0.2s;
+  }
+  &.red {
+    background: #f5638c;
+    color: #fff;
+  }
+}
+
+body {
+  font-family: "Mina", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: 300;
+  color: #1e1d1d;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  height: 100%;
+}

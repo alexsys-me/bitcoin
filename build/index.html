@@ -55,9 +55,10 @@
 
     <section class="wrapper">
       <main class="main">
-        <header class="main__header">
-          <p class="main__header_slogo">
-            Hello Bob! Hope you have a wonderful day!
+        <header class="header">
+          <p class="header__slogo">
+            Hello <strong class="header__name">Bob!</strong> Hope you have a
+            wonderful day!
           </p>
           <img src="images/logo.png" alt="" class="main__header_logo" />
         </header>
@@ -146,13 +147,35 @@
             </div>
           </div>
 
-          <div class="main__transaction-history content-block">
+          <div class="transaction-history content-block">
             <p class="content-block__box">
               <span class="content-block__title">Transaction History</span>
               <span class="content-block__btns">
                 <button class="btn">View More</button>
               </span>
             </p>
+            <div class="transaction-history__body">
+              <div class="transaction-history__table-head">
+                <div>
+                  Date <a href="" class="transaction-history__table-sort"></a>
+                </div>
+                <div>Type of transaction</div>
+                <div>Amount</div>
+                <div>Status</div>
+              </div>
+
+              <div class="transaction-history__table-content">
+                <div class="transaction-history__table-row">
+                  <div>
+                    10.01.2018
+                    <span class="transaction-history__time">22:04</span>
+                  </div>
+                  <div>Fiat Deposit --- Bank Transfer Payment</div>
+                  <div>1’001 AUD</div>
+                  <div>Executed</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

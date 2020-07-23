@@ -1,0 +1,25 @@
+.info-box {
+  border: 1px dashed #c8c8c8;
+  color: #575757;
+  display: flex;
+  justify-content: space-between;
+  flex: 100%;
+  padding: 20px;
+  margin: 32px auto;
+  background: #fffefa;
+
+  &__close {
+    display: block;
+    color: #3d3d3d;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+    &:before {
+      content: "\e911";
+      font-size: 14px;
+      font-family: "icomoon";
+    }
+  }
+}
