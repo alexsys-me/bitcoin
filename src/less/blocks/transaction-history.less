@@ -1,33 +1,61 @@
 .transaction-history {
   margin-left: 20px;
   flex: 70%;
-
   &__body {
   }
-
-  // .transaction-history__table-head
-
   &__table-head {
     background: #fcfcfc;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    display: grid;
+    color: #131313;
+    font-weight: 500;
+    grid-template-columns: 0.9fr 45% 0.7fr 0.7fr;
+    padding: 19px 30px 17px 20px;
+    font-size: 15px;
   }
-
-  // .transaction-history__table-sort
 
   &__table-sort {
   }
 
-  // .transaction-history__table-content
-
   &__table-content {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 220px;
   }
-
-  // .transaction-history__table-row
-
   &__table-row {
+    display: grid;
+    grid-template-columns: 0.9fr 45% 0.7fr 0.7fr;
+    padding: 19px 30px 17px 20px;
+    font-size: 14px;
+    color: #6c6c6c;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  &__time {
+    color: #82adcf;
+  }
+  &__company {
+    color: #b0b0b0;
+    &-color {
+      color: #35bda4;
+    }
   }
 
-  // .transaction-history__time
-
-  &__time {
+  &__amount-plus {
+    &:before {
+      content: "\e904";
+      font-family: icomoon;
+      color: #6dedb8;
+      margin-right: 5px;
+    }
+  }
+  &__amount-minus {
+    &:before {
+      content: "\e901";
+      font-family: icomoon;
+      color: #ffca05;
+      margin-right: 5px;
+    }
   }
 }
