@@ -1,16 +1,26 @@
-.wrapper {
+.wrap {
   flex: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
+
+  @media (max-width: 490px) {
+		max-width: 100%;  		
+  }
+
 }
 
 .content-block {
   border: 1px solid #e2e2e2;
   border-radius: 1px;
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    margin-left:auto;
+    margin-right:auto;
+  }
 
   &__box {
     display: flex;
@@ -30,6 +40,7 @@
   &__num {
     font-family: "Avenir";
   }
+
   &__btns {
     display: flex;
   }
@@ -46,13 +57,33 @@
   align-content: flex-start;
   padding-left: 150px;
 
+  @media (max-width: 480px) {
+    padding:20px;
+    max-width: 100%;		
+  }
+  
   &_wrapper {
     display: flex;
     flex: 100%;
     justify-content: space-between;
+
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
+    }
+
     &__col {
       flex: 50%;
       max-width: 50%;
+
+      @media (max-width: 480px) {
+        max-width: 100%;	
+        flex:100%;	
+      }
     }
   }
+  
+}
+
+.icon__wallet-status{
+  display: flex;
 }

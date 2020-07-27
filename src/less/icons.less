@@ -9,14 +9,80 @@
   font-style: normal;
 }
 
+[class^="icon__"], [class*=" icon__"] {
+  &:before{
+    font-family: "icomoon" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+ 
+}
+
 .icon {
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  &__footer-facebok:before {
+    content: "\e90c";
+  }
+  &__footer-twitter:before {
+    content: "\e90d";
+  }
+  &__footer-google:before {
+    content: "\e90e";
+  }
+  &__footer-gost:before {
+    content: "\e90f";
+  }
+  &__footer-youtube:before {
+    content: "\e910";
+  }
+  &__leftmenu-home:before {
+    content: "\e902";
+  }
+  &__leftmenu-buy:before {
+    content: "\e90a";
+  }
+  &__leftmenu-sell:before {
+    content: "\e907";
+  }
+  &__leftmenu-history:before {
+    content: "\e90b";
+  }
+  &__leftmenu-setting:before {
+    content: "\e908";
+  }
+  &__leftmenu-logout:before {
+    content: "\e909";
+  }
+  &__wallet:before{
+    content: "\e900";
+  } 
+  &__wallet-add:before{
+    content: "\e901";
+  } 
+  &__wallet-status:after{
+    content: "\e911";
+    font-family: "icomoon";
+    font-size: 3px;
+    margin-right: 3px;
+  }
+  &__acount-balance:before {
+    content: "\e905";
+  } 
+  &__close:before{
+    content: "\e912";
+  }
+  &__transaction-history-plus:before {
+    content: "\e903";
+    color:#ffca05;
+    margin-right: 5px;
+  }
+  &__transaction-history-minus:before {
+    content: "\e904";
+    color: #6dedb8;
+    margin-right: 5px;  
+  }
 }

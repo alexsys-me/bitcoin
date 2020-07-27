@@ -3,6 +3,7 @@
   flex: 70%;
   &__body {
   }
+
   &__table-head {
     background: #fcfcfc;
     border-top: 1px solid #e0e0e0;
@@ -24,6 +25,7 @@
     -webkit-overflow-scrolling: touch;
     max-height: 220px;
   }
+
   &__table-row {
     display: grid;
     grid-template-columns: 0.9fr 45% 0.7fr 0.7fr;
@@ -32,30 +34,16 @@
     color: #6c6c6c;
     border-bottom: 1px solid #f4f4f4;
   }
+
   &__time {
     color: #82adcf;
   }
+
   &__company {
     color: #b0b0b0;
     &-color {
       color: #35bda4;
     }
   }
-
-  &__amount-plus {
-    &:before {
-      content: "\e904";
-      font-family: icomoon;
-      color: #6dedb8;
-      margin-right: 5px;
-    }
-  }
-  &__amount-minus {
-    &:before {
-      content: "\e901";
-      font-family: icomoon;
-      color: #ffca05;
-      margin-right: 5px;
-    }
-  }
+  
 }

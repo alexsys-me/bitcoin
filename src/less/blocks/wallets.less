@@ -15,6 +15,7 @@
     &:last-child {
       border: none;
     }
+
   }
   &__name {
     color: #7b7b7c;
@@ -22,12 +23,11 @@
     padding-bottom: 10px;
     &:before {
       color: #c1c1c1;
-      font-family: icomoon;
-      content: "\e907";
       margin-right: 5px;
       font-size: 13px;
     }
   }
+
   &__money {
     color: #797979;
     font-size: 33px;
@@ -35,17 +35,20 @@
     font-family: "Avenir";
     margin-bottom: 10px;
   }
+
   &__money-val {
     font-size: 12px;
     font-weight: 400;
     font-family: "Mina";
     margin-left: -6px;
   }
+
   &__change {
     display: flex;
     justify-content: space-between;
     margin-bottom: -4px;
   }
+
   &__stat {
     font-size: 12px;
     opacity: 0.6;
@@ -53,36 +56,41 @@
     margin-right: 10px;
 
     &:after {
-      font-family: icomoon;
-      content: "\e90f";
       font-size: 3px;
       height: 10px;
     }
   }
+
   &__change-up {
     color: #00ce87;
+    
+  }
+
+  &__change-down {
+    color: @rose;
+
     &:after {
       transform: rotate(180deg);
       margin-top: -7px;
+      height: 10px;
     }
   }
-  &__change-down {
-    color: @rose;
-  }
+
   &__descript {
     color: #a9a9aa;
     font-size: 13px;
     white-space: nowrap;
+    line-height: 20px;
   }
+
   &__addnew {
     flex: 1;
     opacity: 0.8;
     color: #dfdbd9;
-    line-height: 40px;
+    line-height: 23px;
+    white-space: nowrap;
 
     &:before {
-      font-family: icomoon;
-      content: "\e903";
       font-size: 20px;
       margin-right: 10px;
       float: left;
@@ -91,5 +99,7 @@
       opacity: 1;
       color: #9f9f9f;
     }
+    
   }
+
 }
