@@ -9,7 +9,9 @@
   font-style: normal;
 }
 
-[class^="icon__"], [class*=" icon__"] {
+
+
+.icon {
   &:before{
     font-family: "icomoon" !important;
     font-style: normal;
@@ -20,10 +22,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
- 
-}
-
-.icon {
+  &__wallet-status{
+    display: flex;
+  }
   &__footer-facebok:before {
     content: "\e90c";
   }
