@@ -15,6 +15,10 @@
     grid-template-columns: 0.9fr 45% 0.7fr 0.7fr;
     padding: 19px 30px 17px 20px;
     font-size: 15px;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+      display: flex;   
+      justify-content:space-between;
+    }
   }
 
   &__table-sort {
@@ -33,7 +37,14 @@
     font-size: 14px;
     color: #6c6c6c;
     border-bottom: 1px solid #f4f4f4;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+      display: flex;   
+      justify-content:space-between;
+    }
+
   }
+
 
   &__time {
     color: #82adcf;
@@ -42,7 +53,7 @@
   &__company {
     color: #b0b0b0;
   }
-  
+
   &__company-color {
     color: #35bda4;
   }

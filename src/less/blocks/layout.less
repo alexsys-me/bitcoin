@@ -7,46 +7,15 @@
   min-height: 100vh;
   padding-left:150px;
 
-  @media (max-width: 490px) {
+  @media (max-width: 600px) {
     max-width: 100%;  	
-    padding-left:0px;	
+    padding-left:0px;	    
   }
 
-}
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    display: block    
+ }
 
-.content-block {
-  border: 1px solid #e2e2e2;
-  border-radius: 2px;
-  margin-bottom: 20px;
-
-  @media (max-width: 480px) {
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  &__box {
-    display: flex;
-    padding: 20px;
-    margin: auto;
-    border-bottom: 1px solid #e2e2e2;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 80px;
-  }
-
-  &__title {
-    text-align: left;
-    color: #6c6c6c;
-    font-size: 24px;
-  }
-  
-  &__num {
-    font-family: "Avenir";
-  }
-
-  &__btns {
-    display: flex;
-  }
 }
 
 .main {
@@ -58,7 +27,7 @@
   padding: 50px 0;
   align-content: flex-start;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     padding:20px;
     max-width: 100%;		
   }
@@ -68,19 +37,18 @@
     flex: 100%;
     justify-content: space-between;
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
       flex-wrap: wrap;
     }
-
-    &__col {
+  }
+  &_wrapper__col {
       flex: 50%;
       max-width: 50%;
 
-      @media (max-width: 480px) {
+      @media (max-width: 600px) {
         max-width: 100%;	
         flex:100%;	
       }
-    }
   }
   
   
