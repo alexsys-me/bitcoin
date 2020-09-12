@@ -1,71 +1,138 @@
-﻿@font-face {
-  font-family: "Mina";
-  src: url("../fonts/Mina-Bold.eot");
+﻿@content: @sub-text, "Helvetica", "Arial", sans-serif;
+@sub-text:"DINPro";
+@font-face {
+  font-family: @sub-text;
+  src: url("../fonts/DINPro-Bold.eot");
   src: local("☺"),
-    url("../fonts/Mina-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Mina-Bold.woff") format("woff"),
-    url("../fonts/Mina-Bold.ttf") format("truetype");
+    url("../fonts/DINPro-Boldeot?#iefix") format("embedded-opentype"),
+    url("../fonts/DINPro-Bold.woff") format("woff"),
+    url("../fonts/DINPro-Bold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: "Mina";
+  font-family: @sub-text;
   src: url("../fonts/Mina-Regular.eot");
   src: local("☺"),
-    url("../fonts/Mina-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Mina-Regular.woff") format("woff"),
-    url("../fonts/Mina-Regular.ttf") format("truetype");
-  font-weight: 400;
+    url("../fonts/DINPro-Medium?#iefix") format("embedded-opentype"),
+    url("../fonts/DINPro-Medium.woff") format("woff"),
+    url("../fonts/DINPro-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Avenir";
-  src: url("../fonts/AvenirLT-Light.eot");
+  font-family: @sub-text;
+  src: url("../fonts/DINPro.eot");
   src: local("☺"),
-    url("../fonts/AvenirLT-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/AvenirLT-Light.woff") format("woff"),
-    url("../fonts/AvenirLT-Light.ttf") format("truetype");
+    url("../fonts/DINPro.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DINPro.woff") format("woff"),
+    url("../fonts/DINPro.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+
+section{
+  text-align: center;
+  width: 100%;
+}
+
+.wrap {
+  flex-wrap: nowrap;
+  max-width: 1144px;
+  margin: auto;
+  display: flex;
+  @media (max-width: 580px) {
+    flex-wrap: wrap;   
+  }
+  .col {
+    position: relative;    
+    overflow: hidden;
+    @media (max-width: 480px) {
+      flex:100%;
+      width: 100%;
+    }
+    .c6 {
+      flex:50%;
+      @media (max-width: 768px) {
+        margin-left:auto;
+        margin-right:auto;
+        flex:100%;
+        max-width: 100%;
+      }
+
+    }
+    .c4 {
+      flex:30%;
+      max-width: 33%;
+      @media (max-width: 480px) {
+        margin-left:auto;
+        margin-right:auto;
+        flex:100%;
+        max-width: 100%;
+      }
+      
+    }
+  }
+
+}
+
 
 .btn {
   background: transparent;
-  border: 1px solid #e7cbdc;
-  border-radius: 3px;
-  color: #dd91bf;
+  border: 3px solid @dark-blue;
+  color: @dark-blue;
   font-weight: 600;
   padding: 10px 15px;
   cursor: pointer;
-  transition: 0.2s;
-  font-size: 16px;
+  font-size: 18px;
   white-space: nowrap;
+  margin-left:auto;
+  margin-right:auto;
+  text-transform: uppercase;
+  max-width: 360px;
+  width: 100%;
+  display: block;
+  height: 60px;
+  line-height: 38px;
+  font-family:@content;
 
   &:hover {
     color: white;
-    background: #dd91bf;
+    background: @dark-blue;
     transition: 0.2s;
   }
-  &.red {
-    background: #f5638c;
+
+  &.blue {
+    border: 3px solid #fff;
     color: #fff;
+    &:hover{
+      background: #fff;
+      color: @dark-blue;
+    }
   }
 }
 
 body {
-  font-family: "Mina", "Helvetica", "Arial", sans-serif;
+  font-family:@content;
   font-weight: 400;
   min-width: 320px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-size: 17px;
-  font-weight: 300;
-  color: #1e1d1d;
+  font-size: 18px;
+  color: #08172d;
   display: flex;
   min-height: 100vh;
   position: relative;
   overflow-y: scroll;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   height: 100%;
 }
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}
+:-moz-placeholder           {color:#fff;}
+:-ms-input-placeholder      {color:#fff;}
+
+:focus::-webkit-input-placeholder {color:rgba(255, 255, 255,  0.3)}
+:focus::-moz-placeholder          {color:rgba(255, 255, 255,  0.3)}
+:focus:-moz-placeholder           {color:rgba(255, 255, 255,  0.3)}
+:focus:-ms-input-placeholder      {color:rgba(255, 255, 255,  0.3)}

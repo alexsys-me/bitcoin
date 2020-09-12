@@ -7,362 +7,80 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>{% block page_title %}{% endblock %} | {{ name }}</title>
-    <!---
-  {% if description != "" %}<meta name="description" content="{{ description }}" />{% endif %}
-  {% if keywords != "" %}<meta name="keywords" content="{{ keywords }}">{% endif %}
-  {% if social_networks.title != "" 
-        and social_networks.description != "" 
-        and social_networks.image != "" 
-        and social_networks.url != "" -%}
-				<meta property="og:title" content="{{ social_networks.title }}">
-				<meta property="og:description" content="{{ social_networks.description }}">
-				<meta property="og:image" content="{{ social_networks.image }}">
-				<meta property="og:url" content="{{ social_networks.url }}">
-				<meta name="twitter:card" content="summary_large_image">
-	{%- endif %}
--->
+    <title>Реализованные проекты</title>
     <link rel="stylesheet/less" href="less/main.less" type="text/css" />
     <script src="js/less.js" type="text/javascript"></script>
   </head>
 
   <body>
-    <aside class="leftmenu">
-      <ul class="leftmenu__menu">
-        <li class="leftmenu__item leftmenu__item-active">
-          <a href="#" class="leftmenu__link icon icon__leftmenu-home">Home</a>
-        </li>
-        <li class="leftmenu__item">
-          <a href="#" class="leftmenu__link icon icon__leftmenu-buy"
-            >Buy Bticoin</a
-          >
-        </li>
-        <li class="leftmenu__item">
-          <a href="#" class="leftmenu__link icon icon__leftmenu-sell"
-            >Sell Bticoin</a
-          >
-        </li>
-        <li class="leftmenu__item">
-          <a href="#" class="leftmenu__link icon icon__leftmenu-history"
-            >History</a
-          >
-        </li>
-        <li class="leftmenu__item">
-          <a href="#" class="leftmenu__link icon icon__leftmenu-setting"  
-            >Settings</a
-          >
-        </li>
-        <li class="leftmenu__item">
-          <a href="#" class="leftmenu__link icon icon__leftmenu-logout">Log out</a>
-        </li>
-      </ul>
-    </aside>
 
-    <section class="wrap">
-       <!--HEADER  -->
-       <header class="header">
-        <p class="header__slogo">
-          Hello <strong class="header__name">Bob!</strong> Hope you have a
-          wonderful day!
-        </p>
-        <img src="images/logo.png" alt="" class="main__header_logo" />
-      </header>
-      
-      <main class="main">
-       
-
-        <!--WALLET_TABLE  -->
-        <div class="wallet">
-          <div class="wallet__box">
-            <div class="wallet__name icon icon__wallet">My sister’s wallet</div>
-            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
-            <div class="wallet__change"><div class="icon icon__wallet-status wallet__change-down">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
-          </div>
-          <div class="wallet__box">
-            <div class="wallet__name icon icon__wallet">My sister’s wallet</div>
-            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
-            <div class="wallet__change"><div class="icon icon__wallet-status wallet__change-up">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
-          </div>
-          <div class="wallet__box">
-            <div class="wallet__name icon icon__wallet">My sister’s wallet</div>
-            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
-            <div class="wallet__change"><div class="icon icon__wallet-status wallet__change-down">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
-          </div>
-          <div class="wallet__box">
-            <div class="wallet__name icon icon__wallet">My sister’s wallet</div>
-            <div class="wallet__money">0.0001 <span class="wallet__money-val">BTC<span></div>
-            <div class="wallet__change"><div class="icon icon__wallet-status wallet__change-up">2.83921754 </div><div class="wallet__descript">From last Week</div></div>
-          </div>
-          <div class="wallet__box">
-            <a href="#" class="wallet__addnew icon icon__wallet-add">Add Wallets</a>
+      <section class="middel-content">
+        <div class="wrap">
+          <h1>РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h1>
+          <p>Коммуникационное агентство – часть многофункционального холдинга, объединяющего различные компании на территории России и ближнего зарубежья. </p>
+          <p>Наши подходы к организации бизнеса и имеющиеся ресурсы позволяют одинаково эффективно обеспечивать реализацию как крупномасштабных федеральных или международных проектов, так и решать небольшие локальные задачи. Мы находимся в постоянном развитии, расширяя и укрепляя имеющиеся бизнес-направления, а также формируя новые.</p>
+        </div>
+      </section>
+      <section class="full-content">
+        <div class="full-content_wrap wrap">
+            <div class="col c4">
+                <img src="images/img-1.jpg" class="full-content_postimg" alt="">
+                <p class="full-content_des">республика саха</p>
+            </div>
+            <div class="col c4">
+              <img src="images/img-2.jpg" class="full-content_postimg" alt="">
+              <p class="full-content_des">ГАЗПРОМ</p>
+            </div>
+          <div class="col c4">
+            <img src="images/img-3.jpg" class="full-content_postimg" alt="">
+            <p class="full-content_des">NOKIA</p>
           </div>
         </div>
-
-       
-        <!--INFO_BLOCK  -->
-        <div class="info-box">
-          Have you thought about Verifying your Account?
-          <a href="#" class="info-box__close icon icon__close"></a>
-        </div>
-
-        <section class="main_wrapper">
-          <!--   ACOUNT-BALANCE   -->
-          <div class="acount-balance content-block">
-            <p class="content-block__box">
-              <span class="content-block__title">Account Balance</span>
-            </p>
-            <div class="acount-balance__body">
-              <div class="acount-balance__balance">
-                2’598,63 <span class="acount-balance__aud">AUD</span>
-              </div>
-              <div class="acount-balance__loader acount-balance__loader-active">
-                Updating...
-              </div>
-              <div class="acount-balance__status icon icon__acount-balance">
-                Pending:
-                <div class="acount-balance__pending">1’259,22</div>
-                <span class="acount-balance__miniaud">AUD</span>
-              </div>
-              <button class="acount-balance__btn btn red">Top Up</button>
-            </div>
-          </div>
-          <!--  TRANSACTION-HISTORY -->
-          <div class="transaction-history content-block">
-            <p class="content-block__box">
-              <span class="content-block__title">Transaction History</span>
-              <span class="content-block__btns">
-                <button class="btn">View More</button>
-              </span>
-            </p>
-            <div class="transaction-history__body">
-              <div class="transaction-history__table-head">
-                <div>
-                  Date <a href="" class="transaction-history__table-sort"></a>
-                </div>
-                <div>Type of transaction</div>
-                <div>Amount</div>
-                <div>Status</div>
-              </div>
-
-              <div class="transaction-history__table-content">
-
-                <div class="transaction-history__table-row">
-                  <div>
-                    10.01.2018
-                    <span class="transaction-history__time">22:04</span>
-                  </div>
-                  <div>Fiat Deposit <span class="transaction-history__company">--- Bank Transfer Payment</span></div>
-                  <div class="icon icon__transaction-history-plus">1’001 AUD</div>
-                  <div>Executed</div>
-                </div>
-                <div class="transaction-history__table-row">
-                  <div>
-                    10.01.2018
-                    <span class="transaction-history__time">22:04</span>
-                  </div>
-                  <div>BTC Withdrawal:<span class="transaction-history__company-color"> 0.12345678 <sub>BTC</sub></span></div>
-                  <div class="icon icon__transaction-history-minus">1’001 AUD</div>
-                  <div>Executed</div>
-                </div>
-                <div class="transaction-history__table-row">
-                  <div>
-                    10.01.2018
-                    <span class="transaction-history__time">22:04</span>
-                  </div>
-                  <div>Fiat Deposit <span class="transaction-history__company">--- Bank Transfer Payment</span></div>
-                  <div class="transaction-history__ icon icon__transaction-history-minus">1’001 AUD</div>
-                  <div>Executed</div>
-                </div>
-                <div class="transaction-history__table-row">
-                  <div>
-                    10.01.2018
-                    <span class="transaction-history__time">22:04</span>
-                  </div>
-                  <div>Fiat Deposit <span class="transaction-history__company">--- Bank Transfer Payment</span></div>
-                  <div class="icon icon__transaction-history-minus">1’001 AUD</div>
-                  <div>Executed</div>
-                </div>
-                <div class="transaction-history__table-row">
-                  <div>
-                    10.01.2018
-                    <span class="transaction-history__time">22:04</span>
-                  </div>
-                  <div>Fiat Deposit <span class="transaction-history__company">--- Bank Transfer Payment</span></div>
-                  <div class="icon icon__transaction-history-plus">1’001 AUD</div>
-                  <div>Executed</div>
-                </div>
-                <div class="transaction-history__table-row">
-                  <div>
-                    10.01.2018
-                    <span class="transaction-history__time">22:04</span>
-                  </div>
-                  <div>Fiat Deposit <span class="transaction-history__company">--- Bank Transfer Payment</span></div>
-                  <div class="icon icon__transaction-history-plus">1’001 AUD</div>
-                  <div>Executed</div>
-                </div>
-              </div>           
-           
-            
-            </div>
-          </div>
-        </section>
-
-        <section class="main_wrapper">
-          <!--COL-->
-          <div class="main_wrapper__col">
-            <!--  BITCOIN-PRICE -->
-            <div class="bitcoin-price content-block">
-              <p class="content-block__box">
-                <span class="content-block__title">Bitcoin Price: <span class="content-block__num">14’848,82 </span> <sub>AUD</sub> </span>
-                <span class="content-block__btns">
-                  <button class="btn">Buy Bitcoin</button>
-                </span>
-              </p>
-              <img class="bitcoin-price_graf" src="images/diagram1.jpg" alt="">
-            </div>
-            <!--  BITCOIN-PRICE -->
-            <div class="bitcoin-price content-block">
-              <p class="content-block__box">
-                <span class="content-block__title">Bitcoin Selling Price: <span class="content-block__num">14’848,82 </span> <sub>AUD</sub> </span>
-                <span class="content-block__btns">
-                  <button class="btn">Sell Bitcoin</button>
-                </span>
-              </p>
-              <img class="bitcoin-price_graf" src="images/diagram2.jpg" alt="">
-            </div>
-          </div>
-          <!--COL-->
-          <div class="main_wrapper__col">
-            <div class="social-feed content-block">
-              <p class="content-block__box">
-                <span class="content-block__title">
-                  Social Media Feed:
-                </span>
-                <span class="content-block__btns">
-                  <button class="btn">See More</button>
-                  <button class="btn update_btn">Update</button>
-                </span>
-              </p>
-
-              <div class="social-feed__body scroller">
-                <ul class="social-feed__list">
-                  <li class="social-feed__listitem">
-                    <div class="social-feed__user">
-                      <img
-                        src="images/user.png"
-                        alt=""
-                        class="social-feed__user-picture"
-                      />
-                      <div class="social-feed__userwrap">
-                        <p class="social-feed__username">Bitcoin Babe</p>
-                        <span class="social-feed__userdate"
-                          >March 07, 2018</span
-                        >
-                      </div>
-                    </div>
-                    <p class="social-feed__message">
-                      US Marshals Service To Sell Nearly $25 Mln Worth Of Seized
-                      <a href="#" class="social-feed__uplink"
-                        >Bitcoin At Auction http://ow.ly/8R4E30iNkkY</a
-                      >
-                    </p>
-                  </li>
-
-                  <li class="social-feed__listitem">
-                    <div class="social-feed__user">
-                      <img
-                        src="images/user.png"
-                        alt=""
-                        class="social-feed__user-picture"
-                      />
-                      <div class="social-feed__userwrap">
-                        <p class="social-feed__username">Bitcoin Babe</p>
-                        <span class="social-feed__userdate">March 07, 2018</span>
-                      </div>
-                    </div>
-                    <p class="social-feed__message">
-                      US Marshals Service To Sell Nearly $25 Mln Worth Of Seized
-                      <a  href="#" class="social-feed__uplink"
-                        >Bitcoin At Auction http://ow.ly/8R4E30iNkkY</a
-                      >
-                    </p>
-                  </li>
-
-                  <li class="social-feed__listitem">
-                    <div class="social-feed__user">
-                      <img
-                        src="images/user.png"
-                        alt=""
-                        class="social-feed__user-picture"
-                      />
-                      <div class="social-feed__userwrap">
-                        <p class="social-feed__username">Bitcoin Babe</p>
-                        <span class="social-feed__userdate"
-                          >March 07, 2018</span
-                        >
-                      </div>
-                    </div>
-                    <p class="social-feed__message">
-                      US Marshals Service To Sell Nearly $25 Mln Worth Of Seized
-                      <a  href="#" class="social-feed__uplink"
-                        >Bitcoin At Auction http://ow.ly/8R4E30iNkkY</a
-                      >
-                    </p>
-                  </li>
-
-                  <li class="social-feed__listitem">
-                    <div class="social-feed__user">
-                      <img
-                        src="images/user.png"
-                        alt=""
-                        class="social-feed__user-picture"
-                      />
-                      <div class="social-feed__userwrap">
-                        <p class="social-feed__username">Bitcoin Babe</p>
-                        <span class="social-feed__userdate"
-                          >March 07, 2018</span
-                        >
-                      </div>
-                    </div>
-                    <p class="social-feed__message">
-                      US Marshals Service To Sell Nearly $25 Mln Worth Of Seized
-                      <a  href="#" class="social-feed__uplink"
-                        >Bitcoin At Auction http://ow.ly/8R4E30iNkkY</a
-                      >
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
+        <a href="#" class="btn">загрузить еще</a>
+      </section>
       <footer class="footer">
-        <ul class="footer__menu">
-          <li class="footer__item">
-            <a href="#" class="footer__links">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__links">Terms and conditions</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__links">Get Support</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__links">Contact Us</a>
-          </li>
-        </ul>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link icon icon__footer-facebok"></a>
-          <a href="#" class="footer__social-link icon icon__footer-twitter"></a>
-          <a href="#" class="footer__social-link icon icon__footer-google"></a>
-          <a href="#" class="footer__social-link icon icon__footer-gost"></a>
-          <a href="#" class="footer__social-link icon icon__footer-youtube"></a>
-        </div>
-        <p class="footer__copyright">© 2018 Bitcoin Babe PTY LTD</p>
+          <div class="wrap">
+              <div class="col c6">
+                <h2 class="footer_title">КОНТАКТЫ</h2>
+                <div class="footer_more">
+                  <p>Коммуникационное агентство</p>
+                  <p>344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12 <br/> Бизнес–центр «Рост», оф. 104</p>
+                </div>
+                <div class="footer_kontakt">
+                    <div class="footer_phone">
+                      <div class="footer_col">
+                           <a href="tel:+7 (861) 300-11-28" class="footer_phonelink">+7 (861) 300-11-28</a>
+                           <a href="tel:+7 (861) 300-11-28" class="footer_phonelink">+7 (861) 300-11-52</a>
+                           <a href="tel:+7 (861) 300-11-52" class="footer_phonelink">+7 (861) 300-11-52</a>
+                      </div>
+                      <div class="footer_col footer_email">
+                        Email: 
+                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="htp://Facebook.com/exampleagency">Facebook.com/exampleagency</a>
+                        
+                      </div>
+                    </div>
+
+                </div>
+
+              </div>
+              <div class="col c6 ">
+                  <form class="footer_form">
+                      <input type="text" placeholder="Полное имя" >
+                      <input type="text" placeholder="E-mail">
+                      <input type="text" placeholder="Телефон">
+                      <textarea>Пожалуйста, опишите задачу</textarea>
+                      <a href="#" class="fotter_link">Политика обработки персональных данных</a>
+                      <input type="submit" class="btn blue" value="ОТПРАВИТЬ ЗАЯВКУ">        
+                  </form>
+
+              </div>
+          </div>
       </footer>
-    </section>
+
+
+
+
 
     <link rel="stylesheet" href="css/style.css" />
  
